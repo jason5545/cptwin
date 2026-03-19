@@ -19,12 +19,12 @@ function buildAbsoluteUrl(resourcePath) {
   }
 
   const normalizedPath = resourcePath.startsWith('/') ? resourcePath : `/${resourcePath}`;
-  return `https://b-log.to${normalizedPath}`;
+  return `https://cptwin.com${normalizedPath}`;
 }
 
 function generateUrl(slug, category) {
   const catSlug = categoryMapping[category] || 'uncategorized';
-  return `https://b-log.to/${catSlug}/${slug}/`;
+  return `https://cptwin.com/${catSlug}/${slug}/`;
 }
 
 function createFeedItem(post) {

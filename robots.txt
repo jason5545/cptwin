@@ -1,23 +1,23 @@
-# robots.txt for b-log.to
+# robots.txt for cptwin.com
 User-agent: *
 Allow: /
 
-# 主要内容页面
+# 主要內容頁面
 Allow: /*/
 
-# 排除查询参数版本的文章页面（使用新的目录结构）
+# 排除查詢參數版本
 Disallow: /post.html?*
 Disallow: /*?search=*
 
 # Sitemap
-Sitemap: https://b-log.to/sitemap.xml
+Sitemap: https://cptwin.com/sitemap.xml
 
-# 常见爬虫配置
-# 允许所有分类目录
-Allow: /ai-analysis/
-Allow: /tech-analysis/
-Allow: /tech-development/
-Allow: /dev-philosophy/
-Allow: /business-insights/
-Allow: /cultural-insights/
+# 允許所有分類目錄
+Allow: /parenting/
+Allow: /education/
+Allow: /trending/
+Allow: /custom-mouse/
 Allow: /life-stories/
+Allow: /screen-keyboard/
+Allow: /assistive-devices/
+Allow: /uncategorized/

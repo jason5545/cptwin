@@ -7,7 +7,7 @@ const categoriesPath = path.join(__dirname, '../config/categories.json');
 const outputPath = path.join(__dirname, '../sitemap.xml');
 
 // 網站基礎 URL
-const BASE_URL = 'https://b-log.to';
+const BASE_URL = 'https://cptwin.com';
 
 // 讀取文章資料
 const posts = JSON.parse(fs.readFileSync(postsPath, 'utf8'));

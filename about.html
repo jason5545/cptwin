@@ -12,16 +12,15 @@
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
 
-  <!-- Bricolage Grotesque — heading font -->
+  <!-- Noto Serif TC — editorial heading font for CJK -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700;800&display=swap">
   <link rel="stylesheet" href="/assets/css/fonts.css">
   <link rel="stylesheet" href="/assets/css/critical-shared.css">
 
   <!-- 靜態頁專屬關鍵 CSS -->
   <style>
-    /* 防止 CLS */
     main {
       min-height: 600px;
     }
@@ -37,15 +36,15 @@
     <div class="wrapper">
       <div class="site-header__top">
         <div>
-          <p class="breadcrumb"><a href="./">&lt; Back home</a></p>
+          <p class="breadcrumb"><a href="./">← 回首頁</a></p>
           <h1 class="site-title"><a href="./">我與我雙胞胎腦麻兒的生活點滴</a></h1>
 
         </div>
         <nav class="site-nav">
-          <a href="./">Home</a>
-          <a href="about.html" aria-current="page">About</a>
-          <a href="feed.json">Feed</a>
-          <a href="#" id="random-post-link" onclick="goToRandomPost(event)">Random</a>
+          <a href="./">首頁</a>
+          <a href="about.html" aria-current="page">關於我</a>
+          <a href="feed.json">訂閱</a>
+          <a href="#" id="random-post-link" onclick="goToRandomPost(event)">隨機</a>
 
           <!-- 搜尋按鈕與搜尋框 -->
           <div class="search-toggle-container">
@@ -86,7 +85,7 @@
             </div>
           </div>
 
-          <button class="theme-toggle" onclick="ThemeManager.toggle()" aria-label="Toggle theme">
+          <button class="theme-toggle" onclick="ThemeManager.toggle()" aria-label="切換主題">
             <span class="theme-toggle__icon">
               <svg class="theme-icon theme-icon--auto" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M21.5 12c0 5.25-4.25 9.5-9.5 9.5S2.5 17.25 2.5 12 6.75 2.5 12 2.5s9.5 4.25 9.5 9.5z"/>
@@ -129,7 +128,7 @@
       <p>我也創立了 Facebook 社團<strong>「肢障兒二手輔具愛心交流團」</strong>，讓用不到的輔具能流通到需要的家庭。物盡其用，貨暢其流。</p>
       <p>我始終相信：媽媽們也要隨時準備好自己。孩子在長大，我們也不能停下來。</p>
 
-      <hr style="margin: 3rem 0; border: none; border-top: 1px solid #e5e7eb;">
+      <hr style="margin: 3rem 0; border: none; border-top: 1px solid var(--border);">
 
       <h2>關於這個網站</h2>
       <p>本站從 2009 年起於 WordPress 經營，2026 年遷移至靜態網站系統，部署在 GitHub Pages。累積超過兩百篇文章，紀錄了我們一家人二十多年的點點滴滴。</p>
@@ -137,7 +136,7 @@
   </main>
   <footer class="site-footer">
     <div class="wrapper">
-      <p>Built on GitHub Pages with a sprinkle of JavaScript.</p>
+      <p>© 2009–2026 舜英 · 我與我雙胞胎腦麻兒的生活點滴</p>
     </div>
   </footer>
 

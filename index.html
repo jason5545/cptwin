@@ -4,12 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>我與我雙胞胎腦麻兒的生活點滴</title>
-  
+
   <!-- 基本 SEO -->
   <meta name="description" content="記錄腦性麻痺雙胞胎的復健、就學、輔具與無障礙生活經驗，分享給需要的家長們。">
   <meta name="author" content="舜英">
   <link rel="canonical" href="https://cptwin.com/">
-  
+
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://cptwin.com/">
@@ -20,7 +20,7 @@
   <meta property="og:image:height" content="630">
   <meta property="og:site_name" content="cptwin">
   <meta property="og:locale" content="zh_TW">
-  
+
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
   <meta property="twitter:url" content="https://cptwin.com/">
@@ -28,11 +28,11 @@
   <meta property="twitter:description" content="記錄腦性麻痺雙胞胎的復健、就學、輔具與無障礙生活經驗，分享給需要的家長們。">
   <meta property="twitter:image" content="https://cptwin.com/android-chrome-512x512.png">
   <meta property="twitter:creator" content="@cptwin">
-  
+
   <!-- 額外的 metadata -->
-  <meta name="keywords" content="部落格, 待辦清單, 技術分享, 開發記錄, AI 輔助">
+  <meta name="keywords" content="腦性麻痺, 復健, 輔具, 無障礙, 特殊教育, 腦麻雙胞胎">
   <meta name="robots" content="index, follow">
-  <meta name="theme-color" content="#b45309">
+  <meta name="theme-color" content="#b85c38">
 
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
@@ -44,10 +44,10 @@
   <!-- 啟用 View Transition API（跨文件過渡） -->
   <meta name="view-transition" content="same-origin">
 
-  <!-- Bricolage Grotesque — heading font -->
+  <!-- Noto Serif TC — editorial heading font for CJK -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700;800&display=swap">
   <link rel="stylesheet" href="/assets/css/fonts.css">
   <link rel="stylesheet" href="/assets/css/critical-shared.css">
 
@@ -64,7 +64,7 @@
     .layout-grid {
       min-height: 600px;
     }
-    /* 骨架屏樣式 - 載入時的佔位符 */
+    /* 骨架屏樣式 */
     .post-list:empty::before {
       content: '';
       display: block;
@@ -78,17 +78,14 @@
       0% { background-position: 200% 0; }
       100% { background-position: -200% 0; }
     }
-    /* Hero card 預留空間 */
     .hero-card {
       min-height: 400px;
     }
-    /* Keep hero card in the layout even when hidden to avoid large CLS */
     .hero-card[hidden] {
       display: block;
       opacity: 0;
       pointer-events: none;
     }
-    /* 防止動態內容造成佈局移動 */
     .content-grid {
       min-height: 500px;
     }
@@ -109,10 +106,10 @@
 
           </div>
           <nav class="site-nav">
-            <a href="./" aria-current="page">Home</a>
-            <a href="about.html">About</a>
-            <a href="feed.json">Feed</a>
-            <a href="#" id="random-post-link" onclick="goToRandomPost(event)">Random</a>
+            <a href="./" aria-current="page">首頁</a>
+            <a href="about.html">關於我</a>
+            <a href="feed.json">訂閱</a>
+            <a href="#" id="random-post-link" onclick="goToRandomPost(event)">隨機</a>
 
             <!-- 搜尋按鈕與搜尋框 -->
             <div class="search-toggle-container">
@@ -153,9 +150,8 @@
               </div>
             </div>
 
-            <button class="theme-toggle" onclick="ThemeManager.toggle()" aria-label="Toggle theme">
+            <button class="theme-toggle" onclick="ThemeManager.toggle()" aria-label="切換主題">
               <span class="theme-toggle__icon">
-                <!-- SVG icons will be dynamically updated by JavaScript -->
                 <svg class="theme-icon theme-icon--auto" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                   <path d="M21.5 12c0 5.25-4.25 9.5-9.5 9.5S2.5 17.25 2.5 12 6.75 2.5 12 2.5s9.5 4.25 9.5 9.5z"/>
                   <path d="M12 2.5v19M21.5 12h-19M18.36 5.64l-12.72 12.72M18.36 18.36L5.64 5.64"/>
@@ -207,8 +203,8 @@
           <p class="hero-card__meta" id="hero-meta"></p>
           <p class="hero-card__summary" id="hero-summary"></p>
           <div class="hero-card__actions">
-            <a id="hero-read-more" class="button button--primary" href="#">Continue reading</a>
-            <a id="hero-open-discussion" class="button button--ghost" href="#comments">Discuss</a>
+            <a id="hero-read-more" class="button button--primary" href="#">繼續閱讀</a>
+            <a id="hero-open-discussion" class="button button--ghost" href="#comments">留言討論</a>
           </div>
         </div>
       </section>
@@ -216,8 +212,8 @@
       <div class="content-grid">
         <section id="posts" class="post-stream" aria-live="polite">
           <div class="stream-header">
-            <h2 class="stream-title">Latest Dispatches</h2>
-            <p class="stream-subtitle">Fresh experiments in tooling, process, and creative pacing.</p>
+            <h2 class="stream-title">所有文章</h2>
+            <p class="stream-subtitle">復健、就學、輔具與無障礙生活的實戰經驗。</p>
             <p id="search-results-count" class="search-results-count" hidden></p>
           </div>
 
@@ -235,8 +231,8 @@
               </article>
             </li>
           </template>
-          <p id="posts-empty" class="notice" hidden>No posts yet. Add your first note in <code>content/posts</code>.</p>
-          <p id="posts-error" class="error" hidden>Could not load posts. Check <code>data/posts.json</code>.</p>
+          <p id="posts-empty" class="notice" hidden>尚未有文章。在 <code>content/posts</code> 中新增你的第一篇吧。</p>
+          <p id="posts-error" class="error" hidden>無法載入文章列表，請檢查 <code>data/posts.json</code>。</p>
         </section>
 
         <aside class="sidebar">
@@ -271,24 +267,24 @@
           </section>
 
           <section class="widget widget--profile">
-            <h3 class="widget__title">Running the stack</h3>
-            <p>Hi, I'm Jason. 記錄腦性麻痺雙胞胎的復健、就學、輔具與無障礙生活經驗，分享給需要的家長們。</p>
-            <p class="widget__cta"><a href="feed.json">Subscribe via JSON Feed -></a></p>
+            <h3 class="widget__title">關於這裡</h3>
+            <p>我是舜英。記錄腦性麻痺雙胞胎的復健、就學、輔具與無障礙生活經驗，分享給需要的家長們。</p>
+            <p class="widget__cta"><a href="feed.json">訂閱 JSON Feed →</a></p>
           </section>
           <section class="widget">
-            <h3 class="widget__title">Topics</h3>
+            <h3 class="widget__title">分類</h3>
             <ul id="category-list" class="taxonomy-list"></ul>
             <template id="category-item-template">
               <li><a href="#" class="taxonomy-link"></a></li>
             </template>
           </section>
           <section class="widget">
-            <h3 class="widget__title">Tag cloud</h3>
+            <h3 class="widget__title">標籤</h3>
             <div id="tag-cloud" class="tag-cloud"></div>
           </section>
           <section class="widget widget--note">
-            <h3 class="widget__title">Behind the scenes</h3>
-            <p>Every article lives in git. Fork it, open a PR, or let your AI co-author propose edits through <code>agent.md</code>.</p>
+            <h3 class="widget__title">關於本站</h3>
+            <p>從 2009 年 WordPress 起步，2026 年遷移至靜態系統。超過兩百篇文章，紀錄了二十多年的點點滴滴。</p>
           </section>
         </aside>
       </div>
@@ -296,7 +292,7 @@
 
     <footer class="site-footer">
       <div class="wrapper">
-        <p>Hand-built like classic WordPress themes, delivered as static HTML.</p>
+        <p>© 2009–2026 舜英 · 我與我雙胞胎腦麻兒的生活點滴</p>
       </div>
     </footer>
   </div>

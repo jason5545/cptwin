@@ -102,7 +102,7 @@ function generatePostHTML(post) {
     .replace(/href="feed\.json"/g, 'href="../../feed.json"');
 
   // 生成完整的 URL
-  const baseUrl = 'https://b-log.to';
+  const baseUrl = 'https://cptwin.com';
   const fullUrl = `${baseUrl}/${categorySlug}/${slug}/`;
 
   // 生成 Open Graph 圖片 URL
@@ -161,7 +161,7 @@ function generateRedirectHTML(newCategorySlug, slug) {
     <meta charset="UTF-8">
     <meta http-equiv="refresh" content="0; url=/${newCategorySlug}/${slug}/">
     <meta name="robots" content="noindex">
-    <link rel="canonical" href="https://b-log.to/${newCategorySlug}/${slug}/">
+    <link rel="canonical" href="https://cptwin.com/${newCategorySlug}/${slug}/">
     <title>重定向中...</title>
     <script>
         window.location.replace('/${newCategorySlug}/${slug}/');

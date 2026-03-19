@@ -1,5 +1,5 @@
 /* ====================================================================
-   Fonts — Bricolage Grotesque for headings, system stack for body/CJK
+   Fonts — Fraunces for headings, system stack for body/CJK
    ==================================================================== */
 
 /* Chinese-optimised system stack */
@@ -7,7 +7,7 @@
   --sans-tc: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
              "PingFang TC", "Microsoft JhengHei", "Noto Sans TC",
              "Heiti TC", "Helvetica Neue", Arial, Helvetica, sans-serif;
-  --font-heading: "Bricolage Grotesque", var(--sans-tc);
+  --font-heading: "Noto Serif TC", "PMingLiU", Georgia, serif;
   --font-body: var(--sans-tc);
 }
 
