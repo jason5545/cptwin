@@ -1,7 +1,7 @@
 const POSTS_JSON = '/data/posts.json';
 const POSTS_ROOT = '/content/posts/';
 const GITHUB_USERNAME = 'jason5545';
-const GITHUB_REPO = 'b-log';
+const GITHUB_REPO = 'cptwin';
 const DEFAULT_CATEGORY_MAPPING = {
   'AI 分析': 'ai-analysis',
   '技術開發': 'tech-development',
@@ -188,10 +188,10 @@ window.ThemeManager = ThemeManager;
 const GiscusManager = {
   // Giscus 配置參數
   CONFIG: {
-    repo: 'jason5545/b-log',
-    repoId: 'R_kgDOQC92wg',
+    repo: 'jason5545/cptwin',
+    repoId: 'R_kgDORrAA-g',
     category: 'Announcements',
-    categoryId: 'DIC_kwDOQC92ws4C02BV',
+    categoryId: 'DIC_kwDORrAA-s4C4wYx',
     mapping: 'pathname',
     strict: '0',
     reactionsEnabled: '1',
@@ -1634,7 +1634,7 @@ async function renderArticle() {
     }
   }
 
-  document.title = post.title ? `${post.title} - b-log` : 'Reading - b-log';
+  document.title = post.title ? `${post.title} - cptwin` : 'Reading - cptwin';
 
   if (metaEl) {
     metaEl.innerHTML = '';
@@ -2205,7 +2205,7 @@ function renderShareLinks(post) {
   pageUrl.hash = '';
 
   // 在數組定義前保存這些值，避免 minify 後的變量遮蔽問題
-  const postTitle = post.title || 'New post on b-log';
+  const postTitle = post.title || 'New post on cptwin';
   const urlString = pageUrl.toString();
 
   const shareItems = [
@@ -2463,14 +2463,14 @@ function setupCopyLink(container, url) {
 }
 
 function updatePageMetadata(post) {
-  const baseUrl = 'https://b-log.to/';
+  const baseUrl = 'https://cptwin.com/';
   // 使用 WordPress 風格的 URL，指向預渲染的靜態頁面
   // 這樣社群平台爬蟲才能看到正確的 meta 標籤（爬蟲不執行 JavaScript）
   const postPath = slugToPath(post.slug, post.category);
   const postUrl = `${baseUrl}${postPath.startsWith('/') ? postPath.substring(1) : postPath}`;
 
   // 更新基本的 title 和 description
-  document.title = post.title ? `${post.title} - b-log` : 'Reading - b-log';
+  document.title = post.title ? `${post.title} - cptwin` : 'Reading - cptwin';
   
   // 更新 canonical URL
   const canonicalEl = document.querySelector('#canonical-url');
@@ -2481,7 +2481,7 @@ function updatePageMetadata(post) {
   // 更新 description
   const descriptionEl = document.querySelector('meta[name="description"]');
   if (descriptionEl) {
-    descriptionEl.content = post.summary || 'b-log 是一個雙重用途的內容系統：既是分享見解的部落格，也是管理項目的待辦清單。';
+    descriptionEl.content = post.summary || '記錄腦性麻痺雙胞胎的復健、就學、輔具與無障礙生活經驗，分享給需要的家長們。';
   }
   
   // 更新 keywords
@@ -2555,7 +2555,7 @@ function getPostImage(post, baseUrl) {
 
   // 使用第三方服務生成簡單的 OG 圖片
   // 這裡使用 https://og-image.vercel.app/ 作為例子
-  return `https://og-image.vercel.app/${title}.png?theme=light&md=1&fontSize=100px&images=https%3A%2F%2Fb-log.to%2Ffavicon.ico`;
+  return `https://og-image.vercel.app/${title}.png?theme=light&md=1&fontSize=100px&images=https%3A%2F%2Fcptwin.com%2Ffavicon.ico`;
 }
 
 // ============================================================
