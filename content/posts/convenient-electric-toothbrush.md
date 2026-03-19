@@ -30,4 +30,4 @@
 現在三餐飯後，只要把牙刷放上口腔內，就可以輕鬆刷牙又可做口腔的復健
 維持齲齒又得宜
 讚喔~
-[![voot](/content/img/2014/02/voot-175x300.png)](/content/img/2014/02/voot.png)
+[![voot](/content/img/2014/02/voot.png)](/content/img/2014/02/voot.png)

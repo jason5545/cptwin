@@ -21,7 +21,7 @@
 **並且在時間到了，必須使用密碼才能開啟螢幕**
 **(強迫眼睛休息，調節睫狀肌)**
 <https://play.google.com/store/apps/details?id=fiec.foxconn.iprotection&hl=zh_TW>
-[![0925](/content/img/2014/09/0925-300x142.png)](/content/img/2014/09/0925.png)
+[![0925](/content/img/2014/09/0925.png)](/content/img/2014/09/0925.png)
  
 或是 google play商店另一款用程式  **<App限時鎖>**
 爸爸媽媽**可以設定，用這個小工具控制小孩子可以使用某些APP的時段**
@@ -35,7 +35,7 @@
 另外，也有針對 **ipad** 開發了一款APP
 <TimeReminder+ >
 做好時間管理，相同的也是**設定時間到了，螢幕會跳出需要休息圖示**
-[![0930-3](/content/img/2014/10/0930-3-300x211.png)](/content/img/2014/10/0930-3.png)
+[![0930-3](/content/img/2014/10/0930-3.png)](/content/img/2014/10/0930-3.png)
 **<https://itunes.apple.com/us/app/timereminder+/id868624119?ls=1>**
 眼睛是靈魂之窗，可以用它看美麗的世界風景，欣賞優美的文學讀物
 愛眼很重要

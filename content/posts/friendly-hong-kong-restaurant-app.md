@@ -25,7 +25,7 @@
 - 4.**【餐廳友善資訊內容】**
   **電話地址、導航搜尋、現場照片、營業時間、消費價位**
 
-[![Screenshot_2015-02-27-21-10-00](/content/img/2015/02/Screenshot_2015-02-27-21-10-00-169x300.png)](/content/img/2015/02/Screenshot_2015-02-27-21-10-00.png)      [![Screenshot_2015-02-27-21-18-04](/content/img/2015/02/Screenshot_2015-02-27-21-18-04-169x300.png)](/content/img/2015/02/Screenshot_2015-02-27-21-18-04.png)       [![Screenshot_2015-02-27-21-17-56](/content/img/2015/02/Screenshot_2015-02-27-21-17-56-169x300.png)](/content/img/2015/02/Screenshot_2015-02-27-21-17-56.png)       [![Screenshot_2015-02-27-21-18-10](/content/img/2015/02/Screenshot_2015-02-27-21-18-10-169x300.png)](/content/img/2015/02/Screenshot_2015-02-27-21-18-10.png)
+[![Screenshot_2015-02-27-21-10-00](/content/img/2015/02/Screenshot_2015-02-27-21-10-00.png)](/content/img/2015/02/Screenshot_2015-02-27-21-10-00.png)      [![Screenshot_2015-02-27-21-18-04](/content/img/2015/02/Screenshot_2015-02-27-21-18-04.png)](/content/img/2015/02/Screenshot_2015-02-27-21-18-04.png)       [![Screenshot_2015-02-27-21-17-56](/content/img/2015/02/Screenshot_2015-02-27-21-17-56.png)](/content/img/2015/02/Screenshot_2015-02-27-21-17-56.png)       [![Screenshot_2015-02-27-21-18-10](/content/img/2015/02/Screenshot_2015-02-27-21-18-10.png)](/content/img/2015/02/Screenshot_2015-02-27-21-18-10.png)
 到國外前，可依所在地做條件篩選
 **而到了當地，也可以讓自己成為「愛的特派員」，親身體驗**
 **寫入【推薦好餐廳】，讓無障礙環境，無國界、更友善**

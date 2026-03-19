@@ -43,7 +43,7 @@ https://youtu.be/aiBYAbscgEA
  
 檢附台北市109 年臺北市政府社會局失能者生活輔助器具及居家無障礙環境改
 善補助項目--「爬梯機」補助項目
-![](/content/img/2020/02/1111-1-300x203.png)
+![](/content/img/2020/02/1111-1.png)
 【新北市輔具資源中心】租借「爬梯機」服務辦法連結
-![](/content/img/2020/02/1111-300x133.png)
+![](/content/img/2020/02/1111.png)
 <https://atrc.aihsin.ntpc.net.tw/news.php?id=60>

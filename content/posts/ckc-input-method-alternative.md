@@ -13,9 +13,9 @@
 說了那麼多 縱橫輸入法難學嗎?   不喔!!    我去研習半天\*4     就會囉 !!     其實是自己要"多多練習"
 要了解縱橫輸入法??
 http://www.ckcsys.com/teach/guide-to-ckc.html
-[![012801](/content/img/2009/01/012801-267x300.png)](/content/img/2009/01/012801.png)
+[![012801](/content/img/2009/01/012801.png)](/content/img/2009/01/012801.png)
 **連結<台灣縱橫輸入法>協會，網站上附有軟體免費下載喔**~~
  
 <http://www.ckc.org.tw/index_05.php>
-[![012801](/content/img/2009/01/0128011-300x211.png)](/content/img/2009/01/0128011.png)
+[![012801](/content/img/2009/01/0128011.png)](/content/img/2009/01/0128011.png)
 連連看 給自己一個機會吧!!

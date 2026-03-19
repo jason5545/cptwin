@@ -63,4 +63,4 @@
 愛惜我們身邊的資源吧~~
 (以上參考摘自衛福部輔具資源入口網~
 <http://repat.sfaa.gov.tw/book/inside_01b.asp?cate_id=21>)
-[![0102](/content/img/2015/01/0102-300x169.png)](/content/img/2015/01/0102.png)
+[![0102](/content/img/2015/01/0102.png)](/content/img/2015/01/0102.png)

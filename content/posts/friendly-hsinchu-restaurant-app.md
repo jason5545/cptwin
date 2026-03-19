@@ -9,10 +9,10 @@
 ### **友善新竹好餐廳****APP特色：~**
 
 **【好店快速搜】、【依友善類型】、【依餐廳類型】、【新竹好方便】、【我的收藏櫃】、【推薦好餐廳】**
-[![Screenshot_2015-02-27-20-10-12](/content/img/2015/02/Screenshot_2015-02-27-20-10-12-169x300.png)](/content/img/2015/02/Screenshot_2015-02-27-20-10-12.png)       [![Screenshot_2015-02-27-20-09-14](/content/img/2015/02/Screenshot_2015-02-27-20-09-14-169x300.png)](/content/img/2015/02/Screenshot_2015-02-27-20-09-14.png)       [![Screenshot_2015-02-27-20-09-07](/content/img/2015/02/Screenshot_2015-02-27-20-09-07-169x300.png)](/content/img/2015/02/Screenshot_2015-02-27-20-09-07.png)
+[![Screenshot_2015-02-27-20-10-12](/content/img/2015/02/Screenshot_2015-02-27-20-10-12.png)](/content/img/2015/02/Screenshot_2015-02-27-20-10-12.png)       [![Screenshot_2015-02-27-20-09-14](/content/img/2015/02/Screenshot_2015-02-27-20-09-14.png)](/content/img/2015/02/Screenshot_2015-02-27-20-09-14.png)       [![Screenshot_2015-02-27-20-09-07](/content/img/2015/02/Screenshot_2015-02-27-20-09-07.png)](/content/img/2015/02/Screenshot_2015-02-27-20-09-07.png)
  
 小編覺得最具特色是~~特別推薦【新竹好方便】/【高齡友善藥局／高齡友善銀行】
-[![Screenshot_2015-02-27-20-10-05](/content/img/2015/02/Screenshot_2015-02-27-20-10-05-169x300.png)](/content/img/2015/02/Screenshot_2015-02-27-20-10-05.png)
+[![Screenshot_2015-02-27-20-10-05](/content/img/2015/02/Screenshot_2015-02-27-20-10-05.png)](/content/img/2015/02/Screenshot_2015-02-27-20-10-05.png)
 
 ### 【高齡友善藥局】
 
@@ -24,12 +24,12 @@
 - （四）為關愛長者，另**準備 80 支放大鏡放置配合之社區藥局，供長者使用**。
 - （五）**製作高齡友善藥局認證標章**黏貼置配合之藥局門口，**以供辨識**。
 
-[![022701](/content/img/2015/02/0227013-300x298.png)](/content/img/2015/02/0227013.png)             [![Screenshot_2015-02-27-20-37-42](/content/img/2015/02/Screenshot_2015-02-27-20-37-42-169x300.png)](/content/img/2015/02/Screenshot_2015-02-27-20-37-42.png)
+[![022701](/content/img/2015/02/0227013.png)](/content/img/2015/02/0227013.png)             [![Screenshot_2015-02-27-20-37-42](/content/img/2015/02/Screenshot_2015-02-27-20-37-42.png)](/content/img/2015/02/Screenshot_2015-02-27-20-37-42.png)
 
 ### 【高齡友善銀行】
 
 「**高齡友善銀行認證**」之**金融機構皆需通過軟硬體設備評核，**現在有**銀行、農會、信用合作社及郵局共18家金融機構提供長者安全走道、舒適敬老座椅、放大鏡、老花眼鏡、血壓量測服務、叫車服務、輪椅借用、無障礙廁所及專人導讀、諮詢等各式敬老優質服務**
-[![022701](/content/img/2015/02/0227014.png)](/content/img/2015/02/0227014.png)            [![Screenshot_2015-02-27-20-41-01](/content/img/2015/02/Screenshot_2015-02-27-20-41-01-169x300.png)](/content/img/2015/02/Screenshot_2015-02-27-20-41-01.png)
+[![022701](/content/img/2015/02/0227014.png)](/content/img/2015/02/0227014.png)            [![Screenshot_2015-02-27-20-41-01](/content/img/2015/02/Screenshot_2015-02-27-20-41-01.png)](/content/img/2015/02/Screenshot_2015-02-27-20-41-01.png)
 
 ### 【友善新竹小兒科】
 
@@ -40,14 +40,14 @@
 - **1.急診看醫生：**
 
  快速查詢新竹市全國首創的各大醫院小兒科專科醫生急診室夜間駐診時間
-[![Screenshot_2015-02-27-14-42-54](/content/img/2015/02/Screenshot_2015-02-27-14-42-54-169x300.png)](/content/img/2015/02/Screenshot_2015-02-27-14-42-54.png)     [![Screenshot_2015-02-27-14-42-58](/content/img/2015/02/Screenshot_2015-02-27-14-42-58-169x300.png)](/content/img/2015/02/Screenshot_2015-02-27-14-42-58.png)
+[![Screenshot_2015-02-27-14-42-54](/content/img/2015/02/Screenshot_2015-02-27-14-42-54.png)](/content/img/2015/02/Screenshot_2015-02-27-14-42-54.png)     [![Screenshot_2015-02-27-14-42-58](/content/img/2015/02/Screenshot_2015-02-27-14-42-58.png)](/content/img/2015/02/Screenshot_2015-02-27-14-42-58.png)
 
 - **2.週日看醫生：**
    附近哪些看小朋友的診所禮拜天有開？何時有開？假日的開診起迄時間
 
   利用APP連結，快速打個電話確認即可就診
 
-[![Screenshot_2015-02-27-14-43-11](/content/img/2015/02/Screenshot_2015-02-27-14-43-11-169x300.png)](/content/img/2015/02/Screenshot_2015-02-27-14-43-11.png)
+[![Screenshot_2015-02-27-14-43-11](/content/img/2015/02/Screenshot_2015-02-27-14-43-11.png)](/content/img/2015/02/Screenshot_2015-02-27-14-43-11.png)
 
 - **3.附近找醫生：**
    小兒、一般、內科、家醫、耳鼻喉、聯合診所、兒童牙科，APP一手掌握
@@ -55,11 +55,11 @@
 - **4.醫生的專長：**
    台大新竹、新竹馬偕、南門醫院、國泰醫院、國軍醫院小兒科有各醫師的專長
 
-[![Screenshot_2015-02-27-20-05-39](/content/img/2015/02/Screenshot_2015-02-27-20-05-39-169x300.png)](/content/img/2015/02/Screenshot_2015-02-27-20-05-39.png)
+[![Screenshot_2015-02-27-20-05-39](/content/img/2015/02/Screenshot_2015-02-27-20-05-39.png)](/content/img/2015/02/Screenshot_2015-02-27-20-05-39.png)
 **5.照顧好寶寶：**
 運用**連結<衛福部國民健康署網站>**的資訊，**提供相關小寶寶健檢紀錄事項、發展狀況，可觀察幼兒發展情況與紀錄、及預防保健服務**
 (**這實在太貼心、太方便、太便利囉~~**)
-[![Screenshot_2015-02-27-14-43-25](/content/img/2015/02/Screenshot_2015-02-27-14-43-25-169x300.png)](/content/img/2015/02/Screenshot_2015-02-27-14-43-25.png)
+[![Screenshot_2015-02-27-14-43-25](/content/img/2015/02/Screenshot_2015-02-27-14-43-25.png)](/content/img/2015/02/Screenshot_2015-02-27-14-43-25.png)
  
 相信這**專屬新竹朋友們的APP，下載的實用性必定太強大、太有福 (超羨慕的啦~)**
 **不去下載太可惜囉~~**

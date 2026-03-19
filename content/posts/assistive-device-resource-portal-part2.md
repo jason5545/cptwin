@@ -21,7 +21,7 @@
 
 <http://repat.sfaa.gov.tw/09download/dow_c_list.asp>
 
-[![021901](/content/img/2015/02/0219015-300x246.png)](/content/img/2015/02/0219015.png)
+[![021901](/content/img/2015/02/0219015.png)](/content/img/2015/02/0219015.png)
 
 除了在上篇介紹【電子報】，還有【輔具小博士】
 
@@ -44,7 +44,7 @@
 
 **或e-mail：repat.catrp@msa.hinet.net**
 
-[![021901](/content/img/2015/02/0219016-300x69.png)](/content/img/2015/02/0219016.png)
+[![021901](/content/img/2015/02/0219016.png)](/content/img/2015/02/0219016.png)
 
 **常常我們去電社會局，電話很難接通或是佔線、溝通時間有限**
 

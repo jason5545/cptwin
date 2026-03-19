@@ -1,7 +1,7 @@
 # 介紹一個很實用、用餐愉快之【友善台北好捷運】APP應用程式~~#2.1
 
 在手機**下載【友善台北好餐廳】APP時**，我們也可以瀏覽到其他應用程式
-[![Screenshot_2015-02-26-13-47-41](/content/img/2015/02/Screenshot_2015-02-26-13-47-41-169x300.png)](/content/img/2015/02/Screenshot_2015-02-26-13-47-41.png)
+[![Screenshot_2015-02-26-13-47-41](/content/img/2015/02/Screenshot_2015-02-26-13-47-41.png)](/content/img/2015/02/Screenshot_2015-02-26-13-47-41.png)
 也**建議下載其他同【友善台北】相關的應用程式**
 
 ### **友善台北好捷運**[022701](/content/img/2015/02/0227011.png)
@@ -17,15 +17,15 @@
 - **利用【查詢捷運路線】，搜尋【路線列表】/ 【路線地圖】可知道想去的站名及該站的無障礙環境及相關設施/出入口/低地板公車號碼**
 - **清楚、容易查看各捷運站的提供的設施環境，及免除電動輪椅斷電的窘境**
 
-[![Screenshot_2015-02-26-23-21-48](/content/img/2015/02/Screenshot_2015-02-26-23-21-48-169x300.png)](/content/img/2015/02/Screenshot_2015-02-26-23-21-48.png)     [![Screenshot_2015-02-26-23-06-00](/content/img/2015/02/Screenshot_2015-02-26-23-06-00-169x300.png)](/content/img/2015/02/Screenshot_2015-02-26-23-06-00.png)      [![Screenshot_2015-02-26-23-07-20](/content/img/2015/02/Screenshot_2015-02-26-23-07-20-169x300.png)](/content/img/2015/02/Screenshot_2015-02-26-23-07-20.png)
+[![Screenshot_2015-02-26-23-21-48](/content/img/2015/02/Screenshot_2015-02-26-23-21-48.png)](/content/img/2015/02/Screenshot_2015-02-26-23-21-48.png)     [![Screenshot_2015-02-26-23-06-00](/content/img/2015/02/Screenshot_2015-02-26-23-06-00.png)](/content/img/2015/02/Screenshot_2015-02-26-23-06-00.png)      [![Screenshot_2015-02-26-23-07-20](/content/img/2015/02/Screenshot_2015-02-26-23-07-20.png)](/content/img/2015/02/Screenshot_2015-02-26-23-07-20.png)
 
 - **再連結進去，更可以快速查詢即時公車路線與動態狀況，同時下載【台北好行】(台北市政府)APP**
 - **這個APP可隨時知道等待的公車動態資訊**
 
-[![Screenshot_2015-02-26-23-07-59](/content/img/2015/02/Screenshot_2015-02-26-23-07-59-169x300.png)](/content/img/2015/02/Screenshot_2015-02-26-23-07-59.png)       [![Screenshot_2015-02-26-23-46-41](/content/img/2015/02/Screenshot_2015-02-26-23-46-41-169x300.png)](/content/img/2015/02/Screenshot_2015-02-26-23-46-41.png)
+[![Screenshot_2015-02-26-23-07-59](/content/img/2015/02/Screenshot_2015-02-26-23-07-59.png)](/content/img/2015/02/Screenshot_2015-02-26-23-07-59.png)       [![Screenshot_2015-02-26-23-46-41](/content/img/2015/02/Screenshot_2015-02-26-23-46-41.png)](/content/img/2015/02/Screenshot_2015-02-26-23-46-41.png)
 [![022701](/content/img/2015/02/022701-300x277.png)](/content/img/2015/02/022701.png)
 這兒也有**提供台北市，很難parking停車場、捷運轉公車、U-bike、藍色公路(由基隆河、淡水河)的即時訊息**
-[![Screenshot_2015-02-26-23-47-28](/content/img/2015/02/Screenshot_2015-02-26-23-47-28-169x300.png)](/content/img/2015/02/Screenshot_2015-02-26-23-47-28.png)                         [![Screenshot_2015-02-26-23-47-45](/content/img/2015/02/Screenshot_2015-02-26-23-47-45-169x300.png)](/content/img/2015/02/Screenshot_2015-02-26-23-47-45.png)
+[![Screenshot_2015-02-26-23-47-28](/content/img/2015/02/Screenshot_2015-02-26-23-47-28.png)](/content/img/2015/02/Screenshot_2015-02-26-23-47-28.png)                         [![Screenshot_2015-02-26-23-47-45](/content/img/2015/02/Screenshot_2015-02-26-23-47-45.png)](/content/img/2015/02/Screenshot_2015-02-26-23-47-45.png)
  
  
 若是吃完飯，也可以來一趟<藍色公路>之旅喔(也**可夜遊**)~~

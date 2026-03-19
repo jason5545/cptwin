@@ -10,7 +10,7 @@
 
 #### 是手臂上肢常呈彎曲狀
 
-[![](/content/img/2019/08/小一雙手加splint-290x300.jpeg)](/content/img/2019/08/小一雙手加splint.jpeg)
+[![](/content/img/2019/08/小一雙手加splint.jpeg)](/content/img/2019/08/小一雙手加splint.jpeg)
  
 即便在放鬆的水療池裡、或是作復健時
 
@@ -30,7 +30,7 @@
 
 ### 2.再加上gaiter綁腿支架(胳肢窩下約二指幅長)
 
-[![](/content/img/2019/08/柏辰睡覺加枕頭-300x225.jpg)](/content/img/2019/08/柏辰睡覺加枕頭.jpg)
+[![](/content/img/2019/08/柏辰睡覺加枕頭.jpg)](/content/img/2019/08/柏辰睡覺加枕頭.jpg)
 
 ### 為了.....讓他能睡得著....我等公子熟睡後，偷偷的綁上一邊
 
@@ -44,7 +44,7 @@
 
 ### **連右手也給上gaiter**
 
-![](/content/img/2019/08/splint枕心-300x225.png)
+![](/content/img/2019/08/splint枕心.png)
 
 ### **效果奇佳....一整夜沒動靜，睡的可香甜......**
 

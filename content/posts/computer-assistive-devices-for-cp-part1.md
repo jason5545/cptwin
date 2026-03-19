@@ -17,9 +17,9 @@
 (另有專篇介紹破冰專業服務協會之應用軟體下載區
 [破冰專業服務協會軟體下載區#1](/custom-mouse/large-cursor-free-downloads-part1/)
 [破冰專業服務協會軟體下載區#2](/screen-keyboard/on-screen-keyboard-free-downloads-part2/))
-[![keyboard](/content/img/2013/08/keyboard-300x185.jpg)](/content/img/2013/08/keyboard.jpg)
+[![keyboard](/content/img/2013/08/keyboard.jpg)](/content/img/2013/08/keyboard.jpg)
 十分便利與好用
-[![IMAG0442](/content/img/2010/12/IMAG0442-300x179.jpg)](/content/img/2010/12/IMAG0442.jpg)
+[![IMAG0442](/content/img/2010/12/IMAG0442.jpg)](/content/img/2010/12/IMAG0442.jpg)
  
 **2).**因為孩子**手部張力很強**，所以我們把**輪椅的桌板加上<魔鬼氈>毛面**
 **目的是為了可以與搖桿或是按鍵，黏合不易被拔取**
@@ -27,14 +27,14 @@
  
 並找了個
 **3).<搖桿>更改握面成球面(藍色球)，即插即用(USB介面)，**讓兒子更好使用
-[![IMAG0491](/content/img/2010/12/IMAG0491-179x300.jpg)](/content/img/2010/12/IMAG0491.jpg)             [![IMAG0454](/content/img/2010/12/IMAG0454-179x300.jpg)](/content/img/2010/12/IMAG0454.jpg)
+[![IMAG0491](/content/img/2010/12/IMAG0491.jpg)](/content/img/2010/12/IMAG0491.jpg)             [![IMAG0454](/content/img/2010/12/IMAG0454.jpg)](/content/img/2010/12/IMAG0454.jpg)
  
 **在搖桿上本身設計上有紅色、黃色的按鍵是一般滑鼠的左鍵與右鍵(是速度的加減鈕)**
 可依個案的能力加減調整滑鼠移動的速度
  
-[![IMAG0440](/content/img/2010/12/IMAG0440-300x179.jpg)](/content/img/2010/12/IMAG0440.jpg)
+[![IMAG0440](/content/img/2010/12/IMAG0440.jpg)](/content/img/2010/12/IMAG0440.jpg)
 **4).因為視力差(遠視650度)  所以建議改用21"以上螢幕以利看得清楚(如下圖)**
-[![DSC_0870-1](/content/img/2014/05/DSC_0870-1-300x168.jpg)](/content/img/2014/05/DSC_0870-1.jpg)
+[![DSC_0870-1](/content/img/2014/05/DSC_0870-1.jpg)](/content/img/2014/05/DSC_0870-1.jpg)
  
  
 對腦麻兒而言，由於腦性麻痺引起肢體上的不便

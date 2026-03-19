@@ -32,19 +32,19 @@
 
 這一切資訊都可以從2017.01版清楚容易的找到
 
-![](/content/img/2017/02/212-1-163x300.jpg)圖1 before          ![](/content/img/2017/02/212-169x300.png)圖1 after
+![](/content/img/2017/02/212-1.jpg)圖1 before          ![](/content/img/2017/02/212.png)圖1 after
 
-![](/content/img/2017/02/01-3-166x300.png) 圖2 before   ![](/content/img/2017/02/212-1-169x300.png)圖2 after
+![](/content/img/2017/02/01-3.png) 圖2 before   ![](/content/img/2017/02/212-1-169x300.png)圖2 after
 
 ![]()圖3
 
-![](/content/img/2017/02/212-2-169x300.png)       ![](/content/img/2017/02/01-6-168x300.png)圖4
+![](/content/img/2017/02/212-2.png)       ![](/content/img/2017/02/01-6-168x300.png)圖4
 
 ![](/content/img/2017/02/2-169x300.png)      ![](/content/img/2017/02/01-4-169x300.png)圖5
 
 ![](/content/img/2017/02/2-1-180x300.png)   ![](/content/img/2017/02/01-5-169x300.png)圖6
 
-![](/content/img/2017/02/img_0586-169x300.png)     ![](/content/img/2017/02/01-2-168x300.png)    ![]()圖7
+![](/content/img/2017/02/img_0586.png)     ![](/content/img/2017/02/01-2.png)    ![]()圖7
 
 冰友呀~~您來台北坐北捷時，**一定要來下載者免費好用又有效率的智慧****&****聰明的****APP****程式**
 

@@ -23,7 +23,7 @@
 (也曾經得過『教育部金學獎』，與電腦公會值得推薦優良教育光碟獎........得獎不少)
 當下我也讓兒子跟著班上一起學查字典
 **用<按鍵滑鼠>慢慢練習**
-[![DSC_0759](/content/img/2014/03/DSC_0759-300x168.jpg)](/content/img/2014/03/DSC_0759.jpg)
+[![DSC_0759](/content/img/2014/03/DSC_0759.jpg)](/content/img/2014/03/DSC_0759.jpg)
  
 經過了這麼多年 ，現在回想起來~~
  
@@ -55,7 +55,7 @@
 例如：
 
 - 利用光碟片或手機、平板的應用程式APP找國語課本生字裡的造詞、部首.....
-- ![](/content/img/2014/03/01-190x300.png) ![](/content/img/2014/03/2-192x300.png) ![](/content/img/2014/03/01-1-189x300.png) ![](/content/img/2014/03/01-2-193x300.png)
+- ![](/content/img/2014/03/01.png) ![](/content/img/2014/03/2.png) ![](/content/img/2014/03/01-1-189x300.png) ![](/content/img/2014/03/01-2.png)
 - 找找HyRead Ebook電子書服務平[https://tpml.ebook.hyread.com.tw](https://tpml.ebook.hyread.com.tw/) 利用時間，學習識字，查字典、造詞、造句、再來就可閱讀短文，小本書
 
 **學習是一條長遠的路，腦麻兒需要把時間存多一點點**

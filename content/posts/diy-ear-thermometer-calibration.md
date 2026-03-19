@@ -40,9 +40,9 @@
  
 ****(裡面的度量衡/體溫計問題集)****以下是檢驗局的聯結與訊息****
 <http://safety.bsmi.gov.tw/wSite/ct?xItem=22558&ctNode=3594&mp=65>
-[![101804](/content/img/2013/09/101804-300x152.png)](/content/img/2013/09/101804.png)
+[![101804](/content/img/2013/09/101804.png)](/content/img/2013/09/101804.png)
 **<http://www.bsmi.gov.tw/wSite/ct?xItem=1242&ctNode=4064&check=1>**
-[![101804](/content/img/2013/09/1018041-300x168.png)](/content/img/2013/09/1018041.png)
+[![101804](/content/img/2013/09/1018041.png)](/content/img/2013/09/1018041.png)
 **快去看看囉~****重點是:免費喔~**
  
  

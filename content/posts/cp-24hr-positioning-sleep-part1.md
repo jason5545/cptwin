@@ -6,7 +6,7 @@
 
 **術後，醫生、治療師建議長時間(包含睡覺)穿著腳架**
 
-[![0629](/content/img/2014/06/0629-300x240.png)](/content/img/2014/06/0629.png)
+[![0629](/content/img/2014/06/0629.png)](/content/img/2014/06/0629.png)
 
 以**避免再次開刀(同一個手術)**
 
@@ -34,7 +34,7 @@
 
 (或是自製roller     作法：[作法連結](/life-stories/diy-roller-from-stockings/))
 
-[![DSC_1129-1](/content/img/2014/06/DSC_1129-1-300x168.jpg)](/content/img/2014/06/DSC_1129-1.jpg)
+[![DSC_1129-1](/content/img/2014/06/DSC_1129-1.jpg)](/content/img/2014/06/DSC_1129-1.jpg)
 
 或是有類似的睡姿擺位輔具~【山形枕】
 
@@ -46,9 +46,9 @@
 
 **在睡覺就把腳架加gaiter(副木)**
 
-**[![DSC_1116](/content/img/2014/07/DSC_1116-300x168.jpg)](/content/img/2014/07/DSC_1116.jpg)**
+**[![DSC_1116](/content/img/2014/07/DSC_1116.jpg)](/content/img/2014/07/DSC_1116.jpg)**
 
-**[![DSC_1117](/content/img/2014/07/DSC_1117-300x168.jpg)](/content/img/2014/07/DSC_1117.jpg)**
+**[![DSC_1117](/content/img/2014/07/DSC_1117.jpg)](/content/img/2014/07/DSC_1117.jpg)**
 
 **很多家長覺得質疑， 這樣孩子能睡得好嗎??**
 
@@ -78,4 +78,4 @@
 
 ## **謝謝 莊頌音、彭伊君物理治療師諮詢**
 
-[![](/content/img/2014/07/222-1-2-1024x454.png)](/content/img/2014/07/222-1-2.png)
+[![](/content/img/2014/07/222-1-2.png)](/content/img/2014/07/222-1-2.png)

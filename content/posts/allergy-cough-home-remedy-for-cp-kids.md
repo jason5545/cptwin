@@ -11,7 +11,7 @@
 我的摯友是位護理長，給了我一個建議
 **小兒的氣管細小，何不買一台<超音波噴霧器>(如下左圖)與拍背器(如下右圖)**
 在家可以加強護理
-[![DSC_0846](/content/img/2014/03/DSC_0846-300x168.jpg)](/content/img/2014/03/DSC_0846.jpg)        [![DSC_0847](/content/img/2014/03/DSC_08471-300x168.png)](/content/img/2014/03/DSC_08471.png)
+[![DSC_0846](/content/img/2014/03/DSC_0846.jpg)](/content/img/2014/03/DSC_0846.jpg)        [![DSC_0847](/content/img/2014/03/DSC_08471.png)](/content/img/2014/03/DSC_08471.png)
 **一般因兒科支氣管炎住院，多以藥物與呼吸治療為先**
 
 **呼吸治療運用水蒸霧氣吸入一段時間，把在肺部裡的濃稠的痰給稀釋時**
@@ -44,4 +44,4 @@
 
  
 [http://limamafamily.blogspot.tw/2011/06/blog-post\_992.html](http://limamafamily.blogspot.tw/2011/06/blog-post_992.html "http://limamafamily.blogspot.tw/2011/06/blog-post_992.html")
-[![123](/content/img/2014/03/123-184x300.png)](/content/img/2014/03/123.png)
+[![123](/content/img/2014/03/123.png)](/content/img/2014/03/123.png)

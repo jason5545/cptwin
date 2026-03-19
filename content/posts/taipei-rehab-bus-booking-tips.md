@@ -37,27 +37,27 @@
 
 1.)
 
-[![辦法](/content/img/2013/11/辦法1-300x290.jpg)](/content/img/2013/11/辦法1.jpg)
+[![辦法](/content/img/2013/11/辦法1.jpg)](/content/img/2013/11/辦法1.jpg)
 
   2.)
 
-[![辦法1](/content/img/2013/11/辦法12-300x263.jpg)](/content/img/2013/11/辦法12.jpg)
+[![辦法1](/content/img/2013/11/辦法12.jpg)](/content/img/2013/11/辦法12.jpg)
 
 3.)
 
-[![辦法2](/content/img/2013/11/辦法21-300x218.jpg)](/content/img/2013/11/辦法21.jpg)
+[![辦法2](/content/img/2013/11/辦法21.jpg)](/content/img/2013/11/辦法21.jpg)
 
  4.)
 
-[![辦法3](/content/img/2013/11/辦法31-300x285.jpg)](/content/img/2013/11/辦法31.jpg)
+[![辦法3](/content/img/2013/11/辦法31.jpg)](/content/img/2013/11/辦法31.jpg)
 
 5.)
 
-[![辦法4](/content/img/2013/11/辦法4-218x300.jpg)](/content/img/2013/11/辦法4.jpg)
+[![辦法4](/content/img/2013/11/辦法4.jpg)](/content/img/2013/11/辦法4.jpg)
 
      6.)
 
-[![辦法5](/content/img/2013/11/辦法5-216x300.jpg)](/content/img/2013/11/辦法5.jpg)
+[![辦法5](/content/img/2013/11/辦法5.jpg)](/content/img/2013/11/辦法5.jpg)
 
 (伊甸基金會預約辦法亦同)
 

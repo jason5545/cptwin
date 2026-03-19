@@ -32,9 +32,9 @@
 
 #### **支援多種影音娛樂、網路瀏覽、可主動呼叫身旁可幫忙的家人、朋友**
 
-**[![DSC_0004_3](/content/img/2011/08/DSC_0004_3-300x168.jpg)](/content/img/2011/08/DSC_0004_3.jpg)**[![DSC_0005_3](/content/img/2011/08/DSC_0005_3-300x168.jpg)](/content/img/2011/08/DSC_0005_3.jpg)
-[![DSC_0006_2](/content/img/2011/08/DSC_0006_2-300x204.jpg)](/content/img/2011/08/DSC_0006_2.jpg)     [![DSC_0008_4](/content/img/2011/08/DSC_0008_4-300x168.jpg)](/content/img/2011/08/DSC_0008_4.jpg)
-[![DSC_0009_1](/content/img/2011/08/DSC_0009_1-168x300.jpg)](/content/img/2011/08/DSC_0009_1.jpg)
+**[![DSC_0004_3](/content/img/2011/08/DSC_0004_3.jpg)](/content/img/2011/08/DSC_0004_3.jpg)**[![DSC_0005_3](/content/img/2011/08/DSC_0005_3.jpg)](/content/img/2011/08/DSC_0005_3.jpg)
+[![DSC_0006_2](/content/img/2011/08/DSC_0006_2.jpg)](/content/img/2011/08/DSC_0006_2.jpg)     [![DSC_0008_4](/content/img/2011/08/DSC_0008_4.jpg)](/content/img/2011/08/DSC_0008_4.jpg)
+[![DSC_0009_1](/content/img/2011/08/DSC_0009_1.jpg)](/content/img/2011/08/DSC_0009_1.jpg)
 **當時我們使用後有些想法，如果可以改變得更好是~**
 
 - **機器軟體設備是輕便的，不過硬體的架子當時稍嫌大些(有點佔地方)**
@@ -43,7 +43,7 @@
 
 **附上照片**
 
-[![IMG_0016-1](/content/img/2011/08/IMG_0016-11-300x225.jpg)](/content/img/2011/08/IMG_0016-11.jpg)     [![IMG_0018-1](/content/img/2011/08/IMG_0018-1-300x225.jpg)](/content/img/2011/08/IMG_0018-1.jpg)
+[![IMG_0016-1](/content/img/2011/08/IMG_0016-11.jpg)](/content/img/2011/08/IMG_0016-11.jpg)     [![IMG_0018-1](/content/img/2011/08/IMG_0018-1.jpg)](/content/img/2011/08/IMG_0018-1.jpg)
 
 - **使用眼睛操作游標，需要花點時間定位掃描，對眼睛有顫動或是眼睛視力較吃力者，需要花更多時間校正或是長時間眼睛下來，眼睛容易疲勞**
 - **所費不貲(不過前2年，聽說可以租賃，目前不確定)**
@@ -72,4 +72,4 @@
 ##### 附上該公司網站與<阿春眼動看護>產品：
 
 <http://www.utechzone.com.tw/webc/html/products/index.aspx?kid=28>
-[![1125](/content/img/2011/08/1125-300x193.png)](/content/img/2011/08/1125.png)
+[![1125](/content/img/2011/08/1125.png)](/content/img/2011/08/1125.png)

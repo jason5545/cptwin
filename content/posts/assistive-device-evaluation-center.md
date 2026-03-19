@@ -80,4 +80,4 @@
 『申請哪些輔具補助僅需經醫師診斷證明』
 <https://repat.sfaa.gov.tw/system/subject/inside_04b.asp?id=4886>
 
-![040402](/content/img/2016/04/040402-300x113.png)
+![040402](/content/img/2016/04/040402.png)

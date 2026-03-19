@@ -24,31 +24,31 @@
 <http://www.icebreakerpro.org/-----ypkmy>
 我們可以從以下步驟找尋~
 **1.先到網站是去下載<應用軟體>**
-[![050501](/content/img/2014/05/0505014-300x240.png)](/content/img/2014/05/0505014.png)
+[![050501](/content/img/2014/05/0505014.png)](/content/img/2014/05/0505014.png)
  
-[![050501](/content/img/2014/05/0505015-300x240.png)](/content/img/2014/05/0505015.png)
+[![050501](/content/img/2014/05/0505015.png)](/content/img/2014/05/0505015.png)
  
 **下載後開啟資料夾， 並做<解壓縮>程式執行**
-[![050501](/content/img/2014/05/0505016-300x240.png)](/content/img/2014/05/0505016.png)
+[![050501](/content/img/2014/05/0505016.png)](/content/img/2014/05/0505016.png)
  
 **開啟後，我們可從控制台**(如下圖步驟)
 
 1. **找尋<滑鼠>(可以在開啟  <控制台> ，右上方搜尋<滑鼠>)**
 
-[![050501](/content/img/2014/05/0505019-300x225.png)](/content/img/2014/05/0505019.png)
+[![050501](/content/img/2014/05/0505019.png)](/content/img/2014/05/0505019.png)
  
 2**.找到<滑鼠>/變更滑鼠指標的外觀/指標(標籤)中**
-[![050501](/content/img/2014/05/0505018-300x209.png)](/content/img/2014/05/0505018.png)
+[![050501](/content/img/2014/05/0505018.png)](/content/img/2014/05/0505018.png)
  
 **3.從<瀏覽>裡找出下載的資料夾(副檔案多是 .ani  、  .cur)**
-[![050503](/content/img/2014/05/0505031-300x225.png)](/content/img/2014/05/0505031.png)
+[![050503](/content/img/2014/05/0505031.png)](/content/img/2014/05/0505031.png)
  
-[![050507](/content/img/2014/05/0505071-300x225.png)](/content/img/2014/05/0505071.png)
+[![050507](/content/img/2014/05/0505071.png)](/content/img/2014/05/0505071.png)
 4**.選出您喜歡的游標**
 **5.改變後的游標有各種不同圖示**
-[![DSC_1187-1](/content/img/2014/05/DSC_1187-1-168x300.jpg)](/content/img/2014/05/DSC_1187-1.jpg)      [![DSC_1189-1](/content/img/2014/05/DSC_1189-1-168x300.jpg)](/content/img/2014/05/DSC_1189-1.jpg)      [![DSC_1190-1](/content/img/2014/05/DSC_1190-1-168x300.jpg)](/content/img/2014/05/DSC_1190-1.jpg)
+[![DSC_1187-1](/content/img/2014/05/DSC_1187-1.jpg)](/content/img/2014/05/DSC_1187-1.jpg)      [![DSC_1189-1](/content/img/2014/05/DSC_1189-1.jpg)](/content/img/2014/05/DSC_1189-1.jpg)      [![DSC_1190-1](/content/img/2014/05/DSC_1190-1.jpg)](/content/img/2014/05/DSC_1190-1.jpg)
  
-[![DSC_1191-1](/content/img/2014/05/DSC_1191-1-168x300.jpg)](/content/img/2014/05/DSC_1191-1.jpg)      [![DSC_1192-1](/content/img/2014/05/DSC_1192-1-168x300.jpg)](/content/img/2014/05/DSC_1192-1.jpg)
+[![DSC_1191-1](/content/img/2014/05/DSC_1191-1.jpg)](/content/img/2014/05/DSC_1191-1.jpg)      [![DSC_1192-1](/content/img/2014/05/DSC_1192-1.jpg)](/content/img/2014/05/DSC_1192-1.jpg)
  
 (以上圖例提供參考)
 電腦的世界，因為小小的改變，使生活更樂趣喔~

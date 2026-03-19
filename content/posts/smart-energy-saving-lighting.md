@@ -20,7 +20,7 @@
 
 **在不便起身移動開關電燈時，不用****走****下床去「關燈」****，****直接在手機上操作即可**
 **依隨個人使用作『時間』設定開燈、關燈，手機即可在指定時間倒數後，關畢電源**
-![](/content/img/2020/08/Image-5-1-285x300.png)   ![](/content/img/2020/08/Image-5-3-138x300.png)
+![](/content/img/2020/08/Image-5-1.png)   ![](/content/img/2020/08/Image-5-3.png)
 **改裝一盞燈十分簡易，過程不用10分鐘**
 步驟很快如下：
 
@@ -31,12 +31,12 @@
 
 - **接著掃入【QRCODE】進行連結 即可作設定**
 
-![](https://scontent.ftpe8-2.fna.fbcdn.net/v/t1.15752-9/s960x960/118247533_752931685504153_2085736905143576359_n.png?_nc_cat=100&_nc_sid=ae9488&_nc_ohc=Ng6EX28gdxAAX8bPUVt&_nc_ht=scontent.ftpe8-2.fna&oh=468768f8bc9d146968c69e25506d7c96&oe=5F668475)    ![](/content/img/2020/08/Image-5-3-138x300.png)
+![](https://scontent.ftpe8-2.fna.fbcdn.net/v/t1.15752-9/s960x960/118247533_752931685504153_2085736905143576359_n.png?_nc_cat=100&_nc_sid=ae9488&_nc_ohc=Ng6EX28gdxAAX8bPUVt&_nc_ht=scontent.ftpe8-2.fna&oh=468768f8bc9d146968c69e25506d7c96&oe=5F668475)    ![](/content/img/2020/08/Image-5-3.png)
 2. **使用【WI-Fi與手動】控制：這一款的便利性更高**
 **在有Wi-Fi 的環境下，可直接運用網路，叫出『Siri』作『開啟/關閉電源』**
      若是已在外出，才猛然想起忘記關燈**，利用透過遠距作操控 ，一點都不用擔心忘了關燈**
 **( 這其實完全適用於迷糊得我，幫了我很大的忙)**
-![](https://scontent.ftpe8-1.fna.fbcdn.net/v/t1.15752-9/s960x960/118228226_3110552825728420_1389378533411688626_n.png?_nc_cat=109&_nc_sid=ae9488&_nc_ohc=XdF9wa8JMSIAX_TNklD&_nc_ht=scontent.ftpe8-1.fna&oh=5a001da9150ed1dbe6c3ff14d345d12f&oe=5F66BD7B) ![](/content/img/2020/08/Image-5-168x300.png)  ![](/content/img/2020/08/Image-5-2-168x300.png)
+![](https://scontent.ftpe8-1.fna.fbcdn.net/v/t1.15752-9/s960x960/118228226_3110552825728420_1389378533411688626_n.png?_nc_cat=109&_nc_sid=ae9488&_nc_ohc=XdF9wa8JMSIAX_TNklD&_nc_ht=scontent.ftpe8-1.fna&oh=5a001da9150ed1dbe6c3ff14d345d12f&oe=5F66BD7B) ![](/content/img/2020/08/Image-5.png)  ![](/content/img/2020/08/Image-5-2.png)
  
 **對於要常常抱小孩幫忙移位的我，或是家裡有略為不便的行動障礙者而言**
 **有這項好用的裝置，在這炎炎夏日，電費暴漲的同時**
@@ -45,4 +45,4 @@
  
  
  
-![](/content/img/2020/08/Image-5-4-300x176.png)
+![](/content/img/2020/08/Image-5-4.png)

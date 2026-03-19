@@ -2,13 +2,13 @@
 
 2013的8月與學長、老師一起參觀，為期一個月的花博行動夢想館
 
-[![IMAG1120](/content/img/2013/08/IMAG1120-300x179.jpg)](/content/img/2013/08/IMAG1120.jpg)
+[![IMAG1120](/content/img/2013/08/IMAG1120.jpg)](/content/img/2013/08/IMAG1120.jpg)
 購票訊息：
 <https://ticket.taipeiexpo.org.tw/notemsg/idnote.htm>
 
-[![花博行動夢想館](/content/img/2013/08/花博行動夢想館1-300x87.jpg)](/content/img/2013/08/花博行動夢想館1.jpg)
+[![花博行動夢想館](/content/img/2013/08/花博行動夢想館1.jpg)](/content/img/2013/08/花博行動夢想館1.jpg)
 也可以順便預約機器人展
-[![IMAG1121](/content/img/2013/08/IMAG1121-300x179.jpg)](/content/img/2013/08/IMAG1121.jpg)
+[![IMAG1121](/content/img/2013/08/IMAG1121.jpg)](/content/img/2013/08/IMAG1121.jpg)
 夢想館一趟約需1.2小時   機器人展約1小時
 電話：(02)-2182-8886#1
 如果，本人是台北市民
@@ -21,10 +21,10 @@
 夢想館是互動式的展場，
 是以ASUS的手機，作為互動介面
 入場者拍照後，可經由手機做遊戲互動，並在結束前換成一張「夢想登機證」，
-[![IMAG1119](/content/img/2013/08/IMAG1119-300x179.jpg)](/content/img/2013/08/IMAG1119.jpg)
+[![IMAG1119](/content/img/2013/08/IMAG1119.jpg)](/content/img/2013/08/IMAG1119.jpg)
 在回家後可以下載與遊戲的過程
-[![花博行動夢想館-1](/content/img/2013/08/花博行動夢想館-1-300x168.jpg)](/content/img/2013/08/花博行動夢想館-1.jpg)
-[![花博行動夢想館](/content/img/2013/08/花博行動夢想館-300x168.jpg)](/content/img/2013/08/花博行動夢想館.jpg)
+[![花博行動夢想館-1](/content/img/2013/08/花博行動夢想館-1.jpg)](/content/img/2013/08/花博行動夢想館-1.jpg)
+[![花博行動夢想館](/content/img/2013/08/花博行動夢想館.jpg)](/content/img/2013/08/花博行動夢想館.jpg)
  
 <http://www.dreams.tw/main.html#filter=.journey>
 非常值得一遊，大推喔!!!= 目

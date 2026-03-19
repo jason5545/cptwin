@@ -50,8 +50,8 @@
 - **不過~從租借地到宅這段費用是自行負擔，若是請台灣福康輔具中心收、送，需另加運費喔~**
 - 可預約出借時間，有168輛行動輔具可租借
 
-[![DSC_0763](/content/img/2014/03/DSC_0763-e1395583599697-168x300.jpg)](/content/img/2014/03/DSC_0763-e1395583599697.jpg)      [![DSC_0765](/content/img/2014/03/DSC_0765-e1395583682112-168x300.jpg)](/content/img/2014/03/DSC_0765-e1395583682112.jpg)
-[![DSC_0772](/content/img/2014/03/DSC_0772-e1395583857479-168x300.jpg)](/content/img/2014/03/DSC_0772-e1395583857479.jpg)[![DSC_0774](/content/img/2014/03/DSC_0774-e1395583925271-168x300.jpg)](/content/img/2014/03/DSC_0774-e1395583925271.jpg)     [![DSC_0775](/content/img/2014/03/DSC_0775-e1395584006123-168x300.jpg)](/content/img/2014/03/DSC_0775-e1395584006123.jpg)
+[![DSC_0763](/content/img/2014/03/DSC_0763-e1395583599697.jpg)](/content/img/2014/03/DSC_0763-e1395583599697.jpg)      [![DSC_0765](/content/img/2014/03/DSC_0765-e1395583682112.jpg)](/content/img/2014/03/DSC_0765-e1395583682112.jpg)
+[![DSC_0772](/content/img/2014/03/DSC_0772-e1395583857479.jpg)](/content/img/2014/03/DSC_0772-e1395583857479.jpg)[![DSC_0774](/content/img/2014/03/DSC_0774-e1395583925271.jpg)](/content/img/2014/03/DSC_0774-e1395583925271.jpg)     [![DSC_0775](/content/img/2014/03/DSC_0775-e1395584006123.jpg)](/content/img/2014/03/DSC_0775-e1395584006123.jpg)
  
 
 **另外，因電動輪椅維修不便，當只有一部電動輪椅行動時，若是臨時故障**
@@ -63,7 +63,7 @@
  **台灣福康輔具中心位於：台北市中山區新生北路2段131-4號一樓**
  
  
-[![map](/content/img/2014/03/map-300x240.png)](/content/img/2014/03/map.png)
+[![map](/content/img/2014/03/map.png)](/content/img/2014/03/map.png)
  
-[[![DSC_0777](/content/img/2014/03/DSC_0777-e1395665097298-168x300.jpg)](/content/img/2014/03/DSC_0777-e1395665097298.jpg)](http://https://www.google.com.tw/maps/place/104%E5%8F%B0%E5%8C%97%E5%B8%82%E4%B8%AD%E5%B1%B1%E5%8D%80%E6%96%B0%E7%94%9F%E5%8C%97%E8%B7%AF%E4%BA%8C%E6%AE%B5131-4%E8%99%9F/@25.060792,121.527969,17z/data=!4m2!3m1!1s0x3442a95c8f61fe8b:0xb9402fab76b3dad2?hl=zh-TW "https://www.google.com.tw/maps/place/104%E5%8F%B0%E5%8C%97%E5%B8%82%E4%B8%AD%E5%B1%B1%E5%8D%80%E6%96%B0%E7%94%9F%E5%8C%97%E8%B7%AF%E4%BA%8C%E6%AE%B5131-4%E8%99%9F/@25.060792,121.527969,17z/data=!4m2!3m1!1s0x3442a95c8f61fe8b:0xb9402fab76b3dad2?hl=zh-TW")    [![DSC_0781](/content/img/2014/03/DSC_0781-e1395665263912-300x168.jpg)](/content/img/2014/03/DSC_0781-e1395665263912.jpg)
-[![DSC_0780](/content/img/2014/03/DSC_0780-e1395665311107-168x300.jpg)](/content/img/2014/03/DSC_0780-e1395665311107.jpg)     [![DSC_0779](/content/img/2014/03/DSC_0779-e1395665152617-168x300.jpg)](/content/img/2014/03/DSC_0779-e1395665152617.jpg)
+[[![DSC_0777](/content/img/2014/03/DSC_0777-e1395665097298.jpg)](/content/img/2014/03/DSC_0777-e1395665097298.jpg)](http://https://www.google.com.tw/maps/place/104%E5%8F%B0%E5%8C%97%E5%B8%82%E4%B8%AD%E5%B1%B1%E5%8D%80%E6%96%B0%E7%94%9F%E5%8C%97%E8%B7%AF%E4%BA%8C%E6%AE%B5131-4%E8%99%9F/@25.060792,121.527969,17z/data=!4m2!3m1!1s0x3442a95c8f61fe8b:0xb9402fab76b3dad2?hl=zh-TW "https://www.google.com.tw/maps/place/104%E5%8F%B0%E5%8C%97%E5%B8%82%E4%B8%AD%E5%B1%B1%E5%8D%80%E6%96%B0%E7%94%9F%E5%8C%97%E8%B7%AF%E4%BA%8C%E6%AE%B5131-4%E8%99%9F/@25.060792,121.527969,17z/data=!4m2!3m1!1s0x3442a95c8f61fe8b:0xb9402fab76b3dad2?hl=zh-TW")    [![DSC_0781](/content/img/2014/03/DSC_0781-e1395665263912.jpg)](/content/img/2014/03/DSC_0781-e1395665263912.jpg)
+[![DSC_0780](/content/img/2014/03/DSC_0780-e1395665311107.jpg)](/content/img/2014/03/DSC_0780-e1395665311107.jpg)     [![DSC_0779](/content/img/2014/03/DSC_0779-e1395665152617.jpg)](/content/img/2014/03/DSC_0779-e1395665152617.jpg)

@@ -20,7 +20,7 @@
 在端午前後「[**新北市輪椅夢公園**](https://www.facebook.com/wheelchairdreamparknewtaipeicity?__cft__[0]=AZUCaH8f5UaHRqQCu4NXYXTVMb44bPwvJFze5iF-ONcva1iDbnjpBtFl_xeYjCEIoc1FjWXhTEI7kKVPNAFjkLQjZ-lqeN6Kw5_GGV4GS6G7bcPBXx49718jnfFKAW63SeuJ73dqHUjLUm_Nm-REdYrh-nxKS_1genBuYcX8ZlQtc7k3qGyAqj3IIRFUmrNBIV4&__tn__=-UC%2CP-R)」與財團法人明怡基金會舉辦【福隆海洋假期服務計畫】
 免費招待每梯次20位，共400位身心障礙朋友，進行為期一天的度假行程
 這項活動在網路無遠弗屆下，30個小時一下子就報名額滿
-[![](/content/img/2023/10/123-300x133.png)](/content/img/2023/10/123.png)
+[![](/content/img/2023/10/123.png)](/content/img/2023/10/123.png)
 看著文宣寫著這項**【輪椅海洋假期】裡的![📌](https://static.xx.fbcdn.net/images/emoji.php/v9/t5/1.5/16/1f4cc.png)行程特色：**
 
 **1.本次水上活動將使用特製之身障專用獨木舟及SUP，安全無虞。**
@@ -41,15 +41,15 @@
 
 慢慢地體會到主辦方是經過無數次一再測試「絕不翻船」之安全考量與用心
 
-[![](/content/img/2023/10/123-2-224x300.png)](/content/img/2023/10/123-2.png)
+[![](/content/img/2023/10/123-2.png)](/content/img/2023/10/123-2.png)
 
 今天的運氣也太讚了呀～～竟然同場也有「海洋音樂祭」「海洋風箏嘉年華」上映；搭上懶懶的初秋綴上迎風飄揚起的風箏、敞揚在藍天的鯨魚、鹹鹹的海風味也愜意了吧!!
 
-[![](/content/img/2023/10/123-1-223x300.png)](/content/img/2023/10/123-1.png)[![](/content/img/2023/10/123-3-300x224.png)](/content/img/2023/10/123-3.png)
+[![](/content/img/2023/10/123-1.png)](/content/img/2023/10/123-1.png)[![](/content/img/2023/10/123-3.png)](/content/img/2023/10/123-3.png)
 
-[![](/content/img/2023/10/123-4-229x300.png)](/content/img/2023/10/123-4.png) [![](/content/img/2023/10/123-5-222x300.png)](/content/img/2023/10/123-5.png)
+[![](/content/img/2023/10/123-4.png)](/content/img/2023/10/123-4.png) [![](/content/img/2023/10/123-5.png)](/content/img/2023/10/123-5.png)
 
-[![](/content/img/2023/10/123-6-300x227.png)](/content/img/2023/10/123-6.png)
+[![](/content/img/2023/10/123-6.png)](/content/img/2023/10/123-6.png)
 
 在教練解說水上活動教學與注意事項後，教練們帶領學員著上救生衣、泳鞋，也前往活動場地
 
@@ -57,17 +57,17 @@
 
 就知道這條前往沙灘邊的路，是多麼地絞盡心力、想方設法，剪出這麼又長又重的地墊，再帶到現場鋪平，讓輪椅族能方便進入場域 令人感到暖心
 
-[![](/content/img/2023/10/123-7-223x300.png)](/content/img/2023/10/123-7.png)
+[![](/content/img/2023/10/123-7.png)](/content/img/2023/10/123-7.png)
 
 再看著教練與志工們，熟練使用「移位機」，真的是很用心考慮身障不便者【移動身軀】到獨木舟船艙
 
 而且船艙座椅也是特別為身障朋友訂製，真的很有心辦理體驗水上獨木舟呀
 
-[![](/content/img/2023/10/123-8-222x300.png)](/content/img/2023/10/123-8.png) [![](/content/img/2023/10/123-12-226x300.png)](/content/img/2023/10/123-12.png)
+[![](/content/img/2023/10/123-8.png)](/content/img/2023/10/123-8.png) [![](/content/img/2023/10/123-12.png)](/content/img/2023/10/123-12.png)
 
 不同一般的身障朋友專用獨木舟，是經過特別設計在船身二側設有平衡桿
 
-[![](/content/img/2023/10/123-10-225x300.png)](/content/img/2023/10/123-10.png)[![](/content/img/2023/10/123-11-221x300.png)](/content/img/2023/10/123-11.png)
+[![](/content/img/2023/10/123-10.png)](/content/img/2023/10/123-10.png)[![](/content/img/2023/10/123-11.png)](/content/img/2023/10/123-11.png)
 
 兒子對新鮮事的反應總是較溫慢與略有不安，上了移位機便嚷嚷著要跟著陪同下船
 
@@ -81,7 +81,7 @@
 
 能讓【手、腳皆不能移動的重度肢障者】體驗划著獨木舟敞揚海岸邊，真的是細膩、各面向都考慮細微、用心良苦呀
 
-[![](/content/img/2023/10/123-14-300x223.png)](/content/img/2023/10/123-14.png)[![](/content/img/2023/10/123-13-300x223.png)](/content/img/2023/10/123-13.png)[![](/content/img/2023/10/123-15-300x223.png)](/content/img/2023/10/123-15.png)
+[![](/content/img/2023/10/123-14.png)](/content/img/2023/10/123-14.png)[![](/content/img/2023/10/123-13.png)](/content/img/2023/10/123-13.png)[![](/content/img/2023/10/123-15.png)](/content/img/2023/10/123-15.png)
 
 再看看已經完成活動上傳的照片，不禁令我敬佩主辦方👍👍👍
 

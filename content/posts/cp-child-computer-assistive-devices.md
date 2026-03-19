@@ -5,11 +5,11 @@
 **電腦廣泛應用於生活中**
 例如：**學校發下的使用英文光碟片練習聽寫、圖書室的線上預約借閱**
 **學校電腦課教學的word、powerpoint、movie marker軟體運用**
-[![DSC_1652](/content/img/2014/11/DSC_1652-e1415373336908-300x168.jpg)](/content/img/2014/11/DSC_1652-e1415373336908.jpg)
+[![DSC_1652](/content/img/2014/11/DSC_1652-e1415373336908.jpg)](/content/img/2014/11/DSC_1652-e1415373336908.jpg)
 所以**肢障孩童也是可以使用電腦輔助學習，甚至可適當利用電腦硬軟體輔具**
 **讓孩子的天空，無遠弗屆，開通未知的學海中**
-[![110701](/content/img/2014/11/110701.png)](/content/img/2014/11/110701.png)            [![keyboard](/content/img/2013/08/keyboard-300x185.jpg)](/content/img/2013/08/keyboard.jpg)
-[![IMAG0440](/content/img/2010/12/IMAG0440-300x179.jpg)](/content/img/2010/12/IMAG0440.jpg)      [![IMAG0454](/content/img/2010/12/IMAG0454-179x300.jpg)](/content/img/2010/12/IMAG0454.jpg)
+[![110701](/content/img/2014/11/110701.png)](/content/img/2014/11/110701.png)            [![keyboard](/content/img/2013/08/keyboard.jpg)](/content/img/2013/08/keyboard.jpg)
+[![IMAG0440](/content/img/2010/12/IMAG0440.jpg)](/content/img/2010/12/IMAG0440.jpg)      [![IMAG0454](/content/img/2010/12/IMAG0454.jpg)](/content/img/2010/12/IMAG0454.jpg)
  
 **腦麻兒因為肌肉痙攣影響動作障礙**
 **加上在書寫需要手部、眼部協調，才能完成一個字**

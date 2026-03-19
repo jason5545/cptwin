@@ -3,7 +3,7 @@
 我的孩子們因為腦性麻痺緣故
 
 需要經年累月穿上AFO(Ankle Foot Orthosis)（我稱它為”矯正鞋” )
-[![](/content/img/2022/05/IMG_2171-225x300.jpeg)](/content/img/2022/05/IMG_2171.jpeg)
+[![](/content/img/2022/05/IMG_2171.jpeg)](/content/img/2022/05/IMG_2171.jpeg)
 為的是預防踝關節變形與抑制不正常張力或有垂足現象
 問題來了⋯
 長期（將近12小時以上）足部即便是穿上「棉質」襪子?，再穿上塑材製矯正鞋與外鞋
@@ -35,12 +35,12 @@
 **官網也有客服電話，可以跟客服聯繫，客服時間：周一至周六 10:00-18:00  客服專線：04-23759539
 小建議：下單前可以與客服聯繫，並確認尺寸，確保商品是符合您的需要，減少等待的時間。**
 **以上摘自官網資訊**
-[![](/content/img/2022/05/Image-111-4-300x141.png)](/content/img/2022/05/Image-111-4.png)
+[![](/content/img/2022/05/Image-111-4.png)](/content/img/2022/05/Image-111-4.png)
 **因為每個版型不同，有的會建議小一點有的會建議按一般習慣選購**
  
-[![](/content/img/2022/05/Image-111-300x136.png)](/content/img/2022/05/Image-111.png)
-[![](/content/img/2022/05/Image-111-1-300x293.png)](/content/img/2022/05/Image-111-1.png)
-[![](/content/img/2022/05/Image-111-2-300x195.png)](/content/img/2022/05/Image-111-2.png)
+[![](/content/img/2022/05/Image-111.png)](/content/img/2022/05/Image-111.png)
+[![](/content/img/2022/05/Image-111-1.png)](/content/img/2022/05/Image-111-1.png)
+[![](/content/img/2022/05/Image-111-2.png)](/content/img/2022/05/Image-111-2.png)
 再仔細google搜尋一下「母子鱷魚」
 結果...哇原來這還是有故事的呀
 根據✎[報導來源：中央通訊社](https://www.cna.com.tw/news/firstnews/202110250265.aspx?utm_source=cna.app&utm_medium=app&utm_campaign=inapp_share)
@@ -55,7 +55,7 @@
 
 而且真的也有新聞報導
 
-[![](/content/img/2022/05/Image-111-3-300x225.png)](/content/img/2022/05/Image-111-3.png)
+[![](/content/img/2022/05/Image-111-3.png)](/content/img/2022/05/Image-111-3.png)
 **一雙「Y字型拖鞋」可以讓我的孩子穿上著［走路］**
 而且女兒有表達她也想偶爾穿著，到附近的便利商店購物，而不是每次都必須穿「矯正鞋、外鞋」全部武裝才能出門
 嗯嗯嗯~~看樣子  【穿的牢】是孩子 喜歡的原因

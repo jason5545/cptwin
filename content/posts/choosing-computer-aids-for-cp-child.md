@@ -106,7 +106,7 @@
 
 <http://ronamac.myweb.hinet.net/>
 
-[![1110](/content/img/2014/11/1110-300x258.png)](/content/img/2014/11/1110.png)
+[![1110](/content/img/2014/11/1110.png)](/content/img/2014/11/1110.png)
 
 **b.破冰專業服務協會**
 
@@ -118,4 +118,4 @@
 
 **電話：02-2397-5060**
 
-[![111001](/content/img/2014/11/111001-300x170.png)](/content/img/2014/11/111001.png)
+[![111001](/content/img/2014/11/111001.png)](/content/img/2014/11/111001.png)
