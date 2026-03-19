@@ -2,6 +2,17 @@
 <html lang="zh-Hant-TW">
 <head>
   <meta charset="UTF-8">
+  <script>
+  // WordPress ?p=ID 舊連結重定向
+  (function(){
+    var m = location.search.match(/[?&]p=(\d+)/);
+    if (!m) return;
+    var id = m[1];
+    fetch('/data/wp-post-ids.json').then(function(r){return r.json()}).then(function(map){
+      if (map[id]) location.replace(map[id]);
+    });
+  })();
+  </script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>我與我雙胞胎腦麻兒的生活點滴</title>
 
