@@ -28,11 +28,11 @@
 
 ***銳能科技公司許經理***告訴我，他曾經改成功過選台器
 
-[![DSC_0742](/content/img/2014/03/DSC_0742.jpg)](/content/img/2014/03/DSC_0742.jpg)
+[![DSC_0742](/content/img/2014/03/DSC_0742.webp)](/content/img/2014/03/DSC_0742.webp)
 
 於是我們**分頭把焊點技術與選台器做了處理**
 我們甚至找了一款超大型的選台器
-[![DSC_0739](/content/img/2014/03/DSC_0739-e1395319881348.jpg)](/content/img/2014/03/DSC_0739.jpg)
+[![DSC_0739](/content/img/2014/03/DSC_0739-e1395319881348.webp)](/content/img/2014/03/DSC_0739.webp)
 但是也是不合用
 **沒料到.....家中的有線台，突然的改成機上盒收看方式**
 而熱忱的許經理，願意也一切再來過
@@ -42,7 +42,7 @@
 
 **使得機上盒之按壓式選台器產生了**
 
-[![DSC_0759](/content/img/2014/03/DSC_0759.jpg)](/content/img/2014/03/DSC_0759.jpg)    [![DSC_0782](/content/img/2014/03/DSC_0782.jpg)](/content/img/2014/03/DSC_0782.jpg)
+[![DSC_0759](/content/img/2014/03/DSC_0759.webp)](/content/img/2014/03/DSC_0759.webp)    [![DSC_0782](/content/img/2014/03/DSC_0782.webp)](/content/img/2014/03/DSC_0782.webp)
 **為了這一支按壓式選台器，真的找了快十多年**
 逢人就問、參加研習特殊開關，認識專業團隊、人才，進而請教、練習技能
 為的就是能學習更多技能與知識，期待有朝一日能派上場

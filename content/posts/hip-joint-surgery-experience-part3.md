@@ -2,7 +2,7 @@
 
 續......在鬆筋手術後沒多久(約一年半)
 因為兒子張力仍然很強、復健運動做得不很紮實 告訴我：**「他的腿會痛」**
-**![](/content/img/2019/02/饅頭人嚇.png)**
+**![](/content/img/2019/02/饅頭人嚇.webp)**
 在routinet每半年小兒骨科的X-ray 常規檢查中 發覺右側髖關節已經脫臼超過50% 左側43%
 這一下⋯可真的很難....很麻煩....
 當初幫開「鬆筋手術」的醫生出國進修了.....
@@ -49,12 +49,12 @@
 研究了一下~~
 推著擺位輪椅回娘家
 找了**長年的好鄰居 龍舟達人~劉清正  阿正師**
-**![](/content/img/2019/02/12.png)**
+**![](/content/img/2019/02/12.webp)**
 他真的很厲害 真的是國寶級大師( 一出手就知有沒有)
 在討論知道我的訴求後...
 我們將康揚輪椅的坐板給取下(它是有卡榫插稍加強固定)
 另取木板作一片硬底坐板  呈現「梯型」(裁剪成黑色梯型)
-![](/content/img/2019/02/11.png)(示意圖)
+![](/content/img/2019/02/11.webp)(示意圖)
 步驟如下：
 (1)輪椅扶手需是可上掀式
 (2)把木板自坐墊底部外展45度  也裁切方便 打洞 使用長螺絲接上卡榫固定
@@ -65,10 +65,10 @@
 **兒子的腳部張力真的太強了  所以我聽從物理治療師建議每天穿18~22小時**
 **從起床、上學、回家略作休息、睡覺再穿上**
 **整整穿著髖關節支架** **12年****自小學一年級到高三義務教育學成畢業
-![開啟相片](https://scontent.xx.fbcdn.net/v/t1.15752-9/274299322_456270742753286_4331614797959639077_n.jpg?stp=dst-jpg_s206x206&_nc_cat=101&ccb=1-5&_nc_sid=aee45a&_nc_ohc=nUdbtrWxCbYAX8KZvYF&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AVJo7blDgWVCb5r-ahpFLxUS8MHj_R1xwluQZhWb_XwxGw&oe=623DD011)  ![未提供說明。](https://scontent.ftpe8-2.fna.fbcdn.net/v/t1.15752-9/274299964_492933668937055_8648150879098779970_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=ae9488&_nc_ohc=OgMpO6xBtn0AX-PBl-U&_nc_ht=scontent.ftpe8-2.fna&oh=03_AVJiXW4BSXCkk_zBHo_WpNFdHJ0WivTtKQIa_vj-B3UDzQ&oe=623FC968) [![](/content/img/2019/02/髖關節小六.png)](/content/img/2019/02/髖關節小六.png)**
+![開啟相片](https://scontent.xx.fbcdn.net/v/t1.15752-9/274299322_456270742753286_4331614797959639077_n.jpg?stp=dst-jpg_s206x206&_nc_cat=101&ccb=1-5&_nc_sid=aee45a&_nc_ohc=nUdbtrWxCbYAX8KZvYF&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AVJo7blDgWVCb5r-ahpFLxUS8MHj_R1xwluQZhWb_XwxGw&oe=623DD011)  ![未提供說明。](https://scontent.ftpe8-2.fna.fbcdn.net/v/t1.15752-9/274299964_492933668937055_8648150879098779970_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=ae9488&_nc_ohc=OgMpO6xBtn0AX-PBl-U&_nc_ht=scontent.ftpe8-2.fna&oh=03_AVJiXW4BSXCkk_zBHo_WpNFdHJ0WivTtKQIa_vj-B3UDzQ&oe=623FC968) [![](/content/img/2019/02/髖關節小六.webp)](/content/img/2019/02/髖關節小六.webp)**
 **我怕呀~~真的經不起再一次的手術了**
  
-![](/content/img/2019/02/alex20050629端午節-1.png)
+![](/content/img/2019/02/alex20050629端午節-1.webp)
 **4.動髖關節重置手術最重要目的  是要重建正確髖關節位置**
 所以在手術後要努力做好維持髖關節角度
 每天一定把髖關節支架穿滿到足夠的時間 並努力作復健 作站立訓練

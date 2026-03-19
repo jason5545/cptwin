@@ -8,13 +8,13 @@
 
 - 開啟google map 鍵入要尋找特定地點 **例：「辛殿麻辣鍋-松江店」**
 - **點入「路線方式」**裡的「**步行」上方的拉軸【紅色箭頭】**
-- **[![無障礙地圖step1](/content/img/2025/12/%E7%84%A1%E9%9A%9C%E7%A4%99%E5%9C%B0%E5%9C%96step1_thumb.jpg "無障礙地圖step1")](/content/img/2025/12/%E7%84%A1%E9%9A%9C%E7%A4%99%E5%9C%B0%E5%9C%96step1.jpg)**
+- **[![無障礙地圖step1](/content/img/2025/12/%E7%84%A1%E9%9A%9C%E7%A4%99%E5%9C%B0%E5%9C%96step1_thumb.webp "無障礙地圖step1")](/content/img/2025/12/%E7%84%A1%E9%9A%9C%E7%A4%99%E5%9C%B0%E5%9C%96step1.webp)**
 
 - 從選單裡可以勾選開啟按鍵「**輪椅無障礙**」選項，然後輕觸「**完成**」
-- [![無障礙地圖step2](/content/img/2025/12/%E7%84%A1%E9%9A%9C%E7%A4%99%E5%9C%B0%E5%9C%96step2_thumb.jpg "無障礙地圖step2")](/content/img/2025/12/%E7%84%A1%E9%9A%9C%E7%A4%99%E5%9C%B0%E5%9C%96step2.jpg)(**電腦版)**
-- **[![無障礙地圖step1平板](/content/img/2025/12/%E7%84%A1%E9%9A%9C%E7%A4%99%E5%9C%B0%E5%9C%96step1%E5%B9%B3%E6%9D%BF_thumb.jpg "無障礙地圖step1平板")](/content/img/2025/12/%E7%84%A1%E9%9A%9C%E7%A4%99%E5%9C%B0%E5%9C%96step1%E5%B9%B3%E6%9D%BF.jpg)(平板版)**
-- **[![無障礙地圖step1手機](/content/img/2025/12/%E7%84%A1%E9%9A%9C%E7%A4%99%E5%9C%B0%E5%9C%96step1%E6%89%8B%E6%A9%9F_thumb.jpg "無障礙地圖step1手機")](/content/img/2025/12/%E7%84%A1%E9%9A%9C%E7%A4%99%E5%9C%B0%E5%9C%96step1%E6%89%8B%E6%A9%9F.jpg)(手機版)**
+- [![無障礙地圖step2](/content/img/2025/12/%E7%84%A1%E9%9A%9C%E7%A4%99%E5%9C%B0%E5%9C%96step2_thumb.webp "無障礙地圖step2")](/content/img/2025/12/%E7%84%A1%E9%9A%9C%E7%A4%99%E5%9C%B0%E5%9C%96step2.webp)(**電腦版)**
+- **[![無障礙地圖step1平板](/content/img/2025/12/%E7%84%A1%E9%9A%9C%E7%A4%99%E5%9C%B0%E5%9C%96step1%E5%B9%B3%E6%9D%BF_thumb.webp "無障礙地圖step1平板")](/content/img/2025/12/%E7%84%A1%E9%9A%9C%E7%A4%99%E5%9C%B0%E5%9C%96step1%E5%B9%B3%E6%9D%BF.webp)(平板版)**
+- **[![無障礙地圖step1手機](/content/img/2025/12/%E7%84%A1%E9%9A%9C%E7%A4%99%E5%9C%B0%E5%9C%96step1%E6%89%8B%E6%A9%9F_thumb.webp "無障礙地圖step1手機")](/content/img/2025/12/%E7%84%A1%E9%9A%9C%E7%A4%99%E5%9C%B0%E5%9C%96step1%E6%89%8B%E6%A9%9F.webp)(手機版)**
 
 地圖會直接在搜尋結果旁顯示輪椅圖示，方便您快速識別無障礙環境的地點
-[![無障礙地圖step3](/content/img/2025/12/%E7%84%A1%E9%9A%9C%E7%A4%99%E5%9C%B0%E5%9C%96step3_thumb.jpg "無障礙地圖step3")](/content/img/2025/12/%E7%84%A1%E9%9A%9C%E7%A4%99%E5%9C%B0%E5%9C%96step3.jpg)
+[![無障礙地圖step3](/content/img/2025/12/%E7%84%A1%E9%9A%9C%E7%A4%99%E5%9C%B0%E5%9C%96step3_thumb.webp "無障礙地圖step3")](/content/img/2025/12/%E7%84%A1%E9%9A%9C%E7%A4%99%E5%9C%B0%E5%9C%96step3.webp)
 如此一來，當要外出用餐時，就比較可以利用智慧工具選擇友善用餐環境了

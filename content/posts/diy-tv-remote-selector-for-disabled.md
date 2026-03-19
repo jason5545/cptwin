@@ -32,7 +32,7 @@
 
 **【<https://wp.me/p8nOvC-bT>  一支老小都會需要的電視選台器故事】**
 
-[![DSC_0782](/content/img/2014/03/DSC_0782.jpg)](/content/img/2014/03/DSC_0782.jpg)
+[![DSC_0782](/content/img/2014/03/DSC_0782.webp)](/content/img/2014/03/DSC_0782.webp)
 
 才使用沒多久光年....，卻因有線電視系統業者將類比訊號
 
@@ -83,10 +83,10 @@
 - 買回家後：先找出**接縫處用『一字螺絲起子』分解開來  
   ![](https://scontent.ftpe7-4.fna.fbcdn.net/v/t1.15752-0/p480x480/69439451_466528530856735_4256076904005632000_n.jpg?_nc_cat=107&_nc_sid=b96e70&_nc_oc=AQmichgZLfQZ74RzHhYRkTihdajkSHQPpxN7s2d_mTtDSuJ9APw_Ksw8fCh29NVcmPs&_nc_ht=scontent.ftpe7-4.fna&_nc_tp=6&oh=b865095f202ed5b51c48593d16f86053&oe=5EEF223B)**  
   (1)**要把面板上的按鍵矽膠按鍵（鈕）全拆 ，只留下『上下頻道按鈕】**
-- ![](/content/img/2020/05/未命名-3.png)
+- ![](/content/img/2020/05/未命名-3.webp)
 - (2)拿出刀片將盒蓋切出跟『遙控器』大小的形狀   
   **記住~需要留約4cm ，別蓋住了『訊號輸出感應端』**
-- ![](/content/img/2020/05/未命名-4.png)
+- ![](/content/img/2020/05/未命名-4.webp)
 - (2)拿出木板片，並黏好位置  
   **恰好是一邊是蓋住「頻道往上鍵」 另一邊蓋住「頻道往下鍵」**
 - 遙控器可橫放或直放 ，**記得要在『機上盒』可感應到的地方**

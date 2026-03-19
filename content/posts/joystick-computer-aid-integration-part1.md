@@ -30,7 +30,7 @@
 
 *(* 厲害的專家，*2009*就能寫出這玩意*)*
 
-[![1128](/content/img/2013/08/1128.png)](/content/img/2013/08/1128.png)
+[![1128](/content/img/2013/08/1128.webp)](/content/img/2013/08/1128.webp)
 
 用了很多年，但是WINDOWS一直改版，卻跟不上更新)
 
@@ -42,7 +42,7 @@
 
 破冰專業服務協會 (Icebreaker Project)團隊
 
-[![icebreakerpro](/content/img/2010/12/icebreakerpro.jpg)](/content/img/2010/12/icebreakerpro.jpg)
+[![icebreakerpro](/content/img/2010/12/icebreakerpro.webp)](/content/img/2010/12/icebreakerpro.webp)
 
 ==================================================================
 
@@ -50,19 +50,19 @@
 
 **1).一個較新的應用程式(這個螢幕鍵盤可鍵於螢幕上，藉由滑鼠點選keyin 注音選字)**
 
-[![keyboard](/content/img/2013/08/keyboard.jpg)](/content/img/2013/08/keyboard.jpg)
+[![keyboard](/content/img/2013/08/keyboard.webp)](/content/img/2013/08/keyboard.webp)
 
 十分便利與好用
 
-[![IMAG0442](/content/img/2010/12/IMAG0442.jpg)](/content/img/2010/12/IMAG0442.jpg)
+[![IMAG0442](/content/img/2010/12/IMAG0442.webp)](/content/img/2010/12/IMAG0442.webp)
 
 並找了個
 
 **2).搖桿更改握面成球面，即插即用(USB介面)，**讓柏辰更好使用
 
-[![IMAG0491](/content/img/2010/12/IMAG0491.jpg)](/content/img/2010/12/IMAG0491.jpg)             [![IMAG0454](/content/img/2010/12/IMAG0454.jpg)](/content/img/2010/12/IMAG0454.jpg)
+[![IMAG0491](/content/img/2010/12/IMAG0491.webp)](/content/img/2010/12/IMAG0491.webp)             [![IMAG0454](/content/img/2010/12/IMAG0454.webp)](/content/img/2010/12/IMAG0454.webp)
 
-[![IMAG0440](/content/img/2010/12/IMAG0440.jpg)](/content/img/2010/12/IMAG0440.jpg)
+[![IMAG0440](/content/img/2010/12/IMAG0440.webp)](/content/img/2010/12/IMAG0440.webp)
 
 **3).**因為視力差(遠視650度)  所以建議改用**21"以上螢幕**以利看得清楚
 

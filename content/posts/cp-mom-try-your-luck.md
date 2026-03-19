@@ -13,17 +13,17 @@
  **先到《臺灣證劵交易所》**
 <http://www.twse.com.tw/ch/index.php>
 **2.找到《市場公告》/找《公開申購公告》**
-[![twse-1](/content/img/2013/08/twse-1.jpg)](/content/img/2013/08/twse-1.jpg)
+[![twse-1](/content/img/2013/08/twse-1.webp)](/content/img/2013/08/twse-1.webp)
  
  
 <http://www.twse.com.tw/ch/announcement/public.php>
-[![twse-2](/content/img/2013/08/twse-2.jpg)](/content/img/2013/08/twse-2.jpg)
+[![twse-2](/content/img/2013/08/twse-2.webp)](/content/img/2013/08/twse-2.webp)
  
 **3.就可以按下載/開啟(通常是excel檔，應該是不會中毒的)**
 **4.從裡面，您就可以一目了然的知道，哪天開始申購股票與截止日，實際承銷價(需要存足額)**
 **5.再告訴您的證劵經紀商要抽哪一張股票(打電話去找營業員或洽詢證券營業員)，並在抽籤前一天把足額的$$存進銀行**
 ❤❤貼心提醒：可找有ATM自動櫃員機，可**有**方便存提款功能者尤佳**(目前多是只附設提款機，無存款機)**
-[![twse-3](/content/img/2013/08/twse-31.jpg)](/content/img/2013/08/twse-31.jpg)
+[![twse-3](/content/img/2013/08/twse-31.webp)](/content/img/2013/08/twse-31.webp)
  
  
 **★★★如果您的運氣好，也許中籤，(若是中籤，營業員也會打電話告訴已中籤)**

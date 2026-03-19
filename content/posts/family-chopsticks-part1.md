@@ -1,6 +1,6 @@
 # 家人的筷子~#1
 
-![](/content/img/2017/06/image-2.jpg)
+![](/content/img/2017/06/image-2.webp)
 
 民以食為天
 
@@ -17,15 +17,15 @@
 也覺得<吃飯>這檔子事舒適、容易多了
 (如圖示可以很輕鬆、細緻的夾起一顆米粒)
  
-![](/content/img/2017/06/image-2.jpg) 
+![](/content/img/2017/06/image-2.webp) 
 這幾年 阿公也漸漸有些年歲，拿筷子有些吃力
 我建議他試試看~(所以再買右手筷)
 嗯~ 阿公也覺得用起來省力也靈活多了
-![](/content/img/2017/06/image-3.jpg)
+![](/content/img/2017/06/image-3.webp)
  
  
 我不得不佩服日本人 社會福利上做的很棒
 從食.衣. 住.行上 很細心的照顧著這些年長的需求 
 我也曾買過台製的筷子  但是~感覺上是不用心去製作
-[![IMAG1113](/content/img/2011/12/IMAG1113.jpg)](/content/img/2011/12/IMAG1113.jpg)
+[![IMAG1113](/content/img/2011/12/IMAG1113.webp)](/content/img/2011/12/IMAG1113.webp)
 台灣也慢慢進入高齡社會了，應該可以再加把勁~

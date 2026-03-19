@@ -13,7 +13,7 @@
 **不然為了想滑手機，白費了辛苦的復健呀**
 為此......我買了許多市售各式各樣的手機架
 還是**很難以把手機【架穩】在輪椅桌板上****只能當「低頭族」呀****~****☹**
-![](/content/img/2021/05/img_2891.jpg)
+![](/content/img/2021/05/img_2891.webp)
 腦麻兒子手部的高張力 強到手指幾乎變形 **無法單指動作，只能使用拳頭**?**關節觸控手機螢幕**
 ![未提供說明。](https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.15752-9/189112299_1924537571045246_8563995174880653252_n.jpg?_nc_cat=104&ccb=1-3&_nc_sid=ae9488&_nc_ohc=gN5tJFaofvoAX_uCnDM&_nc_ht=scontent.ftpe8-4.fna&oh=94da4065df49eb452d4d5cd139ce83ad&oe=60CED3A8)
  
@@ -40,7 +40,7 @@
 **球頭要多大****..****、手臂多深入到桌板****..****、需要什麼角度，要長、要短，它全都有。**
 **因為他們是製造端，****有很多的相關配件****都可以配對得起來**
 **所以團隊建議我們試用的夾具有：****(1) C****型夾** **(2)****萬向關節** **(3)** **手機架**
-![](/content/img/2021/05/kupo-1.png)     ![未提供說明。](https://scontent.ftpe8-1.fna.fbcdn.net/v/t1.15752-9/p1080x2048/186466531_110931354406391_4384397885458913083_n.jpg?_nc_cat=109&ccb=1-3&_nc_sid=ae9488&_nc_ohc=Yrc9URMPLdsAX9So23T&_nc_ht=scontent.ftpe8-1.fna&tp=6&oh=430942d27b2c933b995113d3eb767c4f&oe=60D1D32C)  ![開啟相片](https://scontent.xx.fbcdn.net/v/t1.15752-0/s240x240/188985314_165141088877023_6556858392103539329_n.jpg?_nc_cat=108&ccb=1-3&_nc_sid=58c789&_nc_ohc=W-C7teW7dL4AX-Rqov7&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&tp=7&oh=8b1d5caedb7d87eb61cdfa607b6fa826&oe=60D05C14)
+![](/content/img/2021/05/kupo-1.webp)     ![未提供說明。](https://scontent.ftpe8-1.fna.fbcdn.net/v/t1.15752-9/p1080x2048/186466531_110931354406391_4384397885458913083_n.jpg?_nc_cat=109&ccb=1-3&_nc_sid=ae9488&_nc_ohc=Yrc9URMPLdsAX9So23T&_nc_ht=scontent.ftpe8-1.fna&tp=6&oh=430942d27b2c933b995113d3eb767c4f&oe=60D1D32C)  ![開啟相片](https://scontent.xx.fbcdn.net/v/t1.15752-0/s240x240/188985314_165141088877023_6556858392103539329_n.jpg?_nc_cat=108&ccb=1-3&_nc_sid=58c789&_nc_ohc=W-C7teW7dL4AX-Rqov7&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&tp=7&oh=8b1d5caedb7d87eb61cdfa607b6fa826&oe=60D05C14)
 **完全穩重的站立著，重點是****....****不會因為觸控螢幕而晃動**
 我自己有散光，對於晃動的螢幕，是很介意，不能接受的
 但是....**(1)****這****款****C****型夾****(****黃色那一塊****)** **有夠堅固****...****上網查了一下，這是有通過****TUV** **安全認證**

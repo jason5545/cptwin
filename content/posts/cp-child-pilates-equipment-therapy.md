@@ -21,7 +21,7 @@
 
 是會出現局部肌肉緊繃、僵硬情形，用力按壓痛點時，會引發局部肌肉抽動，並將疼痛傳導到別處肌肉，甚至可能出現全身性疼痛。)
 
-[![IMAG1145](/content/img/2013/08/IMAG1145.jpg)](/content/img/2013/08/IMAG1145.jpg)
+[![IMAG1145](/content/img/2013/08/IMAG1145.webp)](/content/img/2013/08/IMAG1145.webp)
 
 **2).與物理治療的徒手(辛苦了~治療師的手)**
 
@@ -33,11 +33,11 @@
 
 **並適度慢慢地酌予增加重量與調整**
 
-[![IMAG1147](/content/img/2013/08/IMAG1147.jpg)](/content/img/2013/08/IMAG1147.jpg)
+[![IMAG1147](/content/img/2013/08/IMAG1147.webp)](/content/img/2013/08/IMAG1147.webp)
 
 **弧形板做轉體大肌肉伸展、伏地挺身淺版**
 
-[![IMAG1148](/content/img/2013/08/IMAG1148.jpg)](/content/img/2013/08/IMAG1148.jpg)
+[![IMAG1148](/content/img/2013/08/IMAG1148.webp)](/content/img/2013/08/IMAG1148.webp)
 
 **(對我家肌肉高張力的弟弟來說是伏弧形板上，挺身，手指要全張開)(很難)**
 
@@ -51,7 +51,7 @@
 
 **真的是可以消除整天坐輪椅與身體不便的疲勞耶~**
 
-[![1355219482119](/content/img/2013/08/1355219482119.jpg)](/content/img/2013/08/1355219482119.jpg)
+[![1355219482119](/content/img/2013/08/1355219482119.webp)](/content/img/2013/08/1355219482119.webp)
 
 (照片提供：彭伊君治療師)
 

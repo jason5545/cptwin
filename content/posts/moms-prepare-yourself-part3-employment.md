@@ -11,22 +11,22 @@
 **我們如果可以利用時間去參加職業訓練、或是想創業**
 都有可提供資源服務的地方
 網頁上有由  **勞動部勞動發展署/就業服務科技客服中心**
-![090703](/content/img/2014/09/090703.png)
+![090703](/content/img/2014/09/090703.webp)
 <http://www.taiwanjobs.gov.tw/Internet/Index/List.aspx?uid=746&pid=13&coloerstyleid=3&coloerstyleid_2=2#open>
-[![090701](/content/img/2014/09/090701.png)](/content/img/2014/09/090701.png)
+[![090701](/content/img/2014/09/090701.webp)](/content/img/2014/09/090701.webp)
  
  
 婦女專區網址如下：
 <http://www.ejob.gov.tw/special/woman/Content.aspx?Item=0&ZonFunCde=20070615163059VFPCIA>
-[![090701](/content/img/2014/09/0907011.png)](/content/img/2014/09/0907011.png)
+[![090701](/content/img/2014/09/0907011.webp)](/content/img/2014/09/0907011.webp)
  
 點入裡面有**專頁介紹媽媽們可從事的職業別，並可以做專業培訓**
 <http://www.ejob.gov.tw/special/woman/Content.aspx?Item=0&ZonFunCde=20070629152316RLBYMM>
-[![090702](/content/img/2014/09/090702.png)](/content/img/2014/09/090702.png)
+[![090702](/content/img/2014/09/090702.webp)](/content/img/2014/09/090702.webp)
  
 而且**首頁也很清楚的可以按自己選擇想從哪方面課程、工作訓練、開課訊息、技能檢定、未來的職涯規劃**
 **都可以一覽無遺的找出適合自己想從事的行業**
-**[![090702](/content/img/2014/09/0907021.png)](/content/img/2014/09/0907021.png)**
+**[![090702](/content/img/2014/09/0907021.webp)](/content/img/2014/09/0907021.webp)**
  
  
 或者是
@@ -37,7 +37,7 @@
 也或是可以從拿證照、從網路找資訊
 **我自己也是網路上找到<物流證照>，並試著去考考看**
 <http://www.56job.com.tw/>
-[![090701](/content/img/2014/09/0907012.png)](/content/img/2014/09/0907012.png)
+[![090701](/content/img/2014/09/0907012.webp)](/content/img/2014/09/0907012.webp)
 **身為腦麻兒的媽媽**
 **我看見了別的腦麻媽的韌性與比一般媽媽更有對不同環境的忍受力**
 所以...倘若我們真的想再度就業

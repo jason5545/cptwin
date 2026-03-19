@@ -8,7 +8,7 @@
 (在facebook中有許多人推薦，但是沒人用過
 所以將個人使用經驗分享)
  
-[![DSC_0026](/content/img/2014/01/DSC_0026.jpg)](/content/img/2014/01/DSC_0026.jpg)      [![chair](/content/img/2014/01/chair.jpg)](/content/img/2014/01/chair.jpg)
+[![DSC_0026](/content/img/2014/01/DSC_0026.webp)](/content/img/2014/01/DSC_0026.webp)      [![chair](/content/img/2014/01/chair.webp)](/content/img/2014/01/chair.webp)
  
 它是在4、5年前輔具展上看見的，十分新穎，吸引我的眼光
 廠商展示著，但我.....一見鍾情
@@ -23,10 +23,10 @@
 
 而且他還有姊妹款，可旋轉椅的部分嵌入浴缸旁
 (供想試用浴缸泡澡者方便出入)
-[![DSC_0055-1](/content/img/2014/01/DSC_0055-1.jpg)](/content/img/2014/01/DSC_0055-1.jpg)
+[![DSC_0055-1](/content/img/2014/01/DSC_0055-1.webp)](/content/img/2014/01/DSC_0055-1.webp)
 **獲得**
 **2009年台北國際醫療展創新產品獎**
-![](/content/img/2014/01/1111.png)
+![](/content/img/2014/01/1111.webp)
  
 為了這張椅子 我寧願等半年
 
@@ -40,9 +40,9 @@
 
 (洗澡椅網址)
 
-[![1018](/content/img/2014/01/10181.png)](/content/img/2014/01/10181.png)        [![1018](/content/img/2014/01/1018.png)](/content/img/2014/01/1018.png)
+[![1018](/content/img/2014/01/10181.webp)](/content/img/2014/01/10181.webp)        [![1018](/content/img/2014/01/1018.webp)](/content/img/2014/01/1018.webp)
 
-[![DSC_0055-1](/content/img/2014/01/DSC_0055-1.jpg)](/content/img/2014/01/DSC_0055-1.jpg)
+[![DSC_0055-1](/content/img/2014/01/DSC_0055-1.webp)](/content/img/2014/01/DSC_0055-1.webp)
  
  
  

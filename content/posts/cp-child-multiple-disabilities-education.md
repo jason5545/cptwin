@@ -47,7 +47,7 @@
 **或是［身心障礙資訊服務網］**
 <http://disable.yam.org.tw/node/3786>
 <http://disable.yam.org.tw/node/551>
-![1208](/content/img/2014/12/1208-1.png)
+![1208](/content/img/2014/12/1208-1.webp)
 下面有詳盡的服務電話~~
 愛我們孩子的家長們重要的是~~
 努力為孩子準備好一切，**在我們能力可及之處** 

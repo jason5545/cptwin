@@ -16,13 +16,13 @@
 
 - **拿起一只衣架子**
 - **兩手握住兩端，手與肩等高挺胸、抬頭喔^^**
-- [![DSC_0508](/content/img/2014/02/DSC_0508.jpg)](/content/img/2014/02/DSC_0508.jpg)
+- [![DSC_0508](/content/img/2014/02/DSC_0508.webp)](/content/img/2014/02/DSC_0508.webp)
 - **腳與肩同寬**
 
 - **均勻的握住停留10~15秒**
 - **向左、右轉體**
-- [![DSC_0509](/content/img/2014/02/DSC_0509.jpg)](/content/img/2014/02/DSC_0509.jpg)
-- [![DSC_0510](/content/img/2014/02/DSC_0510.jpg)](/content/img/2014/02/DSC_0510.jpg)
+- [![DSC_0509](/content/img/2014/02/DSC_0509.webp)](/content/img/2014/02/DSC_0509.webp)
+- [![DSC_0510](/content/img/2014/02/DSC_0510.webp)](/content/img/2014/02/DSC_0510.webp)
 - **盡量是身體不跟轉動，只轉動手臂，也就是轉動肋骨以上，腰部以下不要跟著轉動**
 - **並停留10~15秒**
 

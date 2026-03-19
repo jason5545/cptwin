@@ -15,7 +15,7 @@
 
 **在右下角有<文字輸入法>選項，按右鍵，點入<設定值>**
 
-[![0204-1](/content/img/2014/02/0204-1.jpg)](/content/img/2014/02/0204-1.jpg)
+[![0204-1](/content/img/2014/02/0204-1.webp)](/content/img/2014/02/0204-1.webp)
 
 - **step 2**
 
@@ -23,22 +23,22 @@
 
 **就會跑出可點選的<內容>，點入**
 
-[![123](/content/img/2014/02/123.png)](/content/img/2014/02/123.png)
+[![123](/content/img/2014/02/123.webp)](/content/img/2014/02/123.webp)
 
 - **step 4**
 
 **點選<變更輸入字窗及候選字窗字型大小>**
 選定適合的字大小
 有些電腦的自行設定**可以加大120%，或是到200%大喔^^**
-[![0204-2](/content/img/2014/02/0204-2.png)](/content/img/2014/02/0204-2.png)            [![0204-7](/content/img/2014/02/0204-7.png)](/content/img/2014/02/0204-7.png)
+[![0204-2](/content/img/2014/02/0204-2.webp)](/content/img/2014/02/0204-2.webp)            [![0204-7](/content/img/2014/02/0204-7.webp)](/content/img/2014/02/0204-7.webp)
 **step 5**
 
 **5-1**
 
-[![11](/content/img/2014/02/11.png)](/content/img/2014/02/11.png)
+[![11](/content/img/2014/02/11.webp)](/content/img/2014/02/11.webp)
  
 **5-2**
-![111](/content/img/2014/02/111.png)
+![111](/content/img/2014/02/111.webp)
 
 - **step 6**
 
@@ -50,4 +50,4 @@
 **200%特大字體選項，比較新的系統會有200%可選**
 **但...以上路徑不適用於Wndows  10**
 分享給您~
-[![0204-5](/content/img/2014/02/0204-5.png)](/content/img/2014/02/0204-5.png)[![0204-6](/content/img/2014/02/0204-6.png)](/content/img/2014/02/0204-6.png)       [![0204-7](/content/img/2014/02/0204-71.png)](/content/img/2014/02/0204-71.png)
+[![0204-5](/content/img/2014/02/0204-5.webp)](/content/img/2014/02/0204-5.webp)[![0204-6](/content/img/2014/02/0204-6.webp)](/content/img/2014/02/0204-6.webp)       [![0204-7](/content/img/2014/02/0204-71.webp)](/content/img/2014/02/0204-71.webp)

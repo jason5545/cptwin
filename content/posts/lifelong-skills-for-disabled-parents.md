@@ -15,7 +15,7 @@
 所以在修改衣服或需要特製一些東西
 很難去找到有人願意幫忙修改
 我呢??  也為了兒子手汗，摩擦桌板上的合成片面的破損老舊傷腦筋
-![](/content/img/2021/02/Image-4.png)
+![](/content/img/2021/02/Image-4.webp)
 某日從朋友口得知在**桃園有一群身障孩童媽媽們**利用零碎時間
 **跟專業老師學習操作「工業用」縫紉機技術，從練習車縫到有成品完成**
 **進而可以提供專業車縫修改衣物服務  這真值得鼓勵呀**
@@ -46,22 +46,22 @@
 
 **特別吧!!!**
 
-![](/content/img/2021/02/Image-3.png)
+![](/content/img/2021/02/Image-3.webp)
 所以..在過年後的沒多久，在您換季的時候，如果有「穿不下」的牛仔上衣、牛仔褲
 歡迎寄送到【萱藝新知關懷協會】他們歡迎丹寧布回收喔
 ![未提供說明。](https://scontent.ftpe7-3.fna.fbcdn.net/v/t1.15752-9/152091841_884784242356023_728176936310251502_n.jpg?_nc_cat=108&ccb=3&_nc_sid=ae9488&_nc_ohc=E1-Q5kctdqUAX-YD77c&_nc_ht=scontent.ftpe7-3.fna&oh=871d0e9c16cd07b74a6ba7b787120391&oe=6058AD0B)  ![未提供說明。](https://scontent.ftpe7-2.fna.fbcdn.net/v/t1.15752-9/152527835_750306015612450_2069428630721728310_n.jpg?_nc_cat=104&ccb=3&_nc_sid=ae9488&_nc_ohc=a5ldgH96BlIAX9g4cPa&_nc_ht=scontent.ftpe7-2.fna&oh=c9ecf7612665c1c68c814eede352fb8c&oe=6056BB50)
 當然**他們在收到包裹裡的牛仔衣物時， 第一道就是篩選，接著清洗、消毒**
 **整理、裁剪，從中也學習、教導怎麼裁選料材、取樣、備料，製圖、車縫技巧、熨燙**
 **才能做出創意車縫出成品**
-![](/content/img/2021/02/Image-5.png)
+![](/content/img/2021/02/Image-5.webp)
 當然..如果有需要訂製或特製一些特別的東西
 他們也可**以「客製個別化」處理**喔
 想想兒子那一塊有點「特別」的桌板
 **(因為桌板裡面，多包覆了一層記憶泡棉，觸感很好，他很愛)**
 但是已有磨損情況下
-![](/content/img/2021/02/comfort-桌板.png)
+![](/content/img/2021/02/comfort-桌板.webp)
 我找了【萱藝新知關懷協會】幫忙，請他們幫設想出一款漂亮又可以保護的外套
-![](/content/img/2021/02/Image-4.png)  ![未提供說明。](https://scontent.ftpe7-1.fna.fbcdn.net/v/t1.15752-9/152057415_2822182954673235_6924023152308473863_n.jpg?_nc_cat=110&ccb=3&_nc_sid=ae9488&_nc_ohc=n-9Jb8nsy5QAX8XWQJg&_nc_ht=scontent.ftpe7-1.fna&oh=d367c59f93fb44c2738541a8bd859ede&oe=6055F967)
+![](/content/img/2021/02/Image-4.webp)  ![未提供說明。](https://scontent.ftpe7-1.fna.fbcdn.net/v/t1.15752-9/152057415_2822182954673235_6924023152308473863_n.jpg?_nc_cat=110&ccb=3&_nc_sid=ae9488&_nc_ohc=n-9Jb8nsy5QAX8XWQJg&_nc_ht=scontent.ftpe7-1.fna&oh=d367c59f93fb44c2738541a8bd859ede&oe=6055F967)
 結果...不**旦穿上美美的外套，而且可以客製下**
 **在我想要的地方車縫上兒子想加東西時，使用的毛面「魔鬼氈」**
 甚至...要**製作不同的收納包、特製輪椅或特製推車上想加上美美的鈎袋、修改衣褲成魔鬼氈方便穿脫**
@@ -88,6 +88,6 @@
 **萱藝新知關懷協會收**
 **0972195186**
  
-**臉書搜尋：![](/content/img/2021/02/Image-5-1.png)**
+**臉書搜尋：![](/content/img/2021/02/Image-5-1.webp)**
 **官方網址：https://reurl.cc/L0A28a**
 **也有line可加好友喔**

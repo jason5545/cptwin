@@ -50,16 +50,16 @@
 讓我們一起為美好進步的明日努力
  
 歡迎下載**【友善台北好餐廳】**
-[![Screenshot_2015-08-16-22-19-57](/content/img/2015/08/Screenshot_2015-08-16-22-19-57.png)](/content/img/2015/08/Screenshot_2015-08-16-22-19-57.png)
+[![Screenshot_2015-08-16-22-19-57](/content/img/2015/08/Screenshot_2015-08-16-22-19-57.webp)](/content/img/2015/08/Screenshot_2015-08-16-22-19-57.webp)
 **適用於孕婦、嬰兒車、年長者、行動不便者、視障者、需要聽力協助者、無障礙環境者....**
-[![Screenshot_2015-08-16-22-33-54](/content/img/2015/08/Screenshot_2015-08-16-22-33-54.png)](/content/img/2015/08/Screenshot_2015-08-16-22-33-54.png)
-[![DSC_2124](/content/img/2015/08/DSC_2124.jpg)](/content/img/2015/08/DSC_2124.jpg)(上課地點寬敞)
+[![Screenshot_2015-08-16-22-33-54](/content/img/2015/08/Screenshot_2015-08-16-22-33-54.webp)](/content/img/2015/08/Screenshot_2015-08-16-22-33-54.webp)
+[![DSC_2124](/content/img/2015/08/DSC_2124.webp)](/content/img/2015/08/DSC_2124.webp)(上課地點寬敞)
 
 連結活動官網：
 
 [www.OurCityLove.org](http://www.OurCityLove.org)
 
-[![081601](/content/img/2015/08/081601.png)](/content/img/2015/08/081601.png)      [![081601](/content/img/2015/08/0816011.png)](/content/img/2015/08/0816011.png)
+[![081601](/content/img/2015/08/081601.webp)](/content/img/2015/08/081601.webp)      [![081601](/content/img/2015/08/0816011.webp)](/content/img/2015/08/0816011.webp)
 
 服務專線：
 

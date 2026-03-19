@@ -4,7 +4,7 @@
  [家人的筷子](/life-stories/family-chopsticks-part1/)
 這雙筷子得到很多迴響，**每一位借用過的朋友都說<讚>**
 這筷子也已經用了6年，(有點年紀了)
-[![DSC_0680](/content/img/2014/02/DSC_0680.jpg)](/content/img/2014/02/DSC_0680.jpg)
+[![DSC_0680](/content/img/2014/02/DSC_0680.webp)](/content/img/2014/02/DSC_0680.webp)
  
 本想在去年就想請<代購網>購入，但是(2014年)日幣實在太高了
 最近日幣下來了，正想再買.....
@@ -20,21 +20,21 @@
 
 **衛生福利部社會及家庭署多功能輔具資源整合推廣中心（國立陽明大學ICF暨輔助科技研究中心)**
 
-[![0727](/content/img/2014/02/0727.png)](/content/img/2014/02/0727.png)
+[![0727](/content/img/2014/02/0727.webp)](/content/img/2014/02/0727.webp)
 
   網址如下:
 [http://repat.sfaa.gov.tw/07product/pro\_a\_main.asp?t=2&id=4508](http://repat.sfaa.gov.tw/07product/pro_a_main.asp?t=2&id=4508)
 日本筷子原始公司的圖檔、影片檔如下：
 **目前日幣下跌，若是託友人去日本買也會找一下喔**
 **(找一下他們的門市，要專門的『福祉商店』問一下，不是每個地方都有喔**)
-[![0727](/content/img/2014/02/07271.png)](/content/img/2014/02/07271.png)
+[![0727](/content/img/2014/02/07271.webp)](/content/img/2014/02/07271.webp)
  
 youtube檔
 <http://www.youtube.com/watch?v=LN09z9AJ6KM&index=11&list=UU6dOcGfKYZ5pxwlP1QgxPoA>
  
 而國內目前知道的代理商如：
 樂齡網：<https://www.ez66.com.tw/TW/%E6%97%A5%E6%9C%AC%E9%80%B2%E5%8F%A3%E9%A0%82%E7%B4%9A%E9%80%B2%E9%A3%9F%E8%BC%94%E5%8A%A9%E7%AD%B7>
-![](/content/img/2014/02/2018輔具展QR.png)
+![](/content/img/2014/02/2018輔具展QR.webp)
 **龍欣興業有限公司** [http://www.nibon.com.tw/](http://www.nibon.com.tw/) 
 或是
 **台灣福康輔具租賃股份有限公司**[http://www.tfk.com.tw/product\_7-p10.htm](http://www.tfk.com.tw/product_7-p10.htm)
