@@ -31,4 +31,4 @@
  
 附上只有局部的電腦「候選字」設定 文章分享
  
-http://cptwin.com/2014/02/04/年紀大了老花了-分享新解之一/
+[分享新解之一](/life-stories/windows-font-size-settings-part1/)

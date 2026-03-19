@@ -15,7 +15,7 @@
  
 這一程式**2017.01.20****版有更豐富的圖示、更多清楚的資訊版本**
 (小編曾介紹一個很實用、用餐愉快之【友善台北好捷運】APP應用程式更新於2016.02.07~~#2.2)
-<http://cptwin.com/2016/02/07/%e4%bb%8b%e7%b4%b9%e4%b8%80%e5%80%8b%e5%be%88%e5%af%a6%e7%94%a8%e3%80%81%e7%94%a8%e9%a4%90%e6%84%89%e5%bf%ab%e4%b9%8b%e3%80%90%e5%8f%8b%e5%96%84%e5%8f%b0%e5%8c%97%e5%a5%bd%e6%8d%b7%e9%81%8b%e3%80%91ap/>
+[友善台北好捷運 #2.2](/education/friendly-taipei-mrt-app-update-2016/)
 更有新的提示與訊息喔~~
 **我們****經由****APP****自動定位****離最近的捷運站，由****自動定位系統辨識****，提供詳盡的「無障礙友善服務資訊」**
 建議可使用「[Taipei Free](https://www.google.com.tw/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwih7dm9orLSAhWEj5QKHUe2AhEQFggYMAA&url=http%3A%2F%2Fwww.tpe-free.taipei.gov.tw%2F&usg=AFQjCNHSIy6n391Ut1-8spezIMJU2dvXSQ) [臺北公眾區免費無線上網](https://www.google.com.tw/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwih7dm9orLSAhWEj5QKHUe2AhEQFggYMAA&url=http%3A%2F%2Fwww.tpe-free.taipei.gov.tw%2F&usg=AFQjCNHSIy6n391Ut1-8spezIMJU2dvXSQ)」

@@ -17,7 +17,7 @@
 **依條件快速找到符合適配、合適預算內的輔具**
 **(小編也曾經推薦過)**
 
-https://cptwin.com/2017/05/21/%E4%BE%86%E4%BB%8B%E7%B4%B9%E4%B8%80%E5%80%8B%E6%95%B4%E5%90%88%E5%9C%8B%E5%85%A7%E8%BC%94%E5%85%B7%E5%B9%B3%E5%8F%B0%E7%B6%B2%E7%AB%99%E3%80%8C%E8%BC%94%E5%85%B7%E5%AE%B6-athome%E3%80%8D/
+/parenting/assistive-device-athome-website/
  
 而更重要的~~隨著資訊爆炸人手一機的手持裝置時代到來
 輔具家也跟上大量快速腳步，在免費傳訊應用程式「*line*」
