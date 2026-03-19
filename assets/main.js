@@ -300,15 +300,51 @@ const GiscusManager = {
     script.setAttribute('data-lang', this.CONFIG.lang);
     script.setAttribute('data-loading', this.CONFIG.loading);
 
+    // 監聽 Giscus 錯誤訊息（例如未安裝 App 或 Discussions 未啟用）
+    const handleGiscusMessage = (event) => {
+      if (event.origin !== 'https://giscus.app') return;
+      const data = event.data;
+      if (data && data.giscus && data.giscus.error) {
+        console.error('Giscus 錯誤:', data.giscus.error);
+        if (loading) loading.style.display = 'none';
+        if (fallback) fallback.hidden = false;
+        window.removeEventListener('message', handleGiscusMessage);
+      }
+    };
+    window.addEventListener('message', handleGiscusMessage);
+
+    // 超時機制：若 Giscus iframe 未在 10 秒內載入，顯示備用連結
+    const timeout = setTimeout(() => {
+      const iframe = document.querySelector('iframe.giscus-frame');
+      if (!iframe) {
+        console.warn('Giscus 載入超時');
+        if (loading) loading.style.display = 'none';
+        if (fallback) fallback.hidden = false;
+        window.removeEventListener('message', handleGiscusMessage);
+      }
+    }, 10000);
+
     // 載入成功
     script.onload = () => {
       this.scriptLoaded = true;
-      if (loading) loading.style.display = 'none';
+      // 等待 iframe 實際渲染後才隱藏 loading
+      const checkIframe = setInterval(() => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (iframe) {
+          clearInterval(checkIframe);
+          clearTimeout(timeout);
+          if (loading) loading.style.display = 'none';
+        }
+      }, 200);
+      // 最多等 8 秒
+      setTimeout(() => clearInterval(checkIframe), 8000);
     };
 
     // 載入失敗
     script.onerror = () => {
-      console.error('Giscus 載入失敗');
+      console.error('Giscus 腳本載入失敗');
+      clearTimeout(timeout);
+      window.removeEventListener('message', handleGiscusMessage);
       if (loading) loading.style.display = 'none';
       if (fallback) fallback.hidden = false;
     };
