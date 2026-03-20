@@ -17,7 +17,7 @@
 **依條件快速找到符合適配、合適預算內的輔具**
 **(小編也曾經推薦過)**
 
-/parenting/assistive-device-athome-website/
+[輔具家AT Home 網站介紹](/parenting/assistive-device-athome-website/)
  
 而更重要的~~隨著資訊爆炸人手一機的手持裝置時代到來
 輔具家也跟上大量快速腳步，在免費傳訊應用程式「*line*」
@@ -42,7 +42,7 @@
 ![](/content/img/2018/04/08101-8.webp)     ![](/content/img/2018/04/08101-10.webp)
 只要隨手掃一下QR code
 ![](/content/img/2018/04/08101-2.webp)(這是輔具家QR code)
-或是我給您連結直接加為好友  [https://goo.gl/97ipkC](http://輔具家)
+或是我給您連結直接加為好友  [https://goo.gl/97ipkC](https://goo.gl/97ipkC)
 或是從line @搜尋官方帳號［***line@athome.taiwan***］即可
 要找輔具、輔具門市也可找 ［***line@athome.taiwan***］
 **快來加(家)一下吧~~**

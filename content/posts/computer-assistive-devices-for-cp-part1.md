@@ -46,5 +46,3 @@
 |  |
 | --- |
 | [特殊教育法](https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=H0080027) |
-
-」

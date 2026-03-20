@@ -18,7 +18,7 @@
  
 若是申請直聘外傭阿姨，可以在**直聘中心下載所需準備的文件**
 
-- **h[ttp://dhsc.wda.gov.tw/download.html](http://dhsc.wda.gov.tw/download.html)**
+- **[http://dhsc.wda.gov.tw/download.html](http://dhsc.wda.gov.tw/download.html)**
 - **(家庭看護工工作(重新)招募檢查表)   (圖1)**
 - **家庭看護工重新招募申請書   (圖2)**
 - **聲明書 中英文版(菲律賓)、中印文版(印尼)或是中泰文板(泰國)    (圖3)**

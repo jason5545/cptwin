@@ -20,8 +20,8 @@
 多固定是每個月地1、3周或2、4週的週五11：30~13：30
 **只限定在公告時間內購買喔**
 不過優惠真的不小喔
-**[森永福利社](http://森永福利社)http://www.morinaga.com.tw/home/shop
-或是：臉書｢**台灣森永製菓股份有限公司 」**<https://www.facebook.com/morinaga.tw>**
+**[森永福利社](http://www.morinaga.com.tw/home/shop)**
+或是：臉書｢台灣森永製菓股份有限公司」<https://www.facebook.com/morinaga.tw>
  
 下列是2025年的福利社開放時間喔
  
@@ -35,11 +35,10 @@
 給同學或孩子當獎勵品
 **價錢大概是市價的65折~8折，東西多、價格實惠**
 
-![](/content/img/2016/12/dsc_0035-300x169.webp)      ![「森永福利社」的圖片搜尋結果](http://library.taiwanschoolnet.org/cyberfair2006/henrydog/photo/a7_2_4_s.jpg)
+![「森永福利社」的圖片搜尋結果](http://library.taiwanschoolnet.org/cyberfair2006/henrydog/photo/a7_2_4_s.jpg)
 在前陣子食品風暴中要求｢食品安全｣的標準下
 森永牛奶糖公司產品仍然挺挺屹立於「食品安全」中經的起考驗，真是老牌子、好產品呀
 而且也慢慢的有跟上日本森永公司腳步也開發出一些多元新產品**「森永牛奶糖牛乳飲品」喔...**
-![](/content/img/2017/02/01-300x186.webp)
 **更推薦的是...可組團參觀糖果製作包裝過程**
 不過是**有限定資格喔  (歡迎國小(含)以下在校生(幼稚園、托兒所---限4足歲以上)**
 且參觀「森永工廠」後也有贈送每一位小朋友小商品
@@ -47,4 +46,3 @@
 給予參觀工廠訊息連結分享您  <http://www.morinaga.com.tw/home/visit>
 歡迎大家來
  
-![](/content/img/2016/12/122606-300x257.webp)

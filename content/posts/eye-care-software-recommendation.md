@@ -30,7 +30,7 @@
 所以要使用設定和安裝移除的鎖定功能，**請確實記住所設定的密碼**
 **否則就打不開手機設定功能和無法把APP移除**
 **它最多可以設定1~3個時段 例如AM8-AM10 ， PM2-PM6， PM8-PM10**
-[https://play.google.com/store/apps/details?id=com.demo.timelock&hl=zh\_TW](%20https://play.google.com/store/apps/details?id=com.demo.timelock&hl=zh_TW)
+[https://play.google.com/store/apps/details?id=com.demo.timelock&hl=zh\_TW](https://play.google.com/store/apps/details?id=com.demo.timelock&hl=zh_TW)
  
 另外，也有針對 **ipad** 開發了一款APP
 <TimeReminder+ >

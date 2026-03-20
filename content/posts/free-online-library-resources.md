@@ -2,11 +2,10 @@
 
 您知道嗎??
 只要您**是台北市地區的學校小學生，或是大專學院**
-(詳細學校附有超連結 [http://ebook.hyread.com.tw/hyreadLib.jsp]( http://ebook.hyread.com.tw/hyreadLib.jsp)  )
+(詳細學校附有超連結 [http://ebook.hyread.com.tw/hyreadLib.jsp](http://ebook.hyread.com.tw/hyreadLib.jsp)  )
 都可以上**<HyRead ebook>電子書網站**
 **免費借書閱讀**
 可隨時使用身邊的閱讀器**(如：PC電腦、筆電、平板電腦、手機)**
-[![0615](/content/img/2014/06/0615-300x168.webp)](/content/img/2014/06/0615.webp)
 <http://tpedu.ebook.hyread.com.tw/index.jsp>
 **作線上或離線閱讀**
 
@@ -31,7 +30,6 @@
 **開啟HyRead ebook 首頁，只要輸入帳號、密碼**
 就可以瀏覽在該圖書館購置的書喔~
  
-![0615](/content/img/2014/06/0615-300x168.webp)
  
 **既可省$$、省紙張、省運費、又環保**
 **可做標示、如果放著等下次再閱讀時，有紀錄可循易找**

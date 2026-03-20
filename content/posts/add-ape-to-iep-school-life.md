@@ -71,4 +71,4 @@
 都可以跟老師或是學校巡迴治療師討論上「體育課內容」
 **真是一舉兩得呀~**
 
- http://teachers.dale.nhcue.edu.tw/iep/iep7.htm
+<http://teachers.dale.nhcue.edu.tw/iep/iep7.htm>

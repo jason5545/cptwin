@@ -48,15 +48,15 @@
 - **專業比較心安**
 - **事前與廠商有加【line】溝通良好**
 - **有一年保固**
-- ![未提供說明。](https://scontent.ftpe7-4.fna.fbcdn.net/v/t1.15752-9/307884468_1110314449589094_1991791837253532780_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=ae9488&_nc_ohc=JTRfa4oYgj4AX8kEDJP&_nc_ht=scontent.ftpe7-4.fna&oh=03_AVLGpbRskduiat_-6xZUF9eFJ3ndD3dj6_q6nLVRJGbHIw&oe=6352D406)
+- 
 - **無色無毒無味，對過敏者完全無感**
 - **完工立即檢視成效(有驗收單可比對)**
 - **若有長照資格或身心障礙證明者可申請補助(最高補助$1500/10年)**
   **申請補助時，必須有施作前/後的照片。房屋是自己的(須附上稅單或房屋權狀才能申請補助，若是租賃房屋要取得屋主同意書也可以申請喔!!)**
 - [![](/content/img/2022/09/S__9043980.webp)](/content/img/2022/09/S__9043980.webp)
 - 選擇廠牌時，防滑摩擦係數是最重要的
-  ![未提供說明。](https://scontent.ftpe7-1.fna.fbcdn.net/v/t1.15752-9/307983743_382327037442835_682504181729463481_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=ae9488&_nc_ohc=YDvWHYJjqvcAX9Oc8Sy&_nc_ht=scontent.ftpe7-1.fna&oh=03_AVL91uvQzJM1eHpG4rsM9FkFakWkz592OMuQWAiTMPNzGg&oe=635475D3)(他牌廠商)
-- [![](/content/img/2022/09/11-8.webp)(](/content/img/2022/09/11-8.webp)我使用的廠商)
+  (他牌廠商)
+- [![](/content/img/2022/09/11-8.webp)](/content/img/2022/09/11-8.webp)（我使用的廠商）
 
  
 後來我上網查詢該項產品才知道....(**以下圖文摘自「良品防滑專家-好師傅居家清潔」網站**)

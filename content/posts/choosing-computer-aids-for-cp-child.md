@@ -76,7 +76,7 @@
 
 **服務地區：（信義、南港、內湖、文山）**
 
-**[http://www.diyi.org.tw/diyiat/atpage.aspx?id=7&&groupid= 2](http://www.diyi.org.tw/diyiat/atpage.aspx?id=7&&groupid=%202 )**
+**[http://www.diyi.org.tw/diyiat/atpage.aspx?id=7&groupid=2](http://www.diyi.org.tw/diyiat/atpage.aspx?id=7&groupid=2)**
 
 **台北市西區區電腦輔具評估中心(台大輔具中心)**
 
@@ -110,7 +110,7 @@
 
 **b.破冰專業服務協會**
 
-**[http://www.icebreakerpro.org/21934377492836940736.htm](http://www.icebreakerpro.org/21934377492836940736.html)**
+**[http://www.icebreakerpro.org/21934377492836940736.html](http://www.icebreakerpro.org/21934377492836940736.html)**
 
 **協會名稱：社團法人台灣破冰專業服務協會**
 

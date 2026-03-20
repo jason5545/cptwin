@@ -24,7 +24,7 @@
 國民身分證及同意書。
 以上訊息摘自「中華郵政全球資訊網/客戶服務專區」
 連結郵局「未成年人開戶需要什麼證件」網址如下：
-[ttps://www.post.gov.tw/post/internet/Customer\_service/index.jsp?ID=16020402&defaultAllOpen=1&sn=1F037A34-8E0D-4A80-ACB1-AB54FBE5533B](https://www.post.gov.tw/post/internet/Customer_service/index.jsp?ID=16020402&defaultAllOpen=1&sn=1F037A34-8E0D-4A80-ACB1-AB54FBE5533B)
+[https://www.post.gov.tw/post/internet/Customer\_service/index.jsp?ID=16020402&defaultAllOpen=1&sn=1F037A34-8E0D-4A80-ACB1-AB54FBE5533B](https://www.post.gov.tw/post/internet/Customer_service/index.jsp?ID=16020402&defaultAllOpen=1&sn=1F037A34-8E0D-4A80-ACB1-AB54FBE5533B)
  
  
 其實政府與各銀行為了鼓勵年輕人、國人養成儲蓄習慣，讓小資族也能【晉升】為各上市公司【股東】
@@ -41,7 +41,7 @@
  
 https://rich01.com/dollar-cost-averaging-fee/
 類似的網頁有很多...
-![「定期定額買股的券商證交所」的圖片搜尋結果](https://images.chinatimes.com/newsphoto/2017-08-22/CLIPPING/900/A29A00_T_06_02.jpg)\_
+![「定期定額買股的券商證交所」的圖片搜尋結果](https://images.chinatimes.com/newsphoto/2017-08-22/CLIPPING/900/A29A00_T_06_02.jpg)
 小朋友最期待領到壓歲錢了
 理財專家表示，小孩子很少有機會支配一整筆金錢，過年正是學習理財的最佳時機
 建議家長們

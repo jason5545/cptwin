@@ -46,7 +46,7 @@
 
 **頓然顳顎關節肌肉群與口腔臉部肌肉，竟然有放鬆的感覺**
 
-![](https://pic.sopili.net/pub/emoji/twitter/2/72x72/1f4d6.png)![](https://pic.sopili.net/pub/emoji/twitter/2/72x72/1f4d6.png)題外話學知識'：   
+📖📖題外話學知識'：   
 顳顎關節徵候群、夜間磨牙與咬合板 <https://tpech.gov.taipei/mp109151/News_Content.aspx?n=0496F430C1411365&sms=B0D8FD2859388103&s=2D715C7BBD0A301B>   
 顳顎關節徵候群常用的咬合板，可以緩解睡眠時磨牙狀況，但需自費去牙科作【咬合板】
 
@@ -73,7 +73,7 @@
 這奶嘴的貼文也寫著【有效分散吸吮時口腔內壓】是真的
 
 (真的..才幾天又繃緊到笑容變得『碧素』   
-不能開心的張大嘴  真的很痛苦呀![](https://pic.sopili.net/pub/emoji/twitter/2/72x72/1f616.png)![](https://pic.sopili.net/pub/emoji/twitter/2/72x72/1f616.png)![](https://pic.sopili.net/pub/emoji/twitter/2/72x72/1f616.png)
+不能開心的張大嘴  真的很痛苦呀😖😖😖
 
 在專業彼拉提斯~林怡慧物理治療師提醒時  翻一下教室有一本『凃俐雯醫師』的『筋膜線按摩伸展全書』
 
@@ -107,8 +107,5 @@
 
 **建議可以戴上口罩  這樣一來.......任憑誰也不知道 口罩下是怎回事......**
 
-**![](/content/img/2018/09/0810-2-200x300.webp)**
 
 **謝謝 林怡慧物理治療師 莊頌音物理治療師 彭伊君物理治療師 凃俐雯醫師****指導**
-
-![]()
