@@ -1,4 +1,4 @@
-# 結合資源~整合出懂你的人粉重要的～
+# 結合資源～整合出懂你的人粉重要的～
 
 我的雙胞胎兒子屬重度肢體障礙者
 **因為長期復健....  所以治療師很熟兒子張力與身體的狀況**
@@ -15,7 +15,7 @@
 ![](https://scontent.ftpe8-3.fna.fbcdn.net/v/t1.15752-9/96714559_2396218680675635_7248005823102713856_n.jpg?_nc_cat=107&_nc_sid=b96e70&_nc_oc=AQkm3hy8Rq_B0tnrecnbW4Sn94jSqZPvCjNA0-SnOp1dzqq26uZzSYnC9Mmg1XRuiw8&_nc_ht=scontent.ftpe8-3.fna&oh=36df4395e2064fc7e4cb2ed22fa38fcb&oe=5EDDA476)  ![](https://scontent.ftpe8-3.fna.fbcdn.net/v/t1.15752-9/96512596_2574913486103247_5974851536587587584_n.jpg?_nc_cat=107&_nc_sid=b96e70&_nc_oc=AQnW7TQCb-RcKQwI8oJGKVBc40fCEY9LVMLk5urJ5xsW-oHQh5UoQlcce4VMRj7VqsI&_nc_ht=scontent.ftpe8-3.fna&oh=15bd539a6cd411c33ba2bb9955c4d223&oe=5EDD4A9D) ![](https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.15752-9/96156114_2587412421506557_2615344528726425600_n.jpg?_nc_cat=104&_nc_sid=b96e70&_nc_oc=AQlqYMKqtDFayDGpH1yeN37M9SljbUI7R_b3avQeprOS6l-eMdVyVLzOnhjTRlXrz-k&_nc_ht=scontent.ftpe8-4.fna&oh=d43d7471597ce56215457e1caec1e640&oe=5EDE89A8)
 **但...對家長而言......真的不懂要怎麼跟有資源的輔具服務廠商說明白呀......**
 **如果....錄影起來......再給廠商看...好像也沒有甚麼多大作用**
-**最好的辦法~就是直接溝通**
+**最好的辦法～就是直接溝通**
 (**基本上輔具廠商 一定都有時間到醫院** 
 **所以....**
 **如果可以......跟治療師約在上課時間 (有些治療師無法是因為業務量真的很大)**
@@ -31,13 +31,13 @@
 ## **往往的結果是.....『讓孩子去適應這一項輔具』 而不是依孩子的能力選擇『適配』的輔具**
 
 **所以在選擇權上，當孩子是不知道怎麼去『選』輔具**
-**做家長的~『應該也必須』能感覺出來孩子的感受，並且與治療師共同討論出結果**
+**做家長的～『應該也必須』能感覺出來孩子的感受，並且與治療師共同討論出結果**
 **試用就是『試用』試了用看看，不急著當下決定**
 **多試試，才能決定好不好用，才能決定是不是適用**
 **『試用』不等於『好用』不等於『適用』**
 **當然也可以是**
 **『試用』=『好用』=『適用』**
 **這很重要的決定權，必須是你懂孩子，治療師懂你也懂孩子，輔具廠商懂治療師的『想』**
-**所以充分溝通吧~一定可以找入門的key~**
+**所以充分溝通吧～一定可以找入門的key～**
  
 ![](https://scontent.ftpe8-3.fna.fbcdn.net/v/t1.15752-9/95785126_2989652964452849_4736662802167496704_n.jpg?_nc_cat=106&_nc_sid=b96e70&_nc_oc=AQmnT2gppcJw9toC6M-X96deedJeW-Bqxk1o7DfYa0vsBcqqBZyzbTyTQ8iUeTOYzbs&_nc_ht=scontent.ftpe8-3.fna&oh=689268ac43fb74e8f1bf17113a31b5b6&oe=5EDE099C)

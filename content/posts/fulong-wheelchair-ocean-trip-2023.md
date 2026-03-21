@@ -1,4 +1,4 @@
-# 輪椅族~衝一波...衝向海洋吧~~2023年『福隆輪椅海洋假期』隨行陪伴家屬側記
+# 輪椅族～衝一波...衝向海洋吧～～2023年『福隆輪椅海洋假期』隨行陪伴家屬側記
 
 你有多久沒親近海洋了??
 自從年輕時期走過幾次海邊後，再次親近海洋是跟著身心障礙孩子一起出遊
@@ -15,7 +15,7 @@
 所以**人力支援與資源絕對是重度肢體障礙者投入參與一項活動重大指標**
 小編是臉書「[**新北市輪椅夢公園**](https://www.facebook.com/wheelchairdreamparknewtaipeicity?__cft__[0]=AZUCaH8f5UaHRqQCu4NXYXTVMb44bPwvJFze5iF-ONcva1iDbnjpBtFl_xeYjCEIoc1FjWXhTEI7kKVPNAFjkLQjZ-lqeN6Kw5_GGV4GS6G7bcPBXx49718jnfFKAW63SeuJ73dqHUjLUm_Nm-REdYrh-nxKS_1genBuYcX8ZlQtc7k3qGyAqj3IIRFUmrNBIV4&__tn__=-UC%2CP-R)」粉絲之一，經常看著許多身障朋友都踏入由「[**新北市輪椅夢公園**](https://www.facebook.com/wheelchairdreamparknewtaipeicity?__cft__[0]=AZUCaH8f5UaHRqQCu4NXYXTVMb44bPwvJFze5iF-ONcva1iDbnjpBtFl_xeYjCEIoc1FjWXhTEI7kKVPNAFjkLQjZ-lqeN6Kw5_GGV4GS6G7bcPBXx49718jnfFKAW63SeuJ73dqHUjLUm_Nm-REdYrh-nxKS_1genBuYcX8ZlQtc7k3qGyAqj3IIRFUmrNBIV4&__tn__=-UC%2CP-R)」主辦的各項活動
 各式新鮮的活動：舉凡：輪椅攀樹體驗、輪椅飛盤+輪椅漆彈體驗營(好酷喔)、輪椅冰壺、輪椅壘球、輪椅籃球、射箭、輪椅飛盤、地板冰壺、電子飛鏢、輪椅擊劍，常態性的手搖車、與地板滾球、輪椅羽球
-(以上內文摘自臉書~「[**新北市輪椅夢公園**](https://www.facebook.com/wheelchairdreamparknewtaipeicity?__cft__[0]=AZUCaH8f5UaHRqQCu4NXYXTVMb44bPwvJFze5iF-ONcva1iDbnjpBtFl_xeYjCEIoc1FjWXhTEI7kKVPNAFjkLQjZ-lqeN6Kw5_GGV4GS6G7bcPBXx49718jnfFKAW63SeuJ73dqHUjLUm_Nm-REdYrh-nxKS_1genBuYcX8ZlQtc7k3qGyAqj3IIRFUmrNBIV4&__tn__=-UC%2CP-R)」粉絲專頁)
+(以上內文摘自臉書～「[**新北市輪椅夢公園**](https://www.facebook.com/wheelchairdreamparknewtaipeicity?__cft__[0]=AZUCaH8f5UaHRqQCu4NXYXTVMb44bPwvJFze5iF-ONcva1iDbnjpBtFl_xeYjCEIoc1FjWXhTEI7kKVPNAFjkLQjZ-lqeN6Kw5_GGV4GS6G7bcPBXx49718jnfFKAW63SeuJ73dqHUjLUm_Nm-REdYrh-nxKS_1genBuYcX8ZlQtc7k3qGyAqj3IIRFUmrNBIV4&__tn__=-UC%2CP-R)」粉絲專頁)
 這些輪椅族也可以玩的運動，不再只是刻板印象的地板滾球，而是種類繁多，真的琳琅滿目呀
 在端午前後「[**新北市輪椅夢公園**](https://www.facebook.com/wheelchairdreamparknewtaipeicity?__cft__[0]=AZUCaH8f5UaHRqQCu4NXYXTVMb44bPwvJFze5iF-ONcva1iDbnjpBtFl_xeYjCEIoc1FjWXhTEI7kKVPNAFjkLQjZ-lqeN6Kw5_GGV4GS6G7bcPBXx49718jnfFKAW63SeuJ73dqHUjLUm_Nm-REdYrh-nxKS_1genBuYcX8ZlQtc7k3qGyAqj3IIRFUmrNBIV4&__tn__=-UC%2CP-R)」與財團法人明怡基金會舉辦【福隆海洋假期服務計畫】
 免費招待每梯次20位，共400位身心障礙朋友，進行為期一天的度假行程

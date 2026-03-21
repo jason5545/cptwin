@@ -10,13 +10,13 @@
 想找個服務人員問問出入口或是無障礙電梯...想其他服務幫幫忙，又覺得有點「靦腆｣ 不太敢啟齒..XD
 沒關係...**下載這【友善台北好捷運】****APP****應用程式，即可幫忙解決一切疑慮**
 
-## **是免費的喔****~~**
+## **是免費的喔****～～**
 
  
 這一程式**2017.01.20****版有更豐富的圖示、更多清楚的資訊版本**
-(小編曾介紹一個很實用、用餐愉快之【友善台北好捷運】APP應用程式更新於2016.02.07~~#2.2)
+(小編曾介紹一個很實用、用餐愉快之【友善台北好捷運】APP應用程式更新於2016.02.07～～#2.2)
 [友善台北好捷運 #2.2](/education/friendly-taipei-mrt-app-update-2016/)
-更有新的提示與訊息喔~~
+更有新的提示與訊息喔～～
 **我們****經由****APP****自動定位****離最近的捷運站，由****自動定位系統辨識****，提供詳盡的「無障礙友善服務資訊」**
 建議可使用「[Taipei Free](https://www.google.com.tw/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwih7dm9orLSAhWEj5QKHUe2AhEQFggYMAA&url=http%3A%2F%2Fwww.tpe-free.taipei.gov.tw%2F&usg=AFQjCNHSIy6n391Ut1-8spezIMJU2dvXSQ) [臺北公眾區免費無線上網](https://www.google.com.tw/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwih7dm9orLSAhWEj5QKHUe2AhEQFggYMAA&url=http%3A%2F%2Fwww.tpe-free.taipei.gov.tw%2F&usg=AFQjCNHSIy6n391Ut1-8spezIMJU2dvXSQ)」
 
@@ -46,7 +46,7 @@
 
 ![](/content/img/2017/02/img_0586.webp)     ![](/content/img/2017/02/01-2.webp)圖7
 
-冰友呀~~您來台北坐北捷時，**一定要來下載者免費好用又有效率的智慧****&****聰明的****APP****程式**
+冰友呀～～您來台北坐北捷時，**一定要來下載者免費好用又有效率的智慧****&****聰明的****APP****程式**
 
 **它更連結了**
 
