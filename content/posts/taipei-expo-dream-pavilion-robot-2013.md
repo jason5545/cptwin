@@ -3,28 +3,44 @@
 2013的8月與學長、老師一起參觀，為期一個月的花博行動夢想館
 
 [![IMAG1120](/content/img/2013/08/IMAG1120.webp)](/content/img/2013/08/IMAG1120.webp)
+
 購票訊息：
+
 <https://ticket.taipeiexpo.org.tw/notemsg/idnote.htm>
 
 [![花博行動夢想館](/content/img/2013/08/花博行動夢想館1.webp)](/content/img/2013/08/花博行動夢想館1.webp)
+
 也可以順便預約機器人展
+
 [![IMAG1121](/content/img/2013/08/IMAG1121.webp)](/content/img/2013/08/IMAG1121.webp)
+
 夢想館一趟約需1.2小時   機器人展約1小時
+
 電話：(02)-2182-8886#1
+
 如果，本人是台北市民
+
 可以利用<e-go復康巴士>搭乘，只要下車地點是：<濱江街6號>林安泰古厝對面
+
 就下車步行約1 分鐘可以直接到行動夢想館
+
 到時，拿著手冊到「售票口」領取
  
 本人及陪伴者免費，家屬可於現場售票口購票、拿票，同場進入
  
 夢想館是互動式的展場，
+
 是以ASUS的手機，作為互動介面
+
 入場者拍照後，可經由手機做遊戲互動，並在結束前換成一張「夢想登機證」，
+
 [![IMAG1119](/content/img/2013/08/IMAG1119.webp)](/content/img/2013/08/IMAG1119.webp)
+
 在回家後可以下載與遊戲的過程
+
 [![花博行動夢想館-1](/content/img/2013/08/花博行動夢想館-1.webp)](/content/img/2013/08/花博行動夢想館-1.webp)
 [![花博行動夢想館](/content/img/2013/08/花博行動夢想館.webp)](/content/img/2013/08/花博行動夢想館.webp)
  
 <http://www.dreams.tw/main.html#filter=.journey>
+
 非常值得一遊，大推喔!!!= 目

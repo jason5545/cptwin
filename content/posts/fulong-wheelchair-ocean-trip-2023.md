@@ -1,26 +1,47 @@
 # 輪椅族～衝一波...衝向海洋吧～～2023年『福隆輪椅海洋假期』隨行陪伴家屬側記
 
 你有多久沒親近海洋了??
+
 自從年輕時期走過幾次海邊後，再次親近海洋是跟著身心障礙孩子一起出遊
+
 孩子出門行動皆須以「輪椅代步」，幾乎只能在陸地上移動
+
 最靠近陸地中，最有水的地點是醫院的「水療池」了
+
 在每一項有關身心障礙活動報名前，許多朋友問起我
+
 常常看見我們只出現在某一特定地點或活動中，為何不帶孩子出遠門走走
+
 孰不知...家中有手無抓握能力、腳無移動能力之**重度肢體障礙孩童，只有利用「大眾運輸工具」移動的孩子家長的我**
+
 **總擔心活動場域的硬體設施是否足夠，(例如：轉移位設施、辛苦的志工人力、交通運輸轉換...)**
+
 深深知道有「重度肢體障礙者」出門的不便，很怕因為自家的不便成為主辦方的負擔
+
 所以孩子在選擇參加各項活動中，都被我主動【刪除】
+
 不是我限制孩子的活動，而是活動的【整體性規劃】；同屬【肢體障礙程度】，也因為程度之差異而限制活動流暢性
+
 更**因為是「障礙程度嚴重族群」，因此在活動中受環境限制，反而..更是難投入活動參與的弱勢者**
+
 所以**人力支援與資源絕對是重度肢體障礙者投入參與一項活動重大指標**
+
 小編是臉書「[**新北市輪椅夢公園**](https://www.facebook.com/wheelchairdreamparknewtaipeicity?__cft__[0]=AZUCaH8f5UaHRqQCu4NXYXTVMb44bPwvJFze5iF-ONcva1iDbnjpBtFl_xeYjCEIoc1FjWXhTEI7kKVPNAFjkLQjZ-lqeN6Kw5_GGV4GS6G7bcPBXx49718jnfFKAW63SeuJ73dqHUjLUm_Nm-REdYrh-nxKS_1genBuYcX8ZlQtc7k3qGyAqj3IIRFUmrNBIV4&__tn__=-UC%2CP-R)」粉絲之一，經常看著許多身障朋友都踏入由「[**新北市輪椅夢公園**](https://www.facebook.com/wheelchairdreamparknewtaipeicity?__cft__[0]=AZUCaH8f5UaHRqQCu4NXYXTVMb44bPwvJFze5iF-ONcva1iDbnjpBtFl_xeYjCEIoc1FjWXhTEI7kKVPNAFjkLQjZ-lqeN6Kw5_GGV4GS6G7bcPBXx49718jnfFKAW63SeuJ73dqHUjLUm_Nm-REdYrh-nxKS_1genBuYcX8ZlQtc7k3qGyAqj3IIRFUmrNBIV4&__tn__=-UC%2CP-R)」主辦的各項活動
+
 各式新鮮的活動：舉凡：輪椅攀樹體驗、輪椅飛盤+輪椅漆彈體驗營(好酷喔)、輪椅冰壺、輪椅壘球、輪椅籃球、射箭、輪椅飛盤、地板冰壺、電子飛鏢、輪椅擊劍，常態性的手搖車、與地板滾球、輪椅羽球
+
 (以上內文摘自臉書～「[**新北市輪椅夢公園**](https://www.facebook.com/wheelchairdreamparknewtaipeicity?__cft__[0]=AZUCaH8f5UaHRqQCu4NXYXTVMb44bPwvJFze5iF-ONcva1iDbnjpBtFl_xeYjCEIoc1FjWXhTEI7kKVPNAFjkLQjZ-lqeN6Kw5_GGV4GS6G7bcPBXx49718jnfFKAW63SeuJ73dqHUjLUm_Nm-REdYrh-nxKS_1genBuYcX8ZlQtc7k3qGyAqj3IIRFUmrNBIV4&__tn__=-UC%2CP-R)」粉絲專頁)
+
 這些輪椅族也可以玩的運動，不再只是刻板印象的地板滾球，而是種類繁多，真的琳琅滿目呀
+
 在端午前後「[**新北市輪椅夢公園**](https://www.facebook.com/wheelchairdreamparknewtaipeicity?__cft__[0]=AZUCaH8f5UaHRqQCu4NXYXTVMb44bPwvJFze5iF-ONcva1iDbnjpBtFl_xeYjCEIoc1FjWXhTEI7kKVPNAFjkLQjZ-lqeN6Kw5_GGV4GS6G7bcPBXx49718jnfFKAW63SeuJ73dqHUjLUm_Nm-REdYrh-nxKS_1genBuYcX8ZlQtc7k3qGyAqj3IIRFUmrNBIV4&__tn__=-UC%2CP-R)」與財團法人明怡基金會舉辦【福隆海洋假期服務計畫】
+
 免費招待每梯次20位，共400位身心障礙朋友，進行為期一天的度假行程
+
 這項活動在網路無遠弗屆下，30個小時一下子就報名額滿
+
 [![](/content/img/2023/10/123.webp)](/content/img/2023/10/123.webp)
+
 看著文宣寫著這項**【輪椅海洋假期】裡的![📌](https://static.xx.fbcdn.net/images/emoji.php/v9/t5/1.5/16/1f4cc.png)行程特色：**
 
 **1.本次水上活動將使用特製之身障專用獨木舟及SUP，安全無虞。**
@@ -92,8 +113,13 @@
 (我想...保險公司也願意承保，也應該給予掌聲👏👏👏)
 
 身心障礙者也很熱愛戶外活動，經常看見的是、輕中度身障朋友出遊歡樂的笑容
+
 重度肢體障礙朋友卻受了需多環境限制無法親山近水
+
 這回的一日體驗活動真的【無障礙活動】最佳示範
+
 更是圓了孩子體驗「獨木舟」活動
+
 感謝主辦方的用心用力
+
 以「安全、安心為出發點」的【隱形愛】服務，我感受到溫馨了

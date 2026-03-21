@@ -30,7 +30,7 @@
 
 **(所以手要穩、也要能找到可出借的放大鏡，難呀)**
 
-**【<https://wp.me/p8nOvC-bT>  一支老小都會需要的電視選台器故事】**
+**【[一支老小都會需要的電視選台器故事](/parenting/tv-remote-selector-for-all-ages/)】**
 
 [![DSC_0782](/content/img/2014/03/DSC_0782.webp)](/content/img/2014/03/DSC_0782.webp)
 

@@ -22,13 +22,17 @@
 ## 在**<破冰專業服務協會>**的網站上，**有<免費的游標>可供下載**
 
 <http://www.icebreakerpro.org/-----ypkmy>
+
 我們可以從以下步驟找尋～
+
 **1.先到網站是去下載<應用軟體>**
+
 [![050501](/content/img/2014/05/0505014.webp)](/content/img/2014/05/0505014.webp)
  
 [![050501](/content/img/2014/05/0505015.webp)](/content/img/2014/05/0505015.webp)
  
 **下載後開啟資料夾， 並做<解壓縮>程式執行**
+
 [![050501](/content/img/2014/05/0505016.webp)](/content/img/2014/05/0505016.webp)
  
 **開啟後，我們可從控制台**(如下圖步驟)
@@ -38,20 +42,27 @@
 [![050501](/content/img/2014/05/0505019.webp)](/content/img/2014/05/0505019.webp)
  
 2**.找到<滑鼠>/變更滑鼠指標的外觀/指標(標籤)中**
+
 [![050501](/content/img/2014/05/0505018.webp)](/content/img/2014/05/0505018.webp)
  
 **3.從<瀏覽>裡找出下載的資料夾(副檔案多是 .ani  、  .cur)**
+
 [![050503](/content/img/2014/05/0505031.webp)](/content/img/2014/05/0505031.webp)
  
 [![050507](/content/img/2014/05/0505071.webp)](/content/img/2014/05/0505071.webp)
+
 4**.選出您喜歡的游標**
+
 **5.改變後的游標有各種不同圖示**
+
 [![DSC_1187-1](/content/img/2014/05/DSC_1187-1.webp)](/content/img/2014/05/DSC_1187-1.webp)      [![DSC_1189-1](/content/img/2014/05/DSC_1189-1.webp)](/content/img/2014/05/DSC_1189-1.webp)      [![DSC_1190-1](/content/img/2014/05/DSC_1190-1.webp)](/content/img/2014/05/DSC_1190-1.webp)
  
 [![DSC_1191-1](/content/img/2014/05/DSC_1191-1.webp)](/content/img/2014/05/DSC_1191-1.webp)      [![DSC_1192-1](/content/img/2014/05/DSC_1192-1.webp)](/content/img/2014/05/DSC_1192-1.webp)
  
 (以上圖例提供參考)
+
 電腦的世界，因為小小的改變，使生活更樂趣喔～
+
 **(謝謝<破冰專業服務協會>提供網頁、軟體服務、專業諮詢...)**
  
 [http://www.icebreakerpro.org/250332999236575396361997936617.html](http://www.icebreakerpro.org/250332999236575396361997936617.html "http://www.icebreakerpro.org/250332999236575396361997936617.html")
