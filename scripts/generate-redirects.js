@@ -129,14 +129,14 @@ function generatePostHTML(post) {
   const tagsString = Array.isArray(tags) ? tags.map((tag) => escapeHtml(tag)).join(', ') : '';
 
   // 更新 meta tags
-  html = html.replace(/<title>Reading - \(b\)-log<\/title>/, `<title>${safeTitle} - (b)-log</title>`);
+  html = html.replace(/<title>閱讀中 - cptwin<\/title>/, `<title>${safeTitle} - cptwin</title>`);
   html = html.replace(/<meta name="description" content="[^"]*"/, `<meta name="description" content="${safeSummary}"`);
   html = html.replace(/<link rel="canonical" href="" id="canonical-url">/, `<link rel="canonical" href="${fullUrl}" id="canonical-url">`);
   html = html.replace(/<meta name="keywords" content="" id="meta-keywords">/, `<meta name="keywords" content="${tagsString}" id="meta-keywords">`);
 
   // Open Graph
   html = html.replace(/<meta property="og:url" content="" id="og-url">/, `<meta property="og:url" content="${fullUrl}" id="og-url">`);
-  html = html.replace(/<meta property="og:title" content="Loading - \(b\)-log" id="og-title">/, `<meta property="og:title" content="${safeTitle}" id="og-title">`);
+  html = html.replace(/<meta property="og:title" content="閱讀中 - cptwin" id="og-title">/, `<meta property="og:title" content="${safeTitle}" id="og-title">`);
   html = html.replace(/<meta property="og:description" content="" id="og-description">/, `<meta property="og:description" content="${safeSummary}" id="og-description">`);
   html = html.replace(/<meta property="og:image" content="" id="og-image">/, `<meta property="og:image" content="${ogImageUrl}" id="og-image">`);
   html = html.replace(/<meta property="article:published_time" content="" id="og-published-time">/, `<meta property="article:published_time" content="${publishedAt || ''}" id="og-published-time">`);
@@ -146,7 +146,7 @@ function generatePostHTML(post) {
 
   // Twitter
   html = html.replace(/<meta property="twitter:url" content="" id="twitter-url">/, `<meta property="twitter:url" content="${fullUrl}" id="twitter-url">`);
-  html = html.replace(/<meta property="twitter:title" content="Loading - \(b\)-log" id="twitter-title">/, `<meta property="twitter:title" content="${safeTitle}" id="twitter-title">`);
+  html = html.replace(/<meta property="twitter:title" content="閱讀中 - cptwin" id="twitter-title">/, `<meta property="twitter:title" content="${safeTitle}" id="twitter-title">`);
   html = html.replace(/<meta property="twitter:description" content="" id="twitter-description">/, `<meta property="twitter:description" content="${safeSummary}" id="twitter-description">`);
   html = html.replace(/<meta property="twitter:image" content="" id="twitter-image">/, `<meta property="twitter:image" content="${ogImageUrl}" id="twitter-image">`);
 
