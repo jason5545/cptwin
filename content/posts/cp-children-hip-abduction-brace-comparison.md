@@ -2,7 +2,7 @@
 
 **經驗分享：我使用過的兒童常見的「髖關節外展支架」**
 
-![](/content/img/2026/03/img-001.jpeg)![](/content/img/2026/03/img-002.jpeg)
+![](/content/img/2026/03/img-001.webp)![](/content/img/2026/03/img-002.webp)
 
 
 
