@@ -1,5 +1,19 @@
 [
   {
+    "slug": "gmfcs",
+    "title": "用 GMFCS 與實證觀點做有效的預算選購輔具",
+    "summary": "以有限預算下的輔具選購指南：",
+    "category": "輔具類",
+    "author": "舜英",
+    "publishedAt": "2026-04-15T00:00:00Z",
+    "tags": [
+      "輔具  GMFCS"
+    ],
+    "accentColor": "#00cec9",
+    "coverImage": "/content/img/2026/04/img-001.png",
+    "readingTime": "7 min"
+  },
+  {
     "slug": "cp-children-hip-abduction-brace-comparison",
     "title": "經驗分享：我使用過的兒童常見的二款「髖關節外展支架」純分享 無業配",
     "summary": "常見的二款「髖關節外展支架」差異不同(純分享  無業配)",
