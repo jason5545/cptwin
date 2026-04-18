@@ -4,6 +4,15 @@ const path = require('path');
 const ROOT_DIR = path.join(__dirname, '..');
 const POSTS_PATH = path.join(ROOT_DIR, 'data/posts.json');
 const TEMPLATE_PATH = path.join(ROOT_DIR, 'post.html');
+const HOMEPAGE_PATH = path.join(ROOT_DIR, 'index.html');
+const SITE_BASE_URL = 'https://cptwin.com';
+const CLOUDINARY_OG_IMAGE_CONFIG = {
+  cloudName: 'dynj7181i',
+  backgroundId: 'og-background_cbst7j',
+  fontId: 'notosanstc-bold.ttf'
+};
+const ARTICLE_TAGS_START = '<!-- ARTICLE_TAGS_START -->';
+const ARTICLE_TAGS_END = '<!-- ARTICLE_TAGS_END -->';
 
 // 從集中式設定檔載入分類映射
 const categoriesConfigPath = path.join(ROOT_DIR, 'config/categories.json');
@@ -39,6 +48,78 @@ function buildHeroMarkup(post) {
 
   const safeCoverImage = escapeHtml(post.coverImage);
   return `<div id="post-hero" class="article-hero article-hero--image"><img class="article-hero__image" src="${safeCoverImage}" alt="" aria-hidden="true" fetchpriority="high" decoding="async"></div>`;
+}
+
+function escapeRegExp(value = '') {
+  return String(value).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+}
+
+function replaceMarkedBlock(html, startMarker, endMarker, replacement = '') {
+  const pattern = new RegExp(`${escapeRegExp(startMarker)}[\\s\\S]*?${escapeRegExp(endMarker)}`);
+  if (!pattern.test(html)) {
+    throw new Error(`找不到 marker：${startMarker}`);
+  }
+
+  const block = replacement ? `${startMarker}\n${replacement}\n${endMarker}` : `${startMarker}\n${endMarker}`;
+  return html.replace(pattern, block);
+}
+
+function extractMetaPropertyContent(html, property) {
+  const pattern = new RegExp(`<meta\\s+property="${escapeRegExp(property)}"\\s+content="([^"]*)"`);
+  const match = html.match(pattern);
+  if (!match) {
+    throw new Error(`找不到 meta property：${property}`);
+  }
+
+  return match[1];
+}
+
+function replaceMetaPropertyContent(html, property, content) {
+  const pattern = new RegExp(`(<meta\\s+property="${escapeRegExp(property)}"\\s+content=")[^"]*(")`);
+  if (!pattern.test(html)) {
+    throw new Error(`找不到 meta property：${property}`);
+  }
+
+  return html.replace(pattern, (_, prefix, suffix) => `${prefix}${escapeHtml(content)}${suffix}`);
+}
+
+function buildCloudinaryOgImage(title) {
+  const encodedTitle = encodeURIComponent(title || 'Untitled');
+  return (
+    `https://res.cloudinary.com/${CLOUDINARY_OG_IMAGE_CONFIG.cloudName}/image/upload/` +
+    'c_fill,w_1200,h_630/' +
+    'co_rgb:ffffff,' +
+    `l_text:${CLOUDINARY_OG_IMAGE_CONFIG.fontId}_60_center:${encodedTitle},w_1000,c_fit/` +
+    'fl_layer_apply,g_center/' +
+    `${CLOUDINARY_OG_IMAGE_CONFIG.backgroundId}.png`
+  );
+}
+
+function buildArticleTagMetaBlock(tags = []) {
+  if (!Array.isArray(tags) || !tags.length) {
+    return '';
+  }
+
+  return tags
+    .filter(Boolean)
+    .map((tag) => `  <meta property="article:tag" content="${escapeHtml(tag)}">`)
+    .join('\n');
+}
+
+function syncHomepageMetadata() {
+  const homepageTemplate = fs.readFileSync(HOMEPAGE_PATH, 'utf8');
+  const homepageOgTitle = extractMetaPropertyContent(homepageTemplate, 'og:title');
+  const homepageOgImage = buildCloudinaryOgImage(homepageOgTitle);
+
+  let updatedHomepage = replaceMetaPropertyContent(homepageTemplate, 'og:image', homepageOgImage);
+  updatedHomepage = replaceMetaPropertyContent(updatedHomepage, 'twitter:image', homepageOgImage);
+
+  if (updatedHomepage !== homepageTemplate) {
+    fs.writeFileSync(HOMEPAGE_PATH, updatedHomepage, 'utf8');
+    console.log('🏠 已同步首頁 OG 圖片');
+  } else {
+    console.log('🏠 首頁 OG 圖片已是最新');
+  }
 }
 
 function removeEmptyDirsUpward(startDir, stopDir) {
@@ -117,8 +198,7 @@ function generatePostHTML(post) {
     .replace(/href="feed\.json"/g, 'href="../../feed.json"');
 
   // 生成完整的 URL
-  const baseUrl = 'https://cptwin.com';
-  const fullUrl = `${baseUrl}/${categorySlug}/${slug}/`;
+  const fullUrl = `${SITE_BASE_URL}/${categorySlug}/${slug}/`;
   const heroPreload = buildHeroPreload(coverImage);
   const heroMarkup = buildHeroMarkup(post);
 
@@ -126,21 +206,9 @@ function generatePostHTML(post) {
   let ogImageUrl;
   if (coverImage) {
     const normalizedCoverImage = coverImage.startsWith('/') ? coverImage.slice(1) : coverImage;
-    ogImageUrl = `${baseUrl}/${normalizedCoverImage}`;
+    ogImageUrl = `${SITE_BASE_URL}/${normalizedCoverImage}`;
   } else {
-    // 使用 Cloudinary 動態生成圖片（支援中文 Noto Sans TC Bold 字型）
-    const cloudName = 'dynj7181i';
-    const backgroundId = 'og-background_cbst7j';
-    const fontId = 'notosanstc-bold.ttf';
-    const encodedTitle = encodeURIComponent(title || slug || 'Untitled');
-
-    ogImageUrl =
-      `https://res.cloudinary.com/${cloudName}/image/upload/` +
-      `c_fill,w_1200,h_630/` +
-      `co_rgb:ffffff,` +
-      `l_text:${fontId}_60_center:${encodedTitle},w_1000,c_fit/` +
-      `fl_layer_apply,g_center/` +
-      `${backgroundId}.png`;
+    ogImageUrl = buildCloudinaryOgImage(title || slug || 'Untitled');
   }
 
   const tagsString = Array.isArray(tags) ? tags.map((tag) => escapeHtml(tag)).join(', ') : '';
@@ -153,6 +221,12 @@ function generatePostHTML(post) {
   html = html.replace(/  <!-- 首圖 preload 會由生成腳本注入到這裡 -->\s*/,
     `  <!-- 首圖 preload 會由生成腳本注入到這裡 -->\n${heroPreload}`);
   html = html.replace(/<div id="post-hero" class="article-hero"><\/div>/, heroMarkup);
+  html = replaceMarkedBlock(
+    html,
+    ARTICLE_TAGS_START,
+    ARTICLE_TAGS_END,
+    buildArticleTagMetaBlock(tags)
+  );
 
   // Open Graph
   html = html.replace(/<meta property="og:url" content="" id="og-url">/, `<meta property="og:url" content="${fullUrl}" id="og-url">`);
@@ -162,7 +236,6 @@ function generatePostHTML(post) {
   html = html.replace(/<meta property="article:published_time" content="" id="og-published-time">/, `<meta property="article:published_time" content="${publishedAt || ''}" id="og-published-time">`);
   html = html.replace(/<meta property="article:modified_time" content="" id="og-modified-time">/, `<meta property="article:modified_time" content="${updatedAt || publishedAt || ''}" id="og-modified-time">`);
   html = html.replace(/<meta property="article:section" content="" id="og-section">/, `<meta property="article:section" content="${safeCategory}" id="og-section">`);
-  html = html.replace(/<meta property="article:tag" content="" id="og-tags">/, `<meta property="article:tag" content="${tagsString}" id="og-tags">`);
 
   // Twitter
   html = html.replace(/<meta property="twitter:url" content="" id="twitter-url">/, `<meta property="twitter:url" content="${fullUrl}" id="twitter-url">`);
@@ -197,6 +270,7 @@ function generateRedirectHTML(newCategorySlug, slug) {
 function generateRedirects() {
   console.log('開始生成 WordPress 風格文章頁面...\n');
 
+  syncHomepageMetadata();
   const posts = JSON.parse(fs.readFileSync(POSTS_PATH, 'utf8'));
 
   let createdCount = 0;

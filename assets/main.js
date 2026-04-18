@@ -1,23 +1,25 @@
-const POSTS_JSON = '/data/posts.json';
+import {
+  POSTS_JSON,
+  createCategoryMappingStore,
+  createRandomPostHandler,
+  createThemeManager,
+  initSearchUI,
+} from './shared-ui.js';
+
 const POSTS_ROOT = '/content/posts/';
-const GITHUB_USERNAME = 'jason5545';
-const GITHUB_REPO = 'cptwin';
-const DEFAULT_CATEGORY_MAPPING = {
-  'AI 分析': 'ai-analysis',
-  '技術開發': 'tech-development',
-  '技術分析': 'tech-analysis',
-  '開發哲學': 'dev-philosophy',
-  '生活記事': 'life-stories',
-  '商業觀察': 'business-insights',
-  '文化觀察': 'cultural-insights'
+const SITE_BASE_URL = 'https://cptwin.com';
+const DEFAULT_META_DESCRIPTION = '記錄腦性麻痺雙胞胎的復健、就學、輔具與無障礙生活經驗，分享給需要的家長們。';
+const CLOUDINARY_OG_IMAGE_CONFIG = {
+  cloudName: 'dynj7181i',
+  backgroundId: 'og-background_cbst7j',
+  fontId: 'notosanstc-bold.ttf'
 };
 const POSTS_CACHE_TTL_MS = 5 * 60 * 1000;
 const POSTS_PER_PAGE = 10;
 let visibleCount = 0;
 let allFilteredPosts = [];
 
-// 全域變數儲存分類映射（從設定檔載入）
-let categoryMapping = null;
+const categoryMappingStore = createCategoryMappingStore();
 let postsCatalogCache = null;
 let postsCatalogCacheAt = 0;
 let postsCatalogPromise = null;
@@ -25,22 +27,8 @@ let normalizedPostsCache = null;
 let normalizedPostsCacheAt = 0;
 const markdownCache = new Map();
 
-// 載入分類設定
-async function loadCategoryMapping() {
-  if (categoryMapping) return categoryMapping;
-  
-  try {
-    const response = await fetch('/config/categories.json');
-    const config = await response.json();
-    categoryMapping = config.categoryMapping;
-    return categoryMapping;
-  } catch (error) {
-    console.error('無法載入分類設定，使用預設值', error);
-    // 降級方案：使用內建的完整映射
-    categoryMapping = DEFAULT_CATEGORY_MAPPING;
-    return categoryMapping;
-  }
-}
+const loadCategoryMapping = () => categoryMappingStore.load();
+const getCategoryMapping = () => categoryMappingStore.get();
 
 
 // Decode all network responses as UTF-8 to keep non-ASCII content intact.
@@ -55,131 +43,13 @@ async function readUtf8Text(response) {
   }
 }
 
-// 深色模式管理
-const ThemeManager = {
-  STORAGE_KEY: 'theme-preference',
-  THEMES: ['light', 'dark', 'auto'],
-
-  init() {
-    // 從 localStorage 載入偏好，預設為 auto
-    const saved = localStorage.getItem(this.STORAGE_KEY) || 'auto';
-    this.setTheme(saved, false);
-
-    // 監聽系統深色模式變化
-    const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
-    mediaQuery.addEventListener('change', () => {
-      if (this.getCurrentTheme() === 'auto') {
-        this.applyTheme();
-      }
-    });
-  },
-
-  getCurrentTheme() {
-    return localStorage.getItem(this.STORAGE_KEY) || 'auto';
-  },
-
-  setTheme(theme, save = true) {
-    if (!this.THEMES.includes(theme)) {
-      theme = 'auto';
-    }
-
-    if (save) {
-      localStorage.setItem(this.STORAGE_KEY, theme);
-    }
-
-    this.applyTheme();
-    this.updateToggleButton();
-
-    // 同步更新 Giscus 主題
+const ThemeManager = createThemeManager({
+  onThemeApplied: () => {
     if (window.GiscusManager && window.GiscusManager.scriptLoaded) {
       window.GiscusManager.updateTheme();
     }
-  },
-
-  applyTheme() {
-    const currentTheme = this.getCurrentTheme();
-    const root = document.documentElement;
-
-    if (currentTheme === 'auto') {
-      // 移除 data-theme 屬性，讓 CSS 的 @media (prefers-color-scheme: dark) 生效
-      root.removeAttribute('data-theme');
-    } else {
-      // 設定 data-theme 屬性
-      root.setAttribute('data-theme', currentTheme);
-    }
-  },
-
-  toggle() {
-    const current = this.getCurrentTheme();
-    const currentIndex = this.THEMES.indexOf(current);
-    const nextIndex = (currentIndex + 1) % this.THEMES.length;
-    const nextTheme = this.THEMES[nextIndex];
-
-    this.setTheme(nextTheme);
-  },
-
-  updateToggleButton() {
-    const button = document.querySelector('.theme-toggle');
-    if (!button) return;
-
-    const currentTheme = this.getCurrentTheme();
-    const iconContainer = button.querySelector('.theme-toggle__icon');
-    const text = button.querySelector('.theme-toggle__text');
-
-    const configs = {
-      light: {
-        svg: `<svg class="theme-icon theme-icon--light" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <circle cx="12" cy="12" r="5"/>
-          <line x1="12" y1="1" x2="12" y2="3"/>
-          <line x1="12" y1="21" x2="12" y2="23"/>
-          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
-          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
-          <line x1="1" y1="12" x2="3" y2="12"/>
-          <line x1="21" y1="12" x2="23" y2="12"/>
-          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
-          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
-        </svg>`,
-        text: 'Light'
-      },
-      dark: {
-        svg: `<svg class="theme-icon theme-icon--dark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
-        </svg>`,
-        text: 'Dark'
-      },
-      auto: {
-        svg: `<svg class="theme-icon theme-icon--auto" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M21.5 12c0 5.25-4.25 9.5-9.5 9.5S2.5 17.25 2.5 12 6.75 2.5 12 2.5s9.5 4.25 9.5 9.5z"/>
-          <path d="M12 2.5v19M21.5 12h-19M18.36 5.64l-12.72 12.72M18.36 18.36L5.64 5.64"/>
-        </svg>`,
-        text: 'Auto'
-      }
-    };
-
-    const config = configs[currentTheme] || configs.auto;
-
-    if (iconContainer) iconContainer.innerHTML = config.svg;
-    if (text) text.textContent = config.text;
-  },
-
-  getThemeIcon(theme) {
-    const icons = {
-      light: '☀️',
-      dark: '🌙',
-      auto: '🔄'
-    };
-    return icons[theme] || icons.auto;
-  },
-
-  getThemeText(theme) {
-    const texts = {
-      light: 'Light',
-      dark: 'Dark',
-      auto: 'Auto'
-    };
-    return texts[theme] || texts.auto;
   }
-};
+});
 
 // 暴露到全域（因為使用 type="module"）
 window.ThemeManager = ThemeManager;
@@ -375,32 +245,9 @@ window.GiscusManager = GiscusManager;
 // 隨機文章功能
 // ============================================================
 
-async function goToRandomPost(event) {
-  if (event) event.preventDefault();
-
-  try {
-    const response = await fetch(POSTS_JSON);
-    const posts = await response.json();
-
-    if (!posts || posts.length === 0) {
-      console.warn('沒有可用的文章');
-      return;
-    }
-
-    // 隨機選擇一篇文章
-    const randomIndex = Math.floor(Math.random() * posts.length);
-    const randomPost = posts[randomIndex];
-
-    // 載入分類映射並生成 URL
-    const mapping = await loadCategoryMapping();
-    const categorySlug = mapping[randomPost.category] || 'uncategorized';
-    const url = `/${categorySlug}/${randomPost.slug}/`;
-
-    window.location.href = url;
-  } catch (error) {
-    console.error('載入隨機文章失敗', error);
-  }
-}
+const goToRandomPost = createRandomPostHandler({
+  loadCategoryMapping,
+});
 
 // 暴露到全域
 window.goToRandomPost = goToRandomPost;
@@ -567,131 +414,7 @@ window.BirthdayTheme = BirthdayTheme;
  * 初始化搜尋功能
  */
 function initSearch() {
-  const searchToggleBtn = document.querySelector('.search-toggle-btn');
-  const searchBox = document.querySelector('.search-box');
-  const searchInput = document.querySelector('#search-input');
-  const searchClear = document.querySelector('#search-clear');
-
-  if (!searchInput || !searchToggleBtn || !searchBox) {
-    console.warn('[Search] Missing elements:', {
-      searchInput: !!searchInput,
-      searchToggleBtn: !!searchToggleBtn,
-      searchBox: !!searchBox
-    });
-    return;
-  }
-
-  console.log('[Search] Initialized successfully');
-
-  // 從 URL 載入搜尋查詢
-  const params = new URLSearchParams(window.location.search);
-  const searchQuery = params.get('search');
-  if (searchQuery) {
-    searchInput.value = searchQuery;
-    if (searchClear) searchClear.hidden = false;
-    // 如果有搜尋查詢，自動展開搜尋框
-    openSearchBox();
-  }
-
-  // 搜尋按鈕點擊事件
-  searchToggleBtn.addEventListener('click', (e) => {
-    console.log('[Search] Toggle button clicked');
-    e.stopPropagation();
-    toggleSearchBox();
-  });
-
-  // 使用 debounce 避免過度觸發
-  let debounceTimer;
-  searchInput.addEventListener('input', (e) => {
-    const value = e.target.value.trim();
-
-    // 顯示/隱藏清除按鈕
-    if (searchClear) {
-      searchClear.hidden = !value;
-    }
-
-    // Debounce 搜尋
-    clearTimeout(debounceTimer);
-    debounceTimer = setTimeout(() => {
-      updateSearchParams(value);
-    }, 300);
-  });
-
-  // 清除按鈕
-  if (searchClear) {
-    searchClear.addEventListener('click', () => {
-      searchInput.value = '';
-      searchClear.hidden = true;
-      updateSearchParams('');
-      searchInput.focus();
-    });
-  }
-
-  // Enter 鍵立即搜尋
-  searchInput.addEventListener('keydown', (e) => {
-    if (e.key === 'Enter') {
-      clearTimeout(debounceTimer);
-      updateSearchParams(searchInput.value.trim());
-    }
-
-    // ESC 鍵關閉搜尋框
-    if (e.key === 'Escape') {
-      closeSearchBox();
-    }
-  });
-
-  // 點擊外部關閉搜尋框
-  document.addEventListener('click', (e) => {
-    if (!searchBox.contains(e.target) && !searchToggleBtn.contains(e.target)) {
-      // 如果沒有搜尋內容，關閉搜尋框
-      if (!searchInput.value.trim()) {
-        closeSearchBox();
-      }
-    }
-  });
-
-  // 搜尋框內部點擊不關閉
-  searchBox.addEventListener('click', (e) => {
-    e.stopPropagation();
-  });
-
-  // 展開/收合搜尋框的函數
-  function toggleSearchBox() {
-    const isExpanded = searchToggleBtn.getAttribute('aria-expanded') === 'true';
-    if (isExpanded) {
-      closeSearchBox();
-    } else {
-      openSearchBox();
-    }
-  }
-
-  function openSearchBox() {
-    searchBox.hidden = false;
-    searchToggleBtn.setAttribute('aria-expanded', 'true');
-    searchToggleBtn.classList.add('active');
-
-    // 觸發重排以確保動畫生效
-    requestAnimationFrame(() => {
-      searchBox.classList.add('expanded');
-      // 延遲聚焦，等待動畫完成
-      setTimeout(() => {
-        searchInput.focus();
-      }, 150);
-    });
-  }
-
-  function closeSearchBox() {
-    searchBox.classList.remove('expanded');
-    searchToggleBtn.setAttribute('aria-expanded', 'false');
-    searchToggleBtn.classList.remove('active');
-
-    // 等待動畫完成後再隱藏
-    setTimeout(() => {
-      if (!searchBox.classList.contains('expanded')) {
-        searchBox.hidden = true;
-      }
-    }, 300);
-  }
+  initSearchUI({ onSearch: updateSearchParams });
 }
 
 /**
@@ -1365,19 +1088,22 @@ const AudioPlayerManager = {
   }
 };
 
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', async () => {
   // 初始化深色模式
   ThemeManager.init();
   // 初始化語音播放器
   AudioPlayerManager.init();
   // 初始化搜尋功能（所有頁面）
   initSearch();
-  // 載入分類映射
-  loadCategoryMapping().catch((error) => {
+  const categoryMappingReady = loadCategoryMapping().catch((error) => {
     console.warn('[init] failed to load category mapping', error);
+    return getCategoryMapping();
   });
 
   const bodyClassList = document.body.classList;
+  if (bodyClassList.contains('home') || bodyClassList.contains('post-page')) {
+    await categoryMappingReady;
+  }
 
   if (bodyClassList.contains('home')) {
     // 初始化 12 月生日特輯
@@ -2468,9 +2194,7 @@ function clamp(value, min, max) {
 }
 
 function slugToPath(slug, category) {
-  // 使用全局的 categoryMapping（從 config/categories.json 載入）
-  // 如果還沒載入，使用完整的預設映射作為 fallback
-  const mapping = categoryMapping || DEFAULT_CATEGORY_MAPPING;
+  const mapping = getCategoryMapping();
 
   // 如果有分類，生成 WordPress 風格的 URL（絕對路徑）
   if (category && mapping[category]) {
@@ -2511,14 +2235,13 @@ function setupCopyLink(container, url) {
 }
 
 function updatePageMetadata(post) {
-  const baseUrl = 'https://cptwin.com/';
   // 使用 WordPress 風格的 URL，指向預渲染的靜態頁面
   // 這樣社群平台爬蟲才能看到正確的 meta 標籤（爬蟲不執行 JavaScript）
   const postPath = slugToPath(post.slug, post.category);
-  const postUrl = `${baseUrl}${postPath.startsWith('/') ? postPath.substring(1) : postPath}`;
+  const postUrl = `${SITE_BASE_URL}/${postPath.startsWith('/') ? postPath.substring(1) : postPath}`;
 
   // 更新基本的 title 和 description
-  document.title = post.title ? `${post.title} - cptwin` : 'Reading - cptwin';
+  document.title = post.title ? `${post.title} - cptwin` : '閱讀中 - cptwin';
   
   // 更新 canonical URL
   const canonicalEl = document.querySelector('#canonical-url');
@@ -2529,7 +2252,7 @@ function updatePageMetadata(post) {
   // 更新 description
   const descriptionEl = document.querySelector('meta[name="description"]');
   if (descriptionEl) {
-    descriptionEl.content = post.summary || '記錄腦性麻痺雙胞胎的復健、就學、輔具與無障礙生活經驗，分享給需要的家長們。';
+    descriptionEl.content = post.summary || DEFAULT_META_DESCRIPTION;
   }
   
   // 更新 keywords
@@ -2543,18 +2266,15 @@ function updatePageMetadata(post) {
   updateMetaProperty('og:url', postUrl);
   updateMetaProperty('og:title', post.title || 'Untitled Post');
   updateMetaProperty('og:description', post.summary || '');
-  updateMetaProperty('og:image', getPostImage(post, baseUrl));
-  updateMetaProperty('article:author', post.author || 'Jason Chien');
+  updateMetaProperty('og:image', getPostImage(post, SITE_BASE_URL));
+  updateMetaProperty('article:author', post.author || '舜英');
   updateMetaProperty('article:published_time', post.publishedAt || '');
   updateMetaProperty('article:modified_time', post.updatedAt || post.publishedAt || '');
   updateMetaProperty('article:section', post.category || '');
   
   // 更新文章標籤 - 每個標籤都需要單獨的 meta property
+  document.querySelectorAll('meta[property="article:tag"]').forEach(el => el.remove());
   if (Array.isArray(post.tags) && post.tags.length > 0) {
-    // 先移除現有的標籤
-    document.querySelectorAll('meta[property^="article:tag"]').forEach(el => el.remove());
-    
-    // 添加新的標籤
     post.tags.forEach(tag => {
       if (tag) {
         const meta = document.createElement('meta');
@@ -2569,7 +2289,7 @@ function updatePageMetadata(post) {
   updateMetaProperty('twitter:url', postUrl);
   updateMetaProperty('twitter:title', post.title || 'Untitled Post');
   updateMetaProperty('twitter:description', post.summary || '');
-  updateMetaProperty('twitter:image', getPostImage(post, baseUrl));
+  updateMetaProperty('twitter:image', getPostImage(post, SITE_BASE_URL));
 }
 
 function updateMetaProperty(property, content) {
@@ -2597,13 +2317,15 @@ function getPostImage(post, baseUrl) {
     return post.coverImage;
   }
 
-  // 如果沒有封面圖片，使用一個簡單的漸變圖片生成服務
-  const accentColor = post.accentColor || '#556bff';
-  const title = encodeURIComponent(post.title || 'Untitled Post');
-
-  // 使用第三方服務生成簡單的 OG 圖片
-  // 這裡使用 https://og-image.vercel.app/ 作為例子
-  return `https://og-image.vercel.app/${title}.png?theme=light&md=1&fontSize=100px&images=https%3A%2F%2Fcptwin.com%2Ffavicon.ico`;
+  const encodedTitle = encodeURIComponent(post.title || 'Untitled Post');
+  return (
+    `https://res.cloudinary.com/${CLOUDINARY_OG_IMAGE_CONFIG.cloudName}/image/upload/` +
+    'c_fill,w_1200,h_630/' +
+    'co_rgb:ffffff,' +
+    `l_text:${CLOUDINARY_OG_IMAGE_CONFIG.fontId}_60_center:${encodedTitle},w_1000,c_fit/` +
+    'fl_layer_apply,g_center/' +
+    `${CLOUDINARY_OG_IMAGE_CONFIG.backgroundId}.png`
+  );
 }
 
 // ============================================================

@@ -5,9 +5,19 @@ on:
     branches:
       - main
     paths:
+      - 'index.html'
       - 'data/posts.json'
       - 'config/categories.json'
+      - 'assets/main.js'
+      - 'assets/main.min.js'
+      - 'assets/main-static.js'
+      - 'assets/main-static.min.js'
+      - 'assets/shared-ui.js'
+      - 'assets/styles.css'
+      - 'assets/styles.min.css'
+      - 'package.json'
       - 'post.html'
+      - 'scripts/build-assets.js'
       - 'scripts/generate-redirects.js'
       - 'scripts/generate-sitemap.js'
       - 'scripts/sync-feed.js'
@@ -15,9 +25,19 @@ on:
     branches:
       - main
     paths:
+      - 'index.html'
       - 'data/posts.json'
       - 'config/categories.json'
+      - 'assets/main.js'
+      - 'assets/main.min.js'
+      - 'assets/main-static.js'
+      - 'assets/main-static.min.js'
+      - 'assets/shared-ui.js'
+      - 'assets/styles.css'
+      - 'assets/styles.min.css'
+      - 'package.json'
       - 'post.html'
+      - 'scripts/build-assets.js'
       - 'scripts/generate-redirects.js'
       - 'scripts/generate-sitemap.js'
       - 'scripts/sync-feed.js'
@@ -39,6 +59,12 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20'
+
+      - name: 安裝相依套件
+        run: npm install --no-package-lock
+
+      - name: 同步 minified assets
+        run: npm run build:assets
 
       - name: 生成文章靜態頁與重定向
         run: node scripts/generate-redirects.js
@@ -73,10 +99,11 @@ jobs:
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add data/posts.json feed.json sitemap.xml */*/index.html
+          git add index.html data/posts.json feed.json sitemap.xml assets/main.min.js assets/main-static.min.js assets/styles.min.css */*/index.html
           git commit -m "chore: sync content artifacts
 
           - regenerate static article routes
+          - rebuild minified assets
           - refresh sitemap.xml
           - sync feed.json"
 
