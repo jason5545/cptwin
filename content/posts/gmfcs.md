@@ -31,7 +31,7 @@
 > *(資料來源：Palisano et al., 1997)*
 > 
 > ---
-> 📎 *備註：繁體中文版分級標準下載 (PDF) ─ GMFCS-E&R Traditional Chinese*
+> 📎 *備註：繁體中文版分級標準下載 (PDF) ─ [GMFCS-E&R Traditional Chinese](https://canchild.ca/wp-content/uploads/2025/03/GMFCS-ER_Translation-Traditional-Chinese.pdf?license=yes)*
 
 
 **審視一**：**以 GMFCS 分類，客觀評估孩子的「現在」能力並給予支持：  
