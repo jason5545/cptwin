@@ -233,7 +233,10 @@
   <script src="../../assets/main.min.js" type="module" defer></script>
   <!-- Service Worker 註冊 - 延長字型快取 -->
   <script>if('serviceWorker' in navigator){navigator.serviceWorker.register('/sw.js');}</script>
-  <!-- Counterscale Analytics --><script id="counterscale-script" src="https://counterscale.black-hill-f944.workers.dev/tracker.js" defer data-site-id="cptwin.com"></script>
-  <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "a5f4a9c6be0d4b3f836b54e1524e4c67"}'></script><!-- End Cloudflare Web Analytics -->
+  <!-- Analytics - 首屏後載入 -->
+  <script>
+    window.addEventListener('load',()=>{setTimeout(()=>{const counterscale=document.createElement('script');counterscale.id='counterscale-script';counterscale.defer=true;counterscale.src='https://counterscale.black-hill-f944.workers.dev/tracker.js';counterscale.dataset.siteId='cptwin.com';document.head.appendChild(counterscale);const cloudflare=document.createElement('script');cloudflare.defer=true;cloudflare.src='https://static.cloudflareinsights.com/beacon.min.js';cloudflare.setAttribute('data-cf-beacon','{"token":"a5f4a9c6be0d4b3f836b54e1524e4c67"}');document.head.appendChild(cloudflare);},1500);});
+  </script>
+  <!-- End Analytics -->
 </body>
 </html>

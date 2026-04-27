@@ -40,6 +40,13 @@ body::before {
   opacity: var(--orb-opacity-2);
 }
 
+@media (max-width: 768px) {
+  body::before,
+  .orb {
+    display: none;
+  }
+}
+
 .page-chrome {
   min-height: 100vh;
   display: flex;
@@ -2357,6 +2364,16 @@ a:focus {
 .article-sidebar .widget:nth-child(2) { animation-delay: 0.25s; }
 
 .content                { animation-delay: 0.05s; }
+
+@media (max-width: 768px) {
+  .hero-card,
+  .post-stream,
+  .sidebar .widget,
+  .article-sidebar .widget,
+  .content {
+    animation: none;
+  }
+}
 
 @media (prefers-reduced-motion: reduce) {
   .hero-card,
