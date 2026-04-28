@@ -90,7 +90,14 @@
       100% { background-position: -200% 0; }
     }
     .hero-card {
+      display: grid;
+      grid-template-columns: 1fr;
       min-height: 400px;
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-strong);
+      overflow: hidden;
     }
     .hero-card[hidden] {
       display: block;
@@ -100,7 +107,39 @@
     .content-grid {
       min-height: 500px;
     }
+    .hero-card__media {
+      min-height: 220px;
+      aspect-ratio: 16 / 9;
+      background: var(--surface-muted);
+    }
+    .article-hero__image {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    @media (min-width: 1200px) {
+      .hero-card {
+        grid-template-columns: 1.2fr 1fr;
+      }
+      .hero-card__media {
+        min-height: 320px;
+      }
+    }
+    @media (min-width: 1600px) {
+      .hero-card {
+        grid-template-columns: 1.5fr 1fr;
+      }
+      .hero-card__media {
+        min-height: 380px;
+      }
+    }
   </style>
+
+  <!-- 首頁 featured preload 會由生成腳本注入到這裡 -->
+  <!-- HOME_FEATURED_PRELOAD_START -->
+  <link rel="preload" as="image" href="/content/img/2026/04/img-001.png" imagesrcset="/content/img/2026/04/img-001-480w.webp 480w, /content/img/2026/04/img-001-828w.webp 828w, /content/img/2026/04/img-001-1200w.webp 1200w" imagesizes="(min-width: 1600px) 58vw, (min-width: 1200px) 54vw, 98vw" fetchpriority="high">
+<!-- HOME_FEATURED_PRELOAD_END -->
 
   <!-- 完整樣式表 -->
   <link rel="stylesheet" href="assets/styles.min.css">
@@ -204,21 +243,23 @@
         </a>
       </section>
 
-      <section id="featured" class="hero-card" hidden>
-        <div class="hero-card__media" id="hero-media"></div>
+      <!-- HOME_FEATURED_START -->
+      <section id="featured" class="hero-card" data-featured-slug="gmfcs" data-featured-cover="/content/img/2026/04/img-001.png">
+        <div class="hero-card__media article-hero--image" id="hero-media"><img class="article-hero__image" src="/content/img/2026/04/img-001.png" srcset="/content/img/2026/04/img-001-480w.webp 480w, /content/img/2026/04/img-001-828w.webp 828w, /content/img/2026/04/img-001-1200w.webp 1200w" sizes="(min-width: 1600px) 58vw, (min-width: 1200px) 54vw, 98vw" alt="" aria-hidden="true" fetchpriority="high" decoding="sync"></div>
         <div class="hero-card__body">
-          <p class="hero-card__category" id="hero-category"></p>
+          <p class="hero-card__category" id="hero-category" style="color: #00cec9; border-color: rgba(0, 206, 201, 0.3); background: rgba(0, 206, 201, 0.1);">輔具類</p>
           <h2 class="hero-card__title">
-            <a id="hero-link" href="#"></a>
+            <a id="hero-link" href="/assistive-devices/gmfcs/">用 GMFCS 與實證觀點做有效的預算選購輔具</a>
           </h2>
-          <p class="hero-card__meta" id="hero-meta"></p>
-          <p class="hero-card__summary" id="hero-summary"></p>
+          <p class="hero-card__meta" id="hero-meta">作者 舜英 | 發布 2026年4月15日 | 更新 2026年4月19日 | 7 min</p>
+          <p class="hero-card__summary" id="hero-summary">在有限預算下選購兒童輔具，不應盲從高價，而是要透過GMFCS客觀評估孩子的真實能力 。最適配的輔具應提供「剛剛好」的支撐，避免過度保護或支撐不足 。此外，輔具須能融入居家環境，並讓主要照顧者能省力操作以減輕負擔 。建議家長務必與治療師共同擬定中長期復健目標 ，針對絕對需要的核心問題將錢花在刀口上，才能真正成為支持孩子與家庭的最佳助力 。</p>
           <div class="hero-card__actions">
-            <a id="hero-read-more" class="button button--primary" href="#">繼續閱讀</a>
-            <a id="hero-open-discussion" class="button button--ghost" href="#comments">留言討論</a>
+            <a id="hero-read-more" class="button button--primary" href="/assistive-devices/gmfcs/">繼續閱讀</a>
+            <a id="hero-open-discussion" class="button button--ghost" href="/assistive-devices/gmfcs/#comments">留言討論</a>
           </div>
         </div>
       </section>
+<!-- HOME_FEATURED_END -->
 
       <div class="content-grid">
         <section id="posts" class="post-stream" aria-live="polite">

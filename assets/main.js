@@ -1500,8 +1500,15 @@ function renderFeaturedPost(post) {
 
   if (!heroSection) return;
 
-  applyAccentBackground(heroMedia, post);
-  heroSection.hidden = false;
+  const isCurrentStaticFeatured =
+    !hasActiveHomeFilter() &&
+    heroSection.dataset.featuredSlug === post.slug &&
+    heroMedia?.querySelector('.article-hero__image');
+
+  if (!isCurrentStaticFeatured) {
+    applyAccentBackground(heroMedia, post);
+    heroSection.hidden = false;
+  }
 
   if (heroCategory) {
     heroCategory.textContent = post.category || 'Dispatch';
@@ -1554,6 +1561,11 @@ function renderFeaturedPost(post) {
   if (heroDiscuss) {
     heroDiscuss.href = `${slugToPath(post.slug, post.category)}#comments`;
   }
+}
+
+function hasActiveHomeFilter() {
+  const params = new URLSearchParams(window.location.search);
+  return params.has('tag') || params.has('category') || params.has('search');
 }
 
 function populateTagBadges(container, tags) {
@@ -2125,6 +2137,24 @@ function formatDate(date) {
 
 function applyAccentBackground(element, post) {
   if (!element) return;
+
+  if (post.coverImage) {
+    const existingImage = element.querySelector('.article-hero__image');
+    const resolvedCoverImage = new URL(post.coverImage, window.location.origin).href;
+    if (
+      existingImage &&
+      (
+        existingImage.getAttribute('src') === post.coverImage ||
+        existingImage.currentSrc === resolvedCoverImage
+      )
+    ) {
+      element.classList.add('article-hero--image');
+      element.style.backgroundImage = '';
+      element.style.backgroundSize = '';
+      element.style.backgroundPosition = '';
+      return;
+    }
+  }
 
   element.replaceChildren();
   element.classList.remove('article-hero--image');

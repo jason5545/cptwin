@@ -13,6 +13,13 @@ const CLOUDINARY_OG_IMAGE_CONFIG = {
 };
 const ARTICLE_TAGS_START = '<!-- ARTICLE_TAGS_START -->';
 const ARTICLE_TAGS_END = '<!-- ARTICLE_TAGS_END -->';
+const HERO_IMAGE_WIDTHS = [480, 828, 1200];
+const HOME_FEATURED_PRELOAD_START = '<!-- HOME_FEATURED_PRELOAD_START -->';
+const HOME_FEATURED_PRELOAD_END = '<!-- HOME_FEATURED_PRELOAD_END -->';
+const HOME_FEATURED_START = '<!-- HOME_FEATURED_START -->';
+const HOME_FEATURED_END = '<!-- HOME_FEATURED_END -->';
+const HOME_HERO_SIZES = '(min-width: 1600px) 58vw, (min-width: 1200px) 54vw, 98vw';
+const ARTICLE_HERO_SIZES = '(min-width: 1600px) calc(96vw - 428px), (min-width: 1200px) calc(98vw - 364px), 98vw';
 
 // 從集中式設定檔載入分類映射
 const categoriesConfigPath = path.join(ROOT_DIR, 'config/categories.json');
@@ -35,10 +42,52 @@ function ensureDir(dirPath) {
   fs.mkdirSync(dirPath, { recursive: true });
 }
 
-function buildHeroPreload(coverImage) {
+function decodeImagePathSegment(value) {
+  try {
+    return decodeURIComponent(value);
+  } catch {
+    return value;
+  }
+}
+
+function imageUrlToPath(imageUrl) {
+  if (!imageUrl || /^https?:\/\//i.test(imageUrl)) return null;
+  return path.join(ROOT_DIR, decodeImagePathSegment(imageUrl.replace(/^\//, '')));
+}
+
+function buildResponsiveImageSrcset(imageUrl) {
+  const imagePath = imageUrlToPath(imageUrl);
+  if (!imagePath) return '';
+
+  const parsed = path.parse(imagePath);
+  return HERO_IMAGE_WIDTHS
+    .map((width) => {
+      const variantPath = path.join(parsed.dir, `${parsed.name}-${width}w.webp`);
+      if (!fs.existsSync(variantPath)) return null;
+      const variantUrl = imageUrl.replace(/\.[^/.]+$/, `-${width}w.webp`);
+      return `${variantUrl} ${width}w`;
+    })
+    .filter(Boolean)
+    .join(', ');
+}
+
+function buildHeroImageAttributes(coverImage, sizes, decoding = 'async') {
+  const safeCoverImage = escapeHtml(coverImage);
+  const srcset = buildResponsiveImageSrcset(coverImage);
+  const srcsetAttr = srcset ? ` srcset="${escapeHtml(srcset)}" sizes="${escapeHtml(sizes)}"` : '';
+  return `src="${safeCoverImage}"${srcsetAttr} alt="" aria-hidden="true" fetchpriority="high" decoding="${decoding}"`;
+}
+
+function buildHeroPreload(coverImage, sizes = ARTICLE_HERO_SIZES) {
   if (!coverImage) return '';
 
-  return `  <link rel="preload" as="image" href="${coverImage}" fetchpriority="high">\n`;
+  const safeCoverImage = escapeHtml(coverImage);
+  const srcset = buildResponsiveImageSrcset(coverImage);
+  const responsiveAttrs = srcset
+    ? ` imagesrcset="${escapeHtml(srcset)}" imagesizes="${escapeHtml(sizes)}"`
+    : '';
+
+  return `  <link rel="preload" as="image" href="${safeCoverImage}"${responsiveAttrs} fetchpriority="high">\n`;
 }
 
 function buildHeroMarkup(post) {
@@ -46,8 +95,7 @@ function buildHeroMarkup(post) {
     return '<div id="post-hero" class="article-hero"></div>';
   }
 
-  const safeCoverImage = escapeHtml(post.coverImage);
-  return `<div id="post-hero" class="article-hero article-hero--image"><img class="article-hero__image" src="${safeCoverImage}" alt="" aria-hidden="true" fetchpriority="high" decoding="async"></div>`;
+  return `<div id="post-hero" class="article-hero article-hero--image"><img class="article-hero__image" ${buildHeroImageAttributes(post.coverImage, ARTICLE_HERO_SIZES)}></div>`;
 }
 
 function escapeRegExp(value = '') {
@@ -106,19 +154,139 @@ function buildArticleTagMetaBlock(tags = []) {
     .join('\n');
 }
 
-function syncHomepageMetadata() {
+function parseDate(value) {
+  if (!value) return null;
+  const date = value instanceof Date ? value : new Date(value);
+  return Number.isNaN(date.getTime()) ? null : date;
+}
+
+function formatStaticDate(value) {
+  const date = parseDate(value);
+  if (!date) return '';
+  return new Intl.DateTimeFormat('zh-TW', {
+    year: 'numeric',
+    month: 'short',
+    day: 'numeric',
+  }).format(date);
+}
+
+function formatStaticMetaParts(post) {
+  const parts = [];
+  if (post.author) parts.push(`作者 ${post.author}`);
+
+  const publishedDate = formatStaticDate(post.publishedAt);
+  if (publishedDate) parts.push(`發布 ${publishedDate}`);
+
+  const updatedDate = formatStaticDate(post.updatedAt || post.publishedAt);
+  if (updatedDate && updatedDate !== publishedDate) parts.push(`更新 ${updatedDate}`);
+
+  if (post.readingTime) parts.push(post.readingTime);
+  return parts;
+}
+
+function buildHeroCategoryStyle(post) {
+  const accent = post.accentColor || '#556bff';
+  const normalized = accent.trim().replace('#', '');
+  if (!/^[\da-f]{6}$/i.test(normalized)) return '';
+  const value = Number.parseInt(normalized, 16);
+  const r = (value >> 16) & 255;
+  const g = (value >> 8) & 255;
+  const b = value & 255;
+  return ` style="color: ${accent}; border-color: rgba(${r}, ${g}, ${b}, 0.3); background: rgba(${r}, ${g}, ${b}, 0.1);"`;
+}
+
+function slugToPath(slug, category) {
+  const categorySlug = categoryMapping[category] || 'uncategorized';
+  return `/${categorySlug}/${slug}/`;
+}
+
+function buildHomepageHeroMedia(post) {
+  if (!post.coverImage) {
+    return '        <div class="hero-card__media" id="hero-media"></div>';
+  }
+
+  return `        <div class="hero-card__media article-hero--image" id="hero-media"><img class="article-hero__image" ${buildHeroImageAttributes(post.coverImage, HOME_HERO_SIZES, 'sync')}></div>`;
+}
+
+function buildHomepageFeaturedSection(post) {
+  if (!post) {
+    return `      <section id="featured" class="hero-card" hidden data-featured-slug="" data-featured-cover="">
+        <div class="hero-card__media" id="hero-media"></div>
+        <div class="hero-card__body">
+          <p class="hero-card__category" id="hero-category"></p>
+          <h2 class="hero-card__title">
+            <a id="hero-link" href="#"></a>
+          </h2>
+          <p class="hero-card__meta" id="hero-meta"></p>
+          <p class="hero-card__summary" id="hero-summary"></p>
+          <div class="hero-card__actions">
+            <a id="hero-read-more" class="button button--primary" href="#">繼續閱讀</a>
+            <a id="hero-open-discussion" class="button button--ghost" href="#comments">留言討論</a>
+          </div>
+        </div>
+      </section>`;
+  }
+
+  const safeSlug = escapeHtml(post.slug || '');
+  const safeCoverImage = escapeHtml(post.coverImage || '');
+  const safeCategory = escapeHtml(post.category || 'Dispatch');
+  const safeTitle = escapeHtml(post.title || post.slug || 'Untitled');
+  const safeSummary = escapeHtml(post.summary || '');
+  const safeMeta = escapeHtml(formatStaticMetaParts(post).join(' | '));
+  const safePath = escapeHtml(slugToPath(post.slug, post.category));
+  const safeDiscussPath = escapeHtml(`${slugToPath(post.slug, post.category)}#comments`);
+  const categoryStyle = buildHeroCategoryStyle(post);
+
+  return `      <section id="featured" class="hero-card" data-featured-slug="${safeSlug}" data-featured-cover="${safeCoverImage}">
+${buildHomepageHeroMedia(post)}
+        <div class="hero-card__body">
+          <p class="hero-card__category" id="hero-category"${categoryStyle}>${safeCategory}</p>
+          <h2 class="hero-card__title">
+            <a id="hero-link" href="${safePath}">${safeTitle}</a>
+          </h2>
+          <p class="hero-card__meta" id="hero-meta">${safeMeta}</p>
+          <p class="hero-card__summary" id="hero-summary">${safeSummary}</p>
+          <div class="hero-card__actions">
+            <a id="hero-read-more" class="button button--primary" href="${safePath}">繼續閱讀</a>
+            <a id="hero-open-discussion" class="button button--ghost" href="${safeDiscussPath}">留言討論</a>
+          </div>
+        </div>
+      </section>`;
+}
+
+function syncHomepage(posts) {
+  const sortedPosts = [...posts].sort((a, b) => {
+    const timeA = parseDate(a.publishedAt)?.getTime() || 0;
+    const timeB = parseDate(b.publishedAt)?.getTime() || 0;
+    return timeB - timeA;
+  });
+  const featuredPost = sortedPosts[0] || null;
   const homepageTemplate = fs.readFileSync(HOMEPAGE_PATH, 'utf8');
   const homepageOgTitle = extractMetaPropertyContent(homepageTemplate, 'og:title');
   const homepageOgImage = buildCloudinaryOgImage(homepageOgTitle);
 
-  let updatedHomepage = replaceMetaPropertyContent(homepageTemplate, 'og:image', homepageOgImage);
+  let updatedHomepage = replaceMarkedBlock(
+    homepageTemplate,
+    HOME_FEATURED_PRELOAD_START,
+    HOME_FEATURED_PRELOAD_END,
+    buildHeroPreload(featuredPost?.coverImage || '', HOME_HERO_SIZES).trimEnd()
+  );
+
+  updatedHomepage = replaceMarkedBlock(
+    updatedHomepage,
+    HOME_FEATURED_START,
+    HOME_FEATURED_END,
+    buildHomepageFeaturedSection(featuredPost)
+  );
+
+  updatedHomepage = replaceMetaPropertyContent(updatedHomepage, 'og:image', homepageOgImage);
   updatedHomepage = replaceMetaPropertyContent(updatedHomepage, 'twitter:image', homepageOgImage);
 
   if (updatedHomepage !== homepageTemplate) {
     fs.writeFileSync(HOMEPAGE_PATH, updatedHomepage, 'utf8');
-    console.log('🏠 已同步首頁 OG 圖片');
+    console.log('🏠 已同步首頁 featured 區塊');
   } else {
-    console.log('🏠 首頁 OG 圖片已是最新');
+    console.log('🏠 首頁 featured 區塊已是最新');
   }
 }
 
@@ -402,8 +570,8 @@ function printSyncSummary({
 function syncGeneratedContent() {
   console.log('開始同步內容產物與 WordPress 風格文章頁面...\n');
 
-  syncHomepageMetadata();
   const posts = JSON.parse(fs.readFileSync(POSTS_PATH, 'utf8'));
+  syncHomepage(posts);
   const routeState = buildCurrentRouteMap(posts);
   const writeSummary = writeCurrentPostPages(posts);
   const reconcileSummary = reconcileGeneratedRoutes(routeState.slugToCurrentCategory);
