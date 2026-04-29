@@ -5,8 +5,8 @@ Allow: /
 # 主要內容頁面
 Allow: /*/
 
-# 排除查詢參數版本
-Disallow: /post.html?*
+# 排除舊文章入口
+Disallow: /post.html
 Disallow: /*?search=*
 
 # Sitemap

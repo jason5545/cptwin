@@ -6,7 +6,7 @@
 
 ```
 ├── index.html                 首頁（特色文章 + 文章列表 + 側邊欄）
-├── post.html                  文章頁面範本（Markdown 客戶端渲染）
+├── post.html                  文章頁面範本（產生靜態文章路由）
 ├── about.html                 關於我
 ├── assets/
 │   ├── css/
