@@ -36,7 +36,10 @@ jobs:
 
       # 3. 安裝 sharp（圖片處理套件）
       - name: 安裝 sharp
-        run: npm install sharp
+        run: |
+          npm config set cache /tmp/.npm-cache
+          npm install sharp --no-save
+          rm -rf node_modules
 
       # 4. 轉換圖片為 WebP
       - name: 轉換圖片為 WebP
@@ -75,7 +78,12 @@ jobs:
             echo "has_changes=false" >> $GITHUB_OUTPUT
           fi
 
-      # 8. 提交並推送變更
+      # 8. 清理未追蹤檔案
+      - name: 清理未追蹤檔案
+        if: steps.check_changes.outputs.has_changes == 'true'
+        run: git clean -fd
+
+      # 9. 提交並推送變更
       - name: 提交變更
         if: steps.check_changes.outputs.has_changes == 'true'
         run: |
@@ -90,7 +98,7 @@ jobs:
           git pull --rebase origin main
           git push origin HEAD:main
 
-      # 9. 顯示結果
+      # 10. 顯示結果
       - name: 顯示結果
         if: steps.check_changes.outputs.has_changes == 'false'
         run: echo "✅ 沒有需要轉換的圖片"
