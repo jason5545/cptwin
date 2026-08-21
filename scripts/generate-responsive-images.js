@@ -39,6 +39,7 @@ async function generateVariant(imagePath, width, sourceWidth) {
   if (sourceWidth <= width || !variantNeedsUpdate(imagePath, variantPath)) return false;
 
   await sharp(imagePath)
+    .rotate() // 依 EXIF 方向自動轉正
     .resize({ width, withoutEnlargement: true })
     .webp({ quality: 82, alphaQuality: 82, method: 6 })
     .toFile(variantPath);

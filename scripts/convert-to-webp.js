@@ -61,6 +61,7 @@ async function convertToWebP(imagePath) {
 
   try {
     const info = await sharp(imagePath)
+      .rotate() // 依 EXIF 方向自動轉正，避免直拍照片轉檔後橫躺
       .webp({
         quality: CONFIG.quality,
         alphaQuality: CONFIG.alphaQuality,
