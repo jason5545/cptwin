@@ -77,12 +77,7 @@ jobs:
             echo "has_changes=false" >> $GITHUB_OUTPUT
           fi
 
-      # 8. 清理未追蹤檔案
-      - name: 清理未追蹤檔案
-        if: steps.check_changes.outputs.has_changes == 'true'
-        run: git clean -fd
-
-      # 9. 提交並推送變更
+      # 8. 提交並推送變更（注意：不可在此前的步驟執行 git clean，會刪掉剛產生的 WebP）
       - name: 提交變更
         if: steps.check_changes.outputs.has_changes == 'true'
         run: |
@@ -97,7 +92,7 @@ jobs:
           git pull --rebase origin main
           git push origin HEAD:main
 
-      # 10. 顯示結果
+      # 9. 顯示結果
       - name: 顯示結果
         if: steps.check_changes.outputs.has_changes == 'false'
         run: echo "✅ 沒有需要轉換的圖片"
