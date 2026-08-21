@@ -31,7 +31,10 @@ function findMarkdownFiles(dir) {
  * 檢查 WebP 檔案是否存在
  */
 function hasWebPVersion(imagePath, markdownDir) {
-  const absolutePath = path.resolve(markdownDir, imagePath);
+  // 以 / 開頭的路徑視為相對 repo 根目錄（connector 產生的文章使用絕對路徑）
+  const absolutePath = imagePath.startsWith('/')
+    ? path.join(__dirname, '..', imagePath.slice(1))
+    : path.resolve(markdownDir, imagePath);
   const parsedPath = path.parse(absolutePath);
   const webpPath = path.join(parsedPath.dir, `${parsedPath.name}.webp`);
 
