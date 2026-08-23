@@ -1185,6 +1185,11 @@ a:focus {
   margin: 1.3rem 0;
 }
 
+/* 內文粗體以紅色強調（深淺色變數定義在 critical-shared.css） */
+.article-body strong {
+  color: var(--bold-accent);
+}
+
 /* Blockquote — warm editorial */
 .article-body blockquote {
   margin: 2rem 0;
