@@ -6,6 +6,24 @@
   "description": "我與我雙胞胎腦麻兒的生活點滴",
   "items": [
     {
+      "id": "olw-integration-test",
+      "url": "https://cptwin.com/parenting/olw-integration-test/",
+      "title": "OLW 整合測試（自動刪除）& Test",
+      "content_text": "測試摘要",
+      "date_published": "2026-08-22T10:00:00.000Z",
+      "date_modified": "2026-08-23T00:00:00.000Z",
+      "tags": [
+        "測試",
+        "olw",
+        "自動化"
+      ],
+      "authors": [
+        {
+          "name": "舜英"
+        }
+      ]
+    },
+    {
       "id": "wheelchair-suit-raincoat",
       "url": "https://cptwin.com/parenting/wheelchair-suit-raincoat/",
       "title": "一件比輪椅連身雨衣更有巧思的雨衣",
