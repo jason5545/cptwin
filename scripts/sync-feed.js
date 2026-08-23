@@ -77,6 +77,17 @@ function main() {
   // 建立 posts 的 slug -> post 映射
   const postMap = new Map(posts.map(post => [post.slug, post]));
 
+  // 移除 posts.json 已不存在的文章（例如已刪除的文章）
+  const beforeRemove = feed.items.length;
+  feed.items = feed.items.filter(item => {
+    if (!postMap.has(item.id)) {
+      console.log(`  - ${item.id}（posts.json 已不存在，自 feed 移除）`);
+      return false;
+    }
+    return true;
+  });
+  const removed = beforeRemove - feed.items.length;
+
   // 檢查並更新所有 metadata
   feed.items.forEach(item => {
     const post = postMap.get(item.id);
@@ -116,9 +127,9 @@ function main() {
   });
 
   // 寫回檔案
-  if (added > 0 || urlUpdated > 0) {
+  if (added > 0 || urlUpdated > 0 || removed > 0) {
     fs.writeFileSync(FEED_PATH, JSON.stringify(feed, null, 2));
-    console.log(`\n完成：新增 ${added} 篇文章，更新 ${urlUpdated} 個 URL`);
+    console.log(`\n完成：新增 ${added} 篇文章，更新 ${urlUpdated} 個 URL，移除 ${removed} 篇`);
   } else {
     console.log('feed.json 已是最新，無需更新');
   }
