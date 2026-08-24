@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Open Live Writer manifest：options 與 connector 同步；<views> 指向 connector
+     代管的手刻編輯佈景主題（IE9 相容、內聯 CSS），讓 OLW 直接下載套用，
+     不走文字比對式偵測。 -->
+<manifest xmlns="http://schemas.microsoft.com/wlw/manifest/weblog">
+  <options>
+    <supportsSlug>Yes</supportsSlug>
+    <supportsExcerpt>Yes</supportsExcerpt>
+    <supportsKeywords>Yes</supportsKeywords>
+    <supportsNewCategories>No</supportsNewCategories>
+    <requiresHtmlTitles>Yes</requiresHtmlTitles>
+  </options>
+  <views>
+    <default>WebLayout</default>
+    <view type="WebLayout" src="https://cptwin-connector.black-hill-f944.workers.dev/theme/weblayout.html" />
+    <view type="WebPreview" src="https://cptwin-connector.black-hill-f944.workers.dev/theme/webpreview.html" />
+  </views>
+</manifest>
