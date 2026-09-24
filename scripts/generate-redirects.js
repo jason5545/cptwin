@@ -8,6 +8,7 @@ const TEMPLATE_PATH = path.join(ROOT_DIR, 'post.html');
 const HOMEPAGE_PATH = path.join(ROOT_DIR, 'index.html');
 const POSTS_DIR = path.join(ROOT_DIR, 'content/posts');
 const SITE_BASE_URL = 'https://cptwin.com';
+const META_DATE_TIME_ZONE = 'Asia/Taipei';
 const CLOUDINARY_OG_IMAGE_CONFIG = {
   cloudName: 'dynj7181i',
   backgroundId: 'og-background_cbst7j',
@@ -317,6 +318,7 @@ function formatStaticDate(value) {
     year: 'numeric',
     month: 'short',
     day: 'numeric',
+    timeZone: META_DATE_TIME_ZONE,
   }).format(date);
 }
 
