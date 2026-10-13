@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, follow">
+<title>文章上線中 - cptwin</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang TC", "Microsoft JhengHei", sans-serif;
+    background: #faf9f7;
+    color: #2b2b2b;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+  }
+  .card { max-width: 480px; text-align: center; }
+  .spinner {
+    width: 44px; height: 44px;
+    margin: 0 auto 20px;
+    border: 3px solid #e5e0da;
+    border-top-color: #b85c38;
+    border-radius: 50%;
+    animation: spin 0.9s linear infinite;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  h1 { font-size: 20px; font-weight: 600; margin-bottom: 10px; }
+  p { font-size: 14px; color: #6b6b6b; line-height: 1.7; margin-bottom: 6px; }
+  .timer { font-size: 13px; color: #9a9a9a; margin-top: 4px; }
+  a { color: #b85c38; text-decoration: none; font-weight: 600; }
+  a:hover { text-decoration: underline; }
+  .page404 { display: none; }
+</style>
+</head>
+<body>
+<div class="card" id="wait">
+  <div class="spinner"></div>
+  <h1>文章上線中</h1>
+  <p>你的文章剛發布完成，網站正在為它生成頁面。</p>
+  <p class="timer" id="elapsed">已等待 0 秒</p>
+  <p>等到頁面開好時會自動進入。</p>
+</div>
+<div class="card page404" id="plain404">
+  <h1>找不到這個頁面</h1>
+  <p>這個網址不存在或已經搬走。</p>
+  <p><a href="/">回首頁</a></p>
+</div>
+<div class="card page404" id="timedout">
+  <h1>等不到這個頁面</h1>
+  <p>文章頁面遲遲沒有出現，可能是那篇文章還不存在。</p>
+  <p>稍後再試一次，或先逛逛：</p>
+  <p><a href="/">回首頁</a></p>
+</div>
+<script>
+(function () {
+  var DEFAULT_CATEGORIES = [
+    "assistive-devices", "custom-mouse", "education", "life-stories",
+    "parenting", "screen-keyboard", "trending", "uncategorized"
+  ];
+  var segments = location.pathname.replace(/\/+$/g, "").split("/").filter(Boolean);
+  var isArticle = segments.length === 2 && DEFAULT_CATEGORIES.indexOf(segments[0]) !== -1;
+
+  if (!isArticle) {
+    document.getElementById("wait").style.display = "none";
+    document.getElementById("plain404").style.display = "block";
+    return;
+  }
+
+  var target = location.pathname;
+  var startedAt = Date.now();
+  var MAX_WAIT_MS = 90000;
+  var INTERVAL_MS = 3000;
+  var elapsedEl = document.getElementById("elapsed");
+  var timer = setInterval(tick, 1000);
+
+  function onTimeout() {
+    clearInterval(timer);
+    clearInterval(poll);
+    document.getElementById("wait").style.display = "none";
+    document.getElementById("timedout").style.display = "block";
+  }
+
+  function pollOnce() {
+    fetch(target, { method: "HEAD", cache: "no-store" })
+      .then(function (res) {
+        if (res.ok) {
+          clearInterval(timer);
+          clearInterval(poll);
+          elapsedEl.textContent = "好啦！";
+          location.replace(target);
+        }
+      })
+      .catch(function () {});
+  }
+
+  function tick() {
+    var seconds = Math.floor((Date.now() - startedAt) / 1000);
+    elapsedEl.textContent = "已等待 " + seconds + " 秒";
+    if (Date.now() - startedAt >= MAX_WAIT_MS) {
+      onTimeout();
+    }
+  }
+
+  var poll = setInterval(pollOnce, INTERVAL_MS);
+  pollOnce();
+})();
+</script>
+</body>
+</html>
