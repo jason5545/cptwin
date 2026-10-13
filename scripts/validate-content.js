@@ -259,8 +259,14 @@ function validatePosts(posts, categoryMapping) {
       addError(`${context} 的 tags 含有空值或非字串`);
     }
 
-    if (post.coverImage && !localSitePathExists(post.coverImage)) {
-      addError(`${context} 的 coverImage 找不到檔案：${post.coverImage}`);
+    if (post.coverImage) {
+      if (/\s/.test(post.coverImage)) {
+        addError(`${context} 的 coverImage 含有空白字元（可能混入 alt 文字）：${post.coverImage}`);
+      } else if (!/\.webp$/.test(post.coverImage)) {
+        addError(`${context} 的 coverImage 不是 .webp 格式：${post.coverImage}`);
+      } else if (!localSitePathExists(post.coverImage)) {
+        addError(`${context} 的 coverImage 找不到檔案：${post.coverImage}`);
+      }
     }
 
     const markdownPath = path.join(paths.postsDir, `${post.slug}.md`);
