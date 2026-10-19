@@ -16,7 +16,7 @@
 <strong>這不只是身障者的專屬需要，而是一份關乎全人、涵蓋了你我日常生活的普遍需求。</strong>
 
 更不用說，腦麻孩子往往伴隨肢體張力過高或不自主運動，推行輪椅時若遇到「斷頭」人行道，硬生生地將輪椅抬上抬下，不僅對照顧者的腰椎與體力是極大的負荷，突如其來的晃動更常讓孩子感到驚恐與身體不適。  
-[![IMG\_2869](/content/img/2026/10/IMG_2869_thumb.jpg "IMG_2869")](/content/img/2026/10/IMG_2869.jpg)
+[![IMG\_2869](/content/img/2026/10/IMG_2869_thumb.webp "IMG_2869")](/content/img/2026/10/IMG_2869.webp)
 
 根據內政部營建署（現為國土管理署）頒布的《市區道路及附屬工程設計規範》中第十四章「無障礙通路」之規定，路緣斜坡（指將人行道或交通島平順銜接至車道之平緩斜坡）應符合下列規範：
 
@@ -83,7 +83,7 @@
 
   
 
- [![IMG\_2864](/content/img/2026/10/IMG_2864_thumb.jpg "IMG_2864")](/content/img/2026/10/IMG_2864.jpg) [![IMG\_2867](/content/img/2026/10/IMG_2867_thumb.jpg "IMG_2867")](/content/img/2026/10/IMG_2867.jpg) [![IMG\_2868](/content/img/2026/10/IMG_2868_thumb.jpg "IMG_2868")](/content/img/2026/10/IMG_2868.jpg)
+ [![IMG\_2864](/content/img/2026/10/IMG_2864_thumb.webp "IMG_2864")](/content/img/2026/10/IMG_2864.webp) [![IMG\_2867](/content/img/2026/10/IMG_2867_thumb.webp "IMG_2867")](/content/img/2026/10/IMG_2867.webp) [![IMG\_2868](/content/img/2026/10/IMG_2868_thumb.webp "IMG_2868")](/content/img/2026/10/IMG_2868.webp)
 
   
 

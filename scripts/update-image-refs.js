@@ -50,30 +50,31 @@ function updateMarkdownFile(filePath) {
   let updated = false;
   let convertedCount = 0;
 
-  // 匹配 ![alt](path) 格式的圖片
-  const imageRegex = /!\[([^\]]*)\]\(([^)]+)\)/g;
+  // 1. 站內絕對路徑：不限 ![alt](path)，也涵蓋 ![alt](path "title") 與外層 [..](大圖.jpg) 連結（OLW 格式）
+  const absoluteRegex = /\/content\/img\/[^\s)"'<>]+?\.(?:jpe?g|png)(?=[\s)"'<>]|$)/gi;
+  // 2. 相對路徑的 ![alt](path)
+  const relativeRegex = /(!\[[^\]]*\]\()([^)\s"]+?\.(?:jpe?g|png))(?=[\s)"])/gi;
 
-  const newContent = content.replace(imageRegex, (match, alt, imagePath) => {
-    // 跳過外部連結
-    if (imagePath.startsWith('http://') || imagePath.startsWith('https://')) {
+  let newContent = content.replace(absoluteRegex, (imagePath) => {
+    if (!hasWebPVersion(imagePath, markdownDir)) {
+      return imagePath;
+    }
+    updated = true;
+    convertedCount++;
+    return imagePath.replace(/\.(jpg|jpeg|png)$/i, '.webp');
+  });
+
+  newContent = newContent.replace(relativeRegex, (match, prefix, imagePath) => {
+    // 跳過外部連結與已處理的站內路徑
+    if (/^https?:\/\//.test(imagePath) || imagePath.startsWith('/')) {
       return match;
     }
-
-    // 跳過已經是 .webp 的路徑
-    if (imagePath.endsWith('.webp')) {
-      return match;
-    }
-
-    // 檢查是否有對應的 WebP 檔案
     if (!hasWebPVersion(imagePath, markdownDir)) {
       return match;
     }
-
-    // 直接替換副檔名為 .webp
-    const webpImagePath = imagePath.replace(/\.(jpg|jpeg|png)$/i, '.webp');
     updated = true;
     convertedCount++;
-    return `![${alt}](${webpImagePath})`;
+    return prefix + imagePath.replace(/\.(jpg|jpeg|png)$/i, '.webp');
   });
 
   if (updated) {
