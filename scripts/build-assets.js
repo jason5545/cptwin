@@ -5,8 +5,7 @@ const CleanCSS = require('clean-css');
 
 const ROOT_DIR = path.join(__dirname, '..');
 const JS_TARGETS = [
-  ['assets/main.js', 'assets/main.min.js'],
-  ['assets/main-static.js', 'assets/main-static.min.js']
+  ['assets/handbook.js', 'assets/handbook.min.js']
 ];
 const CSS_TARGETS = [
   ['assets/styles.css', 'assets/styles.min.css']

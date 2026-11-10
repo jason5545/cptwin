@@ -1,0 +1,84 @@
+{
+  "twinsBirthYear": 1997,
+  "openingQuote": "如果能讓後來的家長少繞一點路，那就夠了。",
+  "openingQuoteBy": "舜英，三個孩子的媽媽",
+  "openingNote": "這裡不是醫學文獻，不是官方說明。是一個媽媽帶著兩個腦麻兒，在復健、就學、生活中一步步整合出來的經驗。",
+  "topics": [
+    {
+      "slug": "care",
+      "name": "媽媽經",
+      "note": "24小時擺位怎麼做、髖關節術後照護、輔具怎麼選怎麼買怎麼申請補助。",
+      "picks": ["cp-24hr-positioning-sleep-part1", "hip-joint-surgery-experience-part1", "gmfcs"]
+    },
+    {
+      "slug": "computer-aids",
+      "name": "電腦輔具",
+      "note": "兒子不能寫字，電腦就是他的筆。",
+      "picks": ["choosing-computer-aids-for-cp-child", "computer-assistive-devices-for-cp-part1", "on-screen-keyboard-free-downloads-part2"]
+    },
+    {
+      "slug": "assistive-devices",
+      "name": "輔具與無障礙",
+      "note": "用過的、踩過坑的、真心推薦的，通通寫下來。",
+      "picks": ["cp-children-hip-abduction-brace-comparison", "wheelchair-children-tray-table", "high-pressure-eeg-use-experience-on-occipital-lobes"]
+    },
+    {
+      "slug": "getting-around",
+      "name": "友善生活",
+      "note": "出門一趟不容易，多一點資訊就少一點折騰。",
+      "picks": ["google-maps-accessibility-dining", "finding-mrt-exit-for-rehab-bus", "wheelchair-accessible-slopes"]
+    },
+    {
+      "slug": "daily-life",
+      "name": "生活點滴",
+      "note": "日子裡那些不起眼但很重要的小事。",
+      "picks": ["diy-haircut-for-disabled-child", "diy-bookend-assistive-device", "modifying-pants-for-cp-child"]
+    },
+    {
+      "slug": "school",
+      "name": "就學與學習",
+      "note": "從三歲的鑑定安置、IEP會議、巡迴治療師服務，到身障生升大學甄試的準備。",
+      "picks": []
+    }
+  ],
+  "stages": [
+    {
+      "slug": "placement",
+      "step": "第一站",
+      "name": "鑑定與安置",
+      "note": "入學前，以及每一次升學的轉銜",
+      "picks": ["preschool-disability-assessment-placement", "special-student-service-certificate", "disabled-student-school-placement-part1"]
+    },
+    {
+      "slug": "school-life",
+      "step": "第二站",
+      "name": "在學：IEP、治療師、體育課",
+      "note": "普通班加資源班，十二年的校園生活",
+      "picks": ["add-ape-to-iep-school-life", "school-itinerant-therapist-services", "my-sons-pe-class"]
+    },
+    {
+      "slug": "junior-high",
+      "step": "第三站",
+      "name": "國中",
+      "note": "換了環境，從報到、編班到智力測驗",
+      "picks": ["junior-high-new-life-part1", "junior-high-iq-test-important-for-disabled"]
+    },
+    {
+      "slug": "university",
+      "step": "第四站",
+      "name": "升大學",
+      "note": "身障甄試、考場服務、大學的補助",
+      "picks": ["university-exam-prep-disabled-part1", "disabled-student-english-listening-test", "university-subsidies-for-disabled-students"]
+    }
+  ],
+  "categoryTopicFallback": {
+    "媽媽經": "媽媽經",
+    "就學與學習": "就學與學習",
+    "生活": "生活點滴",
+    "輔具類": "輔具與無障礙",
+    "螢幕鍵盤與應用": "電腦輔具",
+    "特製滑鼠": "電腦輔具",
+    "夯話題": "友善生活",
+    "未分類": "生活點滴"
+  }
+}

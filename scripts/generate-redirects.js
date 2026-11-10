@@ -1,36 +1,28 @@
 const fs = require('fs');
 const path = require('path');
 const marked = require('../assets/marked.min.js');
+const {
+  SITE_BASE_URL,
+  loadHandbook,
+  ageText,
+  renderHead,
+  renderPage,
+  buildCloudinaryOgImage,
+  writeHandbookPages,
+  syncStaticPage,
+} = require('./lib/handbook');
 
 const ROOT_DIR = path.join(__dirname, '..');
 const POSTS_PATH = path.join(ROOT_DIR, 'data/posts.json');
-const TEMPLATE_PATH = path.join(ROOT_DIR, 'post.html');
-const HOMEPAGE_PATH = path.join(ROOT_DIR, 'index.html');
 const POSTS_DIR = path.join(ROOT_DIR, 'content/posts');
-const SITE_BASE_URL = 'https://cptwin.com';
-const META_DATE_TIME_ZONE = 'Asia/Taipei';
-const CLOUDINARY_OG_IMAGE_CONFIG = {
-  cloudName: 'dynj7181i',
-  backgroundId: 'og-background_cbst7j',
-  fontId: 'notosanstc-bold.ttf'
-};
-const ARTICLE_TAGS_START = '<!-- ARTICLE_TAGS_START -->';
-const ARTICLE_TAGS_END = '<!-- ARTICLE_TAGS_END -->';
 const HERO_IMAGE_WIDTHS = [480, 828, 1200];
-const HOME_FEATURED_PRELOAD_START = '<!-- HOME_FEATURED_PRELOAD_START -->';
-const HOME_FEATURED_PRELOAD_END = '<!-- HOME_FEATURED_PRELOAD_END -->';
-const HOME_FEATURED_START = '<!-- HOME_FEATURED_START -->';
-const HOME_FEATURED_END = '<!-- HOME_FEATURED_END -->';
-const HOME_HERO_SIZES = '(min-width: 1600px) 58vw, (min-width: 1200px) 54vw, 98vw';
-const ARTICLE_HERO_SIZES = '(min-width: 1600px) calc(96vw - 428px), (min-width: 1200px) calc(98vw - 364px), 98vw';
+const ARTICLE_COVER_SIZES = '(min-width: 1100px) 780px, 100vw';
 
 // 從集中式設定檔載入分類映射
 const categoriesConfigPath = path.join(ROOT_DIR, 'config/categories.json');
 const categoriesConfig = JSON.parse(fs.readFileSync(categoriesConfigPath, 'utf8'));
 const categoryMapping = categoriesConfig.categoryMapping;
 const knownCategorySlugs = new Set(Object.values(categoryMapping));
-
-const postTemplate = fs.readFileSync(TEMPLATE_PATH, 'utf8');
 
 function escapeHtml(value = '') {
   return String(value)
@@ -121,83 +113,24 @@ function buildResponsiveImageSrcset(imageUrl) {
   return entries.map(({ url, width }) => `${url} ${width}w`).join(', ');
 }
 
-function buildHeroImageAttributes(coverImage, sizes, decoding = 'async') {
+function buildCoverImageAttributes(coverImage) {
   const safeCoverImage = escapeHtml(coverImage);
   const srcset = buildResponsiveImageSrcset(coverImage);
-  const srcsetAttr = srcset ? ` srcset="${escapeHtml(srcset)}" sizes="${escapeHtml(sizes)}"` : '';
-  return `src="${safeCoverImage}"${srcsetAttr} alt="" aria-hidden="true" fetchpriority="high" decoding="${decoding}"`;
+  const srcsetAttr = srcset ? ` srcset="${escapeHtml(srcset)}" sizes="${escapeHtml(ARTICLE_COVER_SIZES)}"` : '';
+  return `src="${safeCoverImage}"${srcsetAttr} alt="" fetchpriority="high" decoding="async"`;
 }
 
-function buildHeroPreload(coverImage, sizes = ARTICLE_HERO_SIZES) {
+function buildCoverPreload(coverImage) {
   if (!coverImage) return '';
-
-  const safeCoverImage = escapeHtml(coverImage);
   const srcset = buildResponsiveImageSrcset(coverImage);
   const responsiveAttrs = srcset
-    ? ` imagesrcset="${escapeHtml(srcset)}" imagesizes="${escapeHtml(sizes)}"`
+    ? ` imagesrcset="${escapeHtml(srcset)}" imagesizes="${escapeHtml(ARTICLE_COVER_SIZES)}"`
     : '';
-
-  return `  <link rel="preload" as="image" href="${safeCoverImage}"${responsiveAttrs} fetchpriority="high">\n`;
-}
-
-function buildHeroMarkup(post) {
-  if (!post.coverImage) {
-    return '<div id="post-hero" class="article-hero"></div>';
-  }
-
-  return `<div id="post-hero" class="article-hero article-hero--image"><img class="article-hero__image" ${buildHeroImageAttributes(post.coverImage, ARTICLE_HERO_SIZES)}></div>`;
-}
-
-function escapeRegExp(value = '') {
-  return String(value).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-}
-
-function replaceMarkedBlock(html, startMarker, endMarker, replacement = '') {
-  const pattern = new RegExp(`${escapeRegExp(startMarker)}[\\s\\S]*?${escapeRegExp(endMarker)}`);
-  if (!pattern.test(html)) {
-    throw new Error(`找不到 marker：${startMarker}`);
-  }
-
-  const block = replacement ? `${startMarker}\n${replacement}\n${endMarker}` : `${startMarker}\n${endMarker}`;
-  return html.replace(pattern, block);
-}
-
-function extractMetaPropertyContent(html, property) {
-  const pattern = new RegExp(`<meta\\s+property="${escapeRegExp(property)}"\\s+content="([^"]*)"`);
-  const match = html.match(pattern);
-  if (!match) {
-    throw new Error(`找不到 meta property：${property}`);
-  }
-
-  return match[1];
-}
-
-function replaceMetaPropertyContent(html, property, content) {
-  const pattern = new RegExp(`(<meta\\s+property="${escapeRegExp(property)}"\\s+content=")[^"]*(")`);
-  if (!pattern.test(html)) {
-    throw new Error(`找不到 meta property：${property}`);
-  }
-
-  return html.replace(pattern, (_, prefix, suffix) => `${prefix}${escapeHtml(content)}${suffix}`);
-}
-
-function buildCloudinaryOgImage(title) {
-  const encodedTitle = encodeURIComponent(title || 'Untitled');
-  return (
-    `https://res.cloudinary.com/${CLOUDINARY_OG_IMAGE_CONFIG.cloudName}/image/upload/` +
-    'c_fill,w_1200,h_630/' +
-    'co_rgb:ffffff,' +
-    `l_text:${CLOUDINARY_OG_IMAGE_CONFIG.fontId}_60_center:${encodedTitle},w_1000,c_fit/` +
-    'fl_layer_apply,g_center/' +
-    `${CLOUDINARY_OG_IMAGE_CONFIG.backgroundId}.png`
-  );
+  return `  <link rel="preload" as="image" href="${escapeHtml(coverImage)}"${responsiveAttrs} fetchpriority="high">\n`;
 }
 
 function buildArticleTagMetaBlock(tags = []) {
-  if (!Array.isArray(tags) || !tags.length) {
-    return '';
-  }
-
+  if (!Array.isArray(tags) || !tags.length) return '';
   return tags
     .filter(Boolean)
     .map((tag) => `  <meta property="article:tag" content="${escapeHtml(tag)}">`)
@@ -206,53 +139,7 @@ function buildArticleTagMetaBlock(tags = []) {
 
 function buildAudioPlayerHTML(audioFile) {
   const safeAudioFile = escapeHtml(audioFile);
-  return `<div class="audio-player" data-audio-file="${safeAudioFile}">
-  <audio preload="metadata">
-    <source src="/content/audio/${safeAudioFile}" type="audio/mp4">
-    您的瀏覽器不支援音訊播放。
-  </audio>
-  <div class="audio-controls">
-    <button class="audio-btn play-pause" aria-label="播放/暫停">
-      <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor">
-        <path d="M8 5v14l11-7z"/>
-      </svg>
-      <svg class="pause-icon" viewBox="0 0 24 24" fill="currentColor" style="display:none">
-        <path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z"/>
-      </svg>
-    </button>
-    <div class="audio-progress-container">
-      <input type="range" class="audio-progress" min="0" max="100" value="0" step="0.1" aria-label="播放進度">
-      <div class="audio-time">
-        <span class="current-time">0:00</span>
-        <span class="duration">0:00</span>
-      </div>
-      <div class="playlist-info" style="display:none; font-size:0.75rem; color:var(--text-secondary, #666); margin-top:0.25rem;">
-        片段 <span class="current-part">1</span> / <span class="total-parts">1</span>
-      </div>
-    </div>
-    <div class="audio-speed">
-      <button class="speed-btn" aria-label="播放速度">1.0x</button>
-      <div class="speed-menu" style="display:none">
-        <button data-speed="0.75">0.75x</button>
-        <button data-speed="1.0" class="active">1.0x</button>
-        <button data-speed="1.25">1.25x</button>
-        <button data-speed="1.5">1.5x</button>
-        <button data-speed="2.0">2.0x</button>
-      </div>
-    </div>
-    <div class="audio-volume">
-      <button class="volume-btn" aria-label="音量">
-        <svg viewBox="0 0 24 24" fill="currentColor">
-          <path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02z"/>
-        </svg>
-      </button>
-      <input type="range" class="volume-slider" min="0" max="100" value="100" aria-label="音量控制">
-    </div>
-  </div>
-  <div class="audio-attribution">
-    Powered by <a href="https://notebooklm.google/" target="_blank" rel="noopener noreferrer">NotebookLM</a>. You may check facts.
-  </div>
-</div>`;
+  return `<figure class="audio-note"><audio controls preload="metadata" src="/content/audio/${safeAudioFile}"></audio></figure>`;
 }
 
 function stripMarkdownTitle(markdown) {
@@ -266,7 +153,29 @@ function stripMarkdownTitle(markdown) {
   return lines.join('\n');
 }
 
-function renderMarkdownForStaticPage(post) {
+function stripTags(html) {
+  return html
+    .replace(/<[^>]+>/g, '')
+    .replace(/&nbsp;/g, ' ')
+    .replace(/&amp;/g, '&')
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .replace(/&quot;/g, '"')
+    .replace(/&#39;/g, "'")
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+// Live Writer 會在內文放 _thumb 縮圖並連到原圖；原圖存在時直接顯示原圖
+function preferOriginalImage(src) {
+  const match = /^(\/content\/img\/.+)_thumb(\.webp)$/i.exec(src);
+  if (!match) return src;
+  const original = `${match[1]}${match[2]}`;
+  const originalPath = imageUrlToPath(original);
+  return originalPath && fs.existsSync(originalPath) ? original : src;
+}
+
+function renderArticleBody(post) {
   const markdownPath = path.join(POSTS_DIR, `${post.slug}.md`);
   if (!fs.existsSync(markdownPath)) {
     throw new Error(`找不到 Markdown 檔案：content/posts/${post.slug}.md`);
@@ -275,28 +184,31 @@ function renderMarkdownForStaticPage(post) {
   let markdown = stripMarkdownTitle(fs.readFileSync(markdownPath, 'utf8'));
   markdown = markdown.replace(/<!--\s*audio:\s*(.+?)\s*-->/g, (_, audioFile) => buildAudioPlayerHTML(audioFile.trim()));
 
-  return marked
+  let html = marked
     .parse(markdown)
     .replace(/\b(src|srcset)="content\//g, '$1="/content/');
-}
 
-function buildArticleMetaMarkup(post) {
-  return formatStaticMetaParts(post)
-    .map((part) => `<span>${escapeHtml(part)}</span>`)
-    .join('');
-}
+  html = html.replace(/<img\b([^>]*)>/g, (tag, attrs) => {
+    let next = attrs.replace(/\bsrc="([^"]+)"/, (_, src) => `src="${preferOriginalImage(src)}"`);
+    if (!/\bloading=/.test(next)) next += ' loading="lazy"';
+    if (!/\bdecoding=/.test(next)) next += ' decoding="async"';
+    return `<img${next}>`;
+  });
 
-function buildArticleTagsMarkup(tags = []) {
-  if (!Array.isArray(tags) || !tags.length) {
-    return '<div id="post-tags" class="article-tags" hidden></div>';
-  }
+  const toc = [];
+  html = html.replace(/<h([2-5])([^>]*)>([\s\S]*?)<\/h\1>/g, (tag, level, attrs, inner) => {
+    const text = stripTags(inner);
+    if (!text) return tag;
+    let id = (/\bid="([^"]+)"/.exec(attrs) || [])[1];
+    if (!id) {
+      id = `sec-${toc.length + 1}`;
+      attrs = `${attrs} id="${id}"`;
+    }
+    toc.push({ id, text });
+    return `<h${level}${attrs}>${inner}</h${level}>`;
+  });
 
-  const tagMarkup = tags
-    .filter(Boolean)
-    .map((tag) => `<span>${escapeHtml(tag)}</span>`)
-    .join('');
-
-  return `<div id="post-tags" class="article-tags">${tagMarkup}</div>`;
+  return { html, toc };
 }
 
 function buildStructuredData(post, fullUrl, imageUrl) {
@@ -305,174 +217,18 @@ function buildStructuredData(post, fullUrl, imageUrl) {
     '@type': 'BlogPosting',
     headline: post.title || post.slug || 'Untitled',
     description: post.summary || '',
-    author: {
-      '@type': 'Person',
-      name: post.author || '舜英',
-    },
-    publisher: {
-      '@type': 'Person',
-      name: '舜英',
-    },
+    author: { '@type': 'Person', name: post.author || '舜英' },
+    publisher: { '@type': 'Person', name: '舜英' },
     datePublished: post.publishedAt || '',
     dateModified: post.updatedAt || post.publishedAt || '',
-    mainEntityOfPage: {
-      '@type': 'WebPage',
-      '@id': fullUrl,
-    },
+    mainEntityOfPage: { '@type': 'WebPage', '@id': fullUrl },
     url: fullUrl,
     inLanguage: 'zh-Hant-TW',
   };
-
-  if (imageUrl) {
-    schema.image = [imageUrl];
-  }
-
-  if (Array.isArray(post.tags) && post.tags.length) {
-    schema.keywords = post.tags.join(', ');
-  }
-
-  if (post.category) {
-    schema.articleSection = post.category;
-  }
-
+  if (imageUrl) schema.image = [imageUrl];
+  if (Array.isArray(post.tags) && post.tags.length) schema.keywords = post.tags.join(', ');
+  if (post.topic) schema.articleSection = post.topic.name;
   return `  <script type="application/ld+json">${escapeJsonForScript(schema)}</script>\n`;
-}
-
-function parseDate(value) {
-  if (!value) return null;
-  const date = value instanceof Date ? value : new Date(value);
-  return Number.isNaN(date.getTime()) ? null : date;
-}
-
-function formatStaticDate(value) {
-  const date = parseDate(value);
-  if (!date) return '';
-  return new Intl.DateTimeFormat('zh-TW', {
-    year: 'numeric',
-    month: 'short',
-    day: 'numeric',
-    timeZone: META_DATE_TIME_ZONE,
-  }).format(date);
-}
-
-function formatStaticMetaParts(post) {
-  const parts = [];
-  if (post.author) parts.push(`作者 ${post.author}`);
-
-  const publishedDate = formatStaticDate(post.publishedAt);
-  if (publishedDate) parts.push(`發布 ${publishedDate}`);
-
-  const updatedDate = formatStaticDate(post.updatedAt || post.publishedAt);
-  if (updatedDate && updatedDate !== publishedDate) parts.push(`更新 ${updatedDate}`);
-
-  if (post.readingTime) parts.push(post.readingTime);
-  return parts;
-}
-
-function buildHeroCategoryStyle(post) {
-  const accent = post.accentColor || '#556bff';
-  const normalized = accent.trim().replace('#', '');
-  if (!/^[\da-f]{6}$/i.test(normalized)) return '';
-  const value = Number.parseInt(normalized, 16);
-  const r = (value >> 16) & 255;
-  const g = (value >> 8) & 255;
-  const b = value & 255;
-  return ` style="color: ${accent}; border-color: rgba(${r}, ${g}, ${b}, 0.3); background: rgba(${r}, ${g}, ${b}, 0.1);"`;
-}
-
-function slugToPath(slug, category) {
-  const categorySlug = categoryMapping[category] || 'uncategorized';
-  return `/${categorySlug}/${slug}/`;
-}
-
-function buildHomepageHeroMedia(post) {
-  if (!post.coverImage) {
-    return '        <div class="hero-card__media" id="hero-media"></div>';
-  }
-
-  return `        <div class="hero-card__media article-hero--image" id="hero-media"><img class="article-hero__image" ${buildHeroImageAttributes(post.coverImage, HOME_HERO_SIZES, 'sync')}></div>`;
-}
-
-function buildHomepageFeaturedSection(post) {
-  if (!post) {
-    return `      <section id="featured" class="hero-card" hidden data-featured-slug="" data-featured-cover="">
-        <div class="hero-card__media" id="hero-media"></div>
-        <div class="hero-card__body">
-          <p class="hero-card__category" id="hero-category"></p>
-          <h2 class="hero-card__title">
-            <a id="hero-link" href="#"></a>
-          </h2>
-          <p class="hero-card__meta" id="hero-meta"></p>
-          <p class="hero-card__summary" id="hero-summary"></p>
-          <div class="hero-card__actions">
-            <a id="hero-read-more" class="button button--primary" href="#">繼續閱讀</a>
-            <a id="hero-open-discussion" class="button button--ghost" href="#comments">留言討論</a>
-          </div>
-        </div>
-      </section>`;
-  }
-
-  const safeSlug = escapeHtml(post.slug || '');
-  const safeCoverImage = escapeHtml(post.coverImage || '');
-  const safeCategory = escapeHtml(post.category || 'Dispatch');
-  const safeTitle = escapeHtml(post.title || post.slug || 'Untitled');
-  const safeSummary = escapeHtml(post.summary || '');
-  const safeMeta = escapeHtml(formatStaticMetaParts(post).join(' | '));
-  const safePath = escapeHtml(slugToPath(post.slug, post.category));
-  const safeDiscussPath = escapeHtml(`${slugToPath(post.slug, post.category)}#comments`);
-  const categoryStyle = buildHeroCategoryStyle(post);
-
-  return `      <section id="featured" class="hero-card" data-featured-slug="${safeSlug}" data-featured-cover="${safeCoverImage}">
-${buildHomepageHeroMedia(post)}
-        <div class="hero-card__body">
-          <p class="hero-card__category" id="hero-category"${categoryStyle}>${safeCategory}</p>
-          <h2 class="hero-card__title">
-            <a id="hero-link" href="${safePath}">${safeTitle}</a>
-          </h2>
-          <p class="hero-card__meta" id="hero-meta">${safeMeta}</p>
-          <p class="hero-card__summary" id="hero-summary">${safeSummary}</p>
-          <div class="hero-card__actions">
-            <a id="hero-read-more" class="button button--primary" href="${safePath}">繼續閱讀</a>
-            <a id="hero-open-discussion" class="button button--ghost" href="${safeDiscussPath}">留言討論</a>
-          </div>
-        </div>
-      </section>`;
-}
-
-function syncHomepage(posts) {
-  const sortedPosts = [...posts].sort((a, b) => {
-    const timeA = parseDate(a.publishedAt)?.getTime() || 0;
-    const timeB = parseDate(b.publishedAt)?.getTime() || 0;
-    return timeB - timeA;
-  });
-  const featuredPost = sortedPosts[0] || null;
-  const homepageTemplate = fs.readFileSync(HOMEPAGE_PATH, 'utf8');
-  const homepageOgTitle = extractMetaPropertyContent(homepageTemplate, 'og:title');
-  const homepageOgImage = buildCloudinaryOgImage(homepageOgTitle);
-
-  let updatedHomepage = replaceMarkedBlock(
-    homepageTemplate,
-    HOME_FEATURED_PRELOAD_START,
-    HOME_FEATURED_PRELOAD_END,
-    buildHeroPreload(featuredPost?.coverImage || '', HOME_HERO_SIZES).trimEnd()
-  );
-
-  updatedHomepage = replaceMarkedBlock(
-    updatedHomepage,
-    HOME_FEATURED_START,
-    HOME_FEATURED_END,
-    buildHomepageFeaturedSection(featuredPost)
-  );
-
-  updatedHomepage = replaceMetaPropertyContent(updatedHomepage, 'og:image', homepageOgImage);
-  updatedHomepage = replaceMetaPropertyContent(updatedHomepage, 'twitter:image', homepageOgImage);
-
-  if (updatedHomepage !== homepageTemplate) {
-    fs.writeFileSync(HOMEPAGE_PATH, updatedHomepage, 'utf8');
-    console.log('🏠 已同步首頁 featured 區塊');
-  } else {
-    console.log('🏠 首頁 featured 區塊已是最新');
-  }
 }
 
 function removeEmptyDirsUpward(startDir, stopDir) {
@@ -522,91 +278,119 @@ function listGeneratedIndexFiles() {
   return files;
 }
 
-// 生成完整的文章頁面 HTML（複製 post.html 結構）
-function generatePostHTML(post) {
-  const {
-    slug,
-    title,
-    summary,
-    category,
-    coverImage,
-    publishedAt,
-    updatedAt,
-    tags,
-  } = post;
+function relatedInTopic(post, data, count = 5) {
+  const time = new Date(post.publishedAt).getTime();
+  return data.posts
+    .filter((other) => other !== post && other.topic === post.topic)
+    .sort((a, b) => Math.abs(new Date(a.publishedAt) - time) - Math.abs(new Date(b.publishedAt) - time))
+    .slice(0, count)
+    .sort((a, b) => new Date(b.publishedAt) - new Date(a.publishedAt));
+}
 
-  const categorySlug = categoryMapping[category];
-  const safeTitle = escapeHtml(title || slug || 'Untitled');
-  const safeSummary = escapeHtml(summary || '');
-  const safeCategory = escapeHtml(category || '');
+// 文章頁：標題先、封面後；右欄是這篇的資料卡與段落目錄
+function generatePostHTML(rawPost, data) {
+  const post = data.bySlug.get(rawPost.slug);
+  const fullUrl = `${SITE_BASE_URL}${post.url}`;
+  const title = post.title || post.slug || 'Untitled';
+  const safeTitle = escapeHtml(title);
+  const { html: bodyHtml, toc } = renderArticleBody(post);
 
-  // 調整相對路徑，因為文章頁面在 /category/slug/ 目錄下
-  // 需要往上兩層才能到根目錄
-  let html = postTemplate
-    .replace(/href="assets\//g, 'href="../../assets/')
-    .replace(/src="assets\//g, 'src="../../assets/')
-    .replace(/href="\.\/"/g, 'href="../../"')
-    .replace(/href="about\.html"/g, 'href="../../about.html"')
-    .replace(/href="gadgets\.html"/g, 'href="../../gadgets.html"')
-    .replace(/href="feed\.json"/g, 'href="../../feed.json"');
+  const ogImageUrl = post.coverImage
+    ? `${SITE_BASE_URL}/${post.coverImage.replace(/^\//, '')}`
+    : buildCloudinaryOgImage(title);
 
-  // 生成完整的 URL
-  const fullUrl = `${SITE_BASE_URL}/${categorySlug}/${slug}/`;
-  const heroPreload = buildHeroPreload(coverImage);
-  const heroMarkup = buildHeroMarkup(post);
-  const staticPostContent = renderMarkdownForStaticPage(post);
-  const staticMetaMarkup = buildArticleMetaMarkup(post);
-  const staticTagsMarkup = buildArticleTagsMarkup(tags);
+  const extra = [
+    `  <meta property="article:published_time" content="${escapeHtml(post.publishedAt || '')}">`,
+    `  <meta property="article:modified_time" content="${escapeHtml(post.updatedAt || post.publishedAt || '')}">`,
+    `  <meta property="article:section" content="${escapeHtml(post.topic.name)}">`,
+    buildArticleTagMetaBlock(post.tags),
+    Array.isArray(post.tags) && post.tags.length ? `  <meta name="keywords" content="${escapeHtml(post.tags.join(', '))}">` : '',
+    buildCoverPreload(post.coverImage).trimEnd(),
+    buildStructuredData(post, fullUrl, ogImageUrl).trimEnd(),
+  ].filter(Boolean).join('\n');
 
-  // 生成 Open Graph 圖片 URL
-  let ogImageUrl;
-  if (coverImage) {
-    const normalizedCoverImage = coverImage.startsWith('/') ? coverImage.slice(1) : coverImage;
-    ogImageUrl = `${SITE_BASE_URL}/${normalizedCoverImage}`;
-  } else {
-    ogImageUrl = buildCloudinaryOgImage(title || slug || 'Untitled');
-  }
+  const head = renderHead({
+    title: `${title} - cptwin`,
+    description: post.summary || '',
+    canonical: fullUrl,
+    ogType: 'article',
+    ogImage: ogImageUrl,
+    extra,
+  });
 
-  const tagsString = Array.isArray(tags) ? tags.map((tag) => escapeHtml(tag)).join(', ') : '';
+  const author = escapeHtml(post.author || '舜英');
+  const updated = post.updatedText && post.updatedText !== post.dateText ? `（${post.updatedText} 更新）` : '';
+  const minutes = post.minutes ? `・約 ${post.minutes} 分鐘讀完` : '';
+  const topicLink = `<a href="/topics/${post.topic.slug}/">${escapeHtml(post.topic.name)}</a>`;
+  const stageLink = post.stage ? `<a href="/stages/${post.stage.slug}/">${escapeHtml(post.stage.name)}</a>` : '';
+  const age = ageText(post);
 
-  // 更新 meta tags
-  html = html.replace(/<title>閱讀中 - cptwin<\/title>/, `<title>${safeTitle} - cptwin</title>`);
-  html = html.replace(/<meta name="description" content="[^"]*"/, `<meta name="description" content="${safeSummary}"`);
-  html = html.replace(/<link rel="canonical" href="[^"]*" id="canonical-url">/, `<link rel="canonical" href="${fullUrl}" id="canonical-url">`);
-  html = html.replace(/<meta name="keywords" content="" id="meta-keywords">/, `<meta name="keywords" content="${tagsString}" id="meta-keywords">`);
-  html = html.replace(/<meta name="robots" content="[^"]*">/, '<meta name="robots" content="index, follow">');
-  html = html.replace(/  <!-- 首圖 preload 會由生成腳本注入到這裡 -->\s*/,
-    `  <!-- 首圖 preload 會由生成腳本注入到這裡 -->\n${heroPreload}`);
-  html = html.replace(/<div id="post-hero" class="article-hero"><\/div>/, heroMarkup);
-  html = html.replace(/<span id="breadcrumb-current"><\/span>/, `<span id="breadcrumb-current">${safeTitle}</span>`);
-  html = html.replace(/<p id="post-category" class="article-category"><\/p>/, `<p id="post-category" class="article-category">${safeCategory}</p>`);
-  html = html.replace(/<h1 id="post-title">載入中<\/h1>/, `<h1 id="post-title">${safeTitle}</h1>`);
-  html = html.replace(/<div id="post-meta" class="article-meta"><\/div>/, `<div id="post-meta" class="article-meta">${staticMetaMarkup}</div>`);
-  html = html.replace(/<div id="post-tags" class="article-tags"><\/div>/, staticTagsMarkup);
-  html = html.replace(/<div id="post-content" class="article-body"><\/div>/, `<div id="post-content" class="article-body" data-prerendered="true">${staticPostContent}</div>`);
-  html = replaceMarkedBlock(
-    html,
-    ARTICLE_TAGS_START,
-    ARTICLE_TAGS_END,
-    buildArticleTagMetaBlock(tags)
-  );
+  const cover = post.coverImage
+    ? `<figure class="cover"><img ${buildCoverImageAttributes(post.coverImage)}></figure>`
+    : '';
 
-  // Open Graph
-  html = html.replace(/<meta property="og:url" content="" id="og-url">/, `<meta property="og:url" content="${fullUrl}" id="og-url">`);
-  html = html.replace(/<meta property="og:title" content="閱讀中 - cptwin" id="og-title">/, `<meta property="og:title" content="${safeTitle}" id="og-title">`);
-  html = html.replace(/<meta property="og:description" content="" id="og-description">/, `<meta property="og:description" content="${safeSummary}" id="og-description">`);
-  html = html.replace(/<meta property="og:image" content="" id="og-image">/, `<meta property="og:image" content="${ogImageUrl}" id="og-image">`);
-  html = html.replace(/<meta property="article:published_time" content="" id="og-published-time">/, `<meta property="article:published_time" content="${publishedAt || ''}" id="og-published-time">`);
-  html = html.replace(/<meta property="article:modified_time" content="" id="og-modified-time">/, `<meta property="article:modified_time" content="${updatedAt || publishedAt || ''}" id="og-modified-time">`);
-  html = html.replace(/<meta property="article:section" content="" id="og-section">/, `<meta property="article:section" content="${safeCategory}" id="og-section">`);
+  const mobileMeta = [`這篇在「${topicLink}」`, age ? `寫這篇時，${age}` : ''].filter(Boolean).join('・');
 
-  // Twitter
-  html = html.replace(/<meta property="twitter:url" content="" id="twitter-url">/, `<meta property="twitter:url" content="${fullUrl}" id="twitter-url">`);
-  html = html.replace(/<meta property="twitter:title" content="閱讀中 - cptwin" id="twitter-title">/, `<meta property="twitter:title" content="${safeTitle}" id="twitter-title">`);
-  html = html.replace(/<meta property="twitter:description" content="" id="twitter-description">/, `<meta property="twitter:description" content="${safeSummary}" id="twitter-description">`);
-  html = html.replace(/<meta property="twitter:image" content="" id="twitter-image">/, `<meta property="twitter:image" content="${ogImageUrl}" id="twitter-image">`);
-  html = html.replace('</head>', `${buildStructuredData(post, fullUrl, ogImageUrl)}</head>`);
+  const related = relatedInTopic(post, data);
+  const relatedBlock = related.length
+    ? `<section class="related">
+          <h2>${escapeHtml(post.topic.name)}的其他文章</h2>
+          <ul class="link-list">${related.map((r) => `<li><a href="${r.url}">${escapeHtml(r.title)}</a><time datetime="${escapeHtml(r.publishedAt)}">${r.dateText}</time></li>`).join('')}</ul>
+          <a class="more" href="/topics/${post.topic.slug}/">${escapeHtml(post.topic.name)}全部文章 →</a>
+        </section>`
+    : '';
 
+  const index = data.posts.indexOf(post);
+  const older = data.posts[index + 1];
+  const newer = data.posts[index - 1];
+  const prevNext = (older || newer)
+    ? `<nav class="prev-next" aria-label="前後文章">
+          ${older ? `<a class="prev-next__older" href="${older.url}"><small>上一篇（較早）</small>${escapeHtml(older.title)}</a>` : '<span></span>'}
+          ${newer ? `<a class="prev-next__newer" href="${newer.url}"><small>下一篇（較新）</small>${escapeHtml(newer.title)}</a>` : '<span></span>'}
+        </nav>`
+    : '';
+
+  const tocBlock = toc.length >= 2
+    ? `<h2 class="margin__title">這篇的段落</h2>
+        <ol class="toc">${toc.map((item) => `<li><a href="#${escapeHtml(item.id)}">${escapeHtml(item.text)}</a></li>`).join('')}</ol>`
+    : '';
+
+  const main = `    <div class="post">
+      <article class="article">
+        <div class="crumb"><a href="/">首頁</a> › ${topicLink}</div>
+        <h1>${safeTitle}</h1>
+        <p class="byline">${author}・${post.dateText}${updated}${minutes}</p>
+        <p class="mobile-meta">${mobileMeta}</p>
+        ${cover}
+        <div class="body" id="post-content">${bodyHtml}</div>
+        ${relatedBlock}
+        ${prevNext}
+        <section class="comments" id="comments">
+          <h2>留言</h2>
+          <div id="giscus-container" class="giscus-container">
+            <p class="giscus-status" id="giscus-loading">留言載入中…</p>
+            <p class="giscus-status" id="giscus-fallback" hidden>無法載入留言系統。可以到 <a href="https://github.com/jason5545/cptwin/discussions" target="_blank" rel="noopener noreferrer">GitHub Discussions</a> 留言。</p>
+          </div>
+        </section>
+      </article>
+      <aside class="margin" aria-label="這篇的資料">
+        <dl class="factsheet">
+          <dt>主題</dt><dd>${topicLink}</dd>
+          ${stageLink ? `<dt>階段</dt><dd>${stageLink}</dd>` : ''}
+          ${age ? `<dt>寫這篇時</dt><dd>${age}</dd>` : ''}
+          <dt>寫於${updated ? '／更新' : ''}</dt><dd>${post.dateText}${updated ? `／${post.updatedText}` : ''}</dd>
+        </dl>
+        ${tocBlock}
+      </aside>
+    </div>`;
+
+  const html = renderPage({
+    head,
+    bodyClass: 'page-article',
+    current: '',
+    main,
+    lastYear: data.posts[0]?.year || new Date().getFullYear(),
+  });
   return stripTrailingWhitespace(html);
 }
 
@@ -657,7 +441,7 @@ function buildCurrentRouteMap(posts) {
   };
 }
 
-function writeCurrentPostPages(posts) {
+function writeCurrentPostPages(posts, data) {
   let createdCount = 0;
   let redirectCount = 0;
 
@@ -674,7 +458,7 @@ function writeCurrentPostPages(posts) {
     ensureDir(postDir);
 
     const indexPath = path.join(postDir, 'index.html');
-    const html = generatePostHTML(post);
+    const html = generatePostHTML(post, data);
     fs.writeFileSync(indexPath, html, 'utf8');
 
     console.log(`✅ 已建立：${categorySlug}/${slug}/index.html`);
@@ -767,9 +551,14 @@ function syncGeneratedContent() {
   console.log('開始同步內容產物與 WordPress 風格文章頁面...\n');
 
   const posts = JSON.parse(fs.readFileSync(POSTS_PATH, 'utf8'));
-  syncHomepage(posts);
+  const data = loadHandbook();
+  const handbookPages = writeHandbookPages(data);
+  console.log(`🏠 已同步首頁、列表頁與搜尋索引（${handbookPages.length} 個檔案）`);
+  for (const [page, current] of [['about.html', 'about']]) {
+    if (syncStaticPage(data, page, current)) console.log(`🔄 已同步 ${page} 的站頭與頁尾`);
+  }
   const routeState = buildCurrentRouteMap(posts);
-  const writeSummary = writeCurrentPostPages(posts);
+  const writeSummary = writeCurrentPostPages(posts, data);
   const reconcileSummary = reconcileGeneratedRoutes(routeState.slugToCurrentCategory);
 
   printSyncSummary({

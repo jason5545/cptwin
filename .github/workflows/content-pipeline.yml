@@ -6,16 +6,17 @@ on:
       - main
     paths:
       - 'index.html'
+      - 'about.html'
       - 'content/posts/**'
       - 'data/posts.json'
+      - 'data/handbook-tags.json'
       - 'config/categories.json'
-      - 'assets/main.js'
-      - 'assets/main.min.js'
-      - 'assets/main-static.js'
-      - 'assets/main-static.min.js'
-      - 'assets/shared-ui.js'
+      - 'config/handbook.json'
+      - 'assets/handbook.js'
+      - 'assets/handbook.min.js'
       - 'assets/styles.css'
       - 'assets/styles.min.css'
+      - 'scripts/lib/**'
       - 'package.json'
       - 'post.html'
       - 'scripts/auto-fix-posts.js'
@@ -31,16 +32,17 @@ on:
       - main
     paths:
       - 'index.html'
+      - 'about.html'
       - 'content/posts/**'
       - 'data/posts.json'
+      - 'data/handbook-tags.json'
       - 'config/categories.json'
-      - 'assets/main.js'
-      - 'assets/main.min.js'
-      - 'assets/main-static.js'
-      - 'assets/main-static.min.js'
-      - 'assets/shared-ui.js'
+      - 'config/handbook.json'
+      - 'assets/handbook.js'
+      - 'assets/handbook.min.js'
       - 'assets/styles.css'
       - 'assets/styles.min.css'
+      - 'scripts/lib/**'
       - 'package.json'
       - 'post.html'
       - 'scripts/auto-fix-posts.js'
@@ -121,7 +123,7 @@ jobs:
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add index.html content/posts/ data/posts.json feed.json sitemap.xml assets/main.min.js assets/main-static.min.js assets/styles.min.css content/img/ */*/index.html
+          git add index.html about.html search/index.html data/search-index.json content/posts/ data/posts.json feed.json sitemap.xml assets/handbook.min.js assets/styles.min.css content/img/ */*/index.html
           git add -u  # 補上孤兒文章頁面的刪除（上面的 glob 只會比對到現存檔案）
           git commit -m "chore: sync content artifacts
 

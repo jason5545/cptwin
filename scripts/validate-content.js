@@ -434,8 +434,8 @@ function validateGeneratedRoutes(posts, categoryMapping) {
     }
 
     const html = readText(indexPath, `${routePath}index.html`);
-    const canonical = `<link rel="canonical" href="${buildPostUrl(post, categoryMapping)}" id="canonical-url">`;
-    const ogUrl = `<meta property="og:url" content="${buildPostUrl(post, categoryMapping)}" id="og-url">`;
+    const canonical = `<link rel="canonical" href="${buildPostUrl(post, categoryMapping)}">`;
+    const ogUrl = `<meta property="og:url" content="${buildPostUrl(post, categoryMapping)}">`;
 
     if (!html.includes(canonical)) {
       addError(`${routePath}index.html canonical 不同步`);
