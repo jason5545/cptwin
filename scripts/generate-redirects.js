@@ -72,20 +72,53 @@ function imageUrlToPath(imageUrl) {
   return path.join(ROOT_DIR, decodeImagePathSegment(imageUrl.replace(/^\//, '')));
 }
 
+// 只讀 WebP 檔頭取寬度，不必為了 srcset 把整個產生流程改成非同步
+function readWebpWidth(filePath) {
+  try {
+    const buf = Buffer.alloc(30);
+    const fd = fs.openSync(filePath, 'r');
+    try {
+      fs.readSync(fd, buf, 0, 30, 0);
+    } finally {
+      fs.closeSync(fd);
+    }
+    if (buf.toString('ascii', 0, 4) !== 'RIFF' || buf.toString('ascii', 8, 12) !== 'WEBP') return null;
+    const chunk = buf.toString('ascii', 12, 16);
+    if (chunk === 'VP8 ') return buf.readUInt16LE(26) & 0x3fff;
+    if (chunk === 'VP8L') return 1 + (((buf[22] & 0x3f) << 8) | buf[21]);
+    if (chunk === 'VP8X') return 1 + buf.readUIntLE(24, 3);
+  } catch {
+    return null;
+  }
+  return null;
+}
+
 function buildResponsiveImageSrcset(imageUrl) {
   const imagePath = imageUrlToPath(imageUrl);
   if (!imagePath) return '';
 
   const parsed = path.parse(imagePath);
-  return HERO_IMAGE_WIDTHS
+  const entries = HERO_IMAGE_WIDTHS
     .map((width) => {
       const variantPath = path.join(parsed.dir, `${parsed.name}-${width}w.webp`);
       if (!fs.existsSync(variantPath)) return null;
       const variantUrl = imageUrl.replace(/\.[^/.]+$/, `-${width}w.webp`);
-      return `${variantUrl} ${width}w`;
+      return { url: variantUrl, width };
     })
-    .filter(Boolean)
-    .join(', ');
+    .filter(Boolean);
+
+  // 原圖比最大變體還小時（例如 576 寬），不會有 828w／1200w 變體；
+  // 不把原圖列進來，瀏覽器在大螢幕上也只會拿到 480w。
+  const largestVariant = entries.length ? entries[entries.length - 1].width : 0;
+  const maxHeroWidth = HERO_IMAGE_WIDTHS[HERO_IMAGE_WIDTHS.length - 1];
+  if (largestVariant && largestVariant < maxHeroWidth && /\.webp$/i.test(imagePath)) {
+    const sourceWidth = readWebpWidth(imagePath);
+    if (sourceWidth && sourceWidth > largestVariant) {
+      entries.push({ url: imageUrl, width: sourceWidth });
+    }
+  }
+
+  return entries.map(({ url, width }) => `${url} ${width}w`).join(', ');
 }
 
 function buildHeroImageAttributes(coverImage, sizes, decoding = 'async') {

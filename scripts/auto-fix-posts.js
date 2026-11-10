@@ -99,6 +99,27 @@ async function fixNonWebpExtension(post) {
   }
 }
 
+function decodeSitePath(sitePath) {
+  try {
+    return decodeURIComponent(sitePath);
+  } catch {
+    return sitePath;
+  }
+}
+
+// Open Live Writer 會把內文圖片拆成原圖與 _thumb 縮圖，封面若取到縮圖，
+// 首頁精選與文章頁會把它放大好幾倍。原圖存在時一律改用原圖。
+function fixThumbCover(post) {
+  const match = /^(.*)_thumb(\.webp)$/i.exec(post.coverImage);
+  if (!match) return false;
+  const fullUrl = `${match[1]}${match[2]}`;
+  const fullAbs = localPathFor(decodeSitePath(fullUrl));
+  if (!fullAbs || !fs.existsSync(fullAbs)) return false;
+  post.coverImage = fullUrl;
+  console.log(`🔧 修復 ${post.slug}：封面由縮圖改為原圖 ${fullUrl}`);
+  return true;
+}
+
 async function fixCoverImage(post) {
   const coverImage = post.coverImage;
   if (typeof coverImage !== 'string' || !coverImage.trim()) return;
@@ -116,6 +137,7 @@ async function fixCoverImage(post) {
   if (!/\.webp$/i.test(post.coverImage)) {
     await fixNonWebpExtension(post);
   }
+  fixThumbCover(post);
 }
 
 async function main() {
