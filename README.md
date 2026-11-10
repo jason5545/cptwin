@@ -5,24 +5,24 @@
 ## 專案架構
 
 ```
-├── index.html                 首頁（特色文章 + 文章列表 + 側邊欄）
-├── post.html                  文章頁面範本（產生靜態文章路由）
-├── about.html                 關於我
+├── index.html                 首頁（建置產生：開場、依階段、依主題、最近寫的、按年份翻）
+├── topics/ stages/ years/     主題、階段、年份列表頁（建置產生）
+├── search/                    搜尋頁（建置產生，資料在 data/search-index.json）
+├── post.html                  舊網址 post.html?slug= 的轉址頁
+├── about.html                 關於我（內文手寫，站頭頁尾由建置同步）
 ├── assets/
-│   ├── css/
-│   │   ├── critical-shared.css  CSS 變數（單一事實來源）
-│   │   └── fonts.css            字型設定
-│   ├── styles.css               主要樣式表
-│   └── main.js                  CSR 核心邏輯
+│   ├── styles.css               全站樣式（「家長手冊」設計，守則見 cptwin/AGENT.md）
+│   └── handbook.js              前端：留言、搜尋、舊網址轉址
 ├── content/
 │   ├── posts/                   Markdown 文章（<slug>.md）
 │   └── img/                     圖片（按年月分類，WebP 格式）
 ├── data/
 │   ├── posts.json               文章元資料目錄
-│   └── feed.json                JSON Feed
+│   └── handbook-tags.json       每篇的主題與階段
 ├── config/
-│   └── categories.json          分類中英對照
-└── scripts/                     自動化腳本
+│   ├── categories.json          分類中英對照（文章網址用）
+│   └── handbook.json            主題、階段、首頁精選、雙胞胎出生年
+└── scripts/                     自動化腳本（版面在 scripts/lib/handbook.js）
 ```
 
 ## 文章元資料格式

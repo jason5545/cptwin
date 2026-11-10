@@ -41,6 +41,21 @@ function generateSitemap() {
   xml += '    <priority>0.8</priority>\n';
   xml += '  </url>\n';
 
+  // 主題、階段列表頁（家長手冊導覽）
+  const handbook = JSON.parse(fs.readFileSync(path.join(__dirname, '../config/handbook.json'), 'utf8'));
+  const listPaths = [
+    ...handbook.topics.map((topic) => `/topics/${topic.slug}/`),
+    ...handbook.stages.map((stage) => `/stages/${stage.slug}/`),
+  ];
+  listPaths.forEach((listPath) => {
+    xml += '  <url>\n';
+    xml += `    <loc>${BASE_URL}${listPath}</loc>\n`;
+    xml += `    <lastmod>${latestPostDate}</lastmod>\n`;
+    xml += '    <changefreq>monthly</changefreq>\n';
+    xml += '    <priority>0.7</priority>\n';
+    xml += '  </url>\n';
+  });
+
   // 每篇文章（使用 WordPress 風格 URL）
   posts.forEach(post => {
     const categorySlug = categoryMapping[post.category];
@@ -70,7 +85,7 @@ try {
   const sitemap = generateSitemap();
   fs.writeFileSync(outputPath, sitemap, 'utf8');
   console.log(`✅ Sitemap 已成功生成：${outputPath}`);
-  console.log(`📄 包含 ${posts.length + 2} 個 URL（首頁 + 關於頁面 + ${posts.length} 篇文章）`);
+  console.log(`📄 已寫入首頁、關於頁、主題與階段列表頁和 ${posts.length} 篇文章`);
 } catch (error) {
   console.error('❌ 生成 sitemap 時發生錯誤：', error);
   process.exit(1);
